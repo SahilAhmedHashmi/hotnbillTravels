@@ -541,13 +541,23 @@
     color: rgba(255,255,255,0.5); margin-top: 0.8rem;
     max-width: 400px; line-height: 1.7;
   }
-  .vehicles-grid {
+  .vehicles-carousel {
     max-width: 1320px; margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    position: relative;
   }
+  .vehicles-grid {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding: 0 0 0.5rem;
+  }
+  .vehicles-grid::-webkit-scrollbar { display: none; }
   .vehicle-card {
+    flex: 0 0 calc((100% - 3rem) / 3);
+    scroll-snap-align: start;
     background: var(--glass);
     border: 1px solid var(--glass-border);
     border-radius: 8px; overflow: hidden;
@@ -640,6 +650,37 @@
   .vehicle-btn:hover {
     background: var(--gold); color: var(--ink);
     border-color: var(--gold);
+  }
+  .vehicle-arrow {
+    position: absolute; top: 50%;
+    transform: translateY(-50%);
+    width: 44px; height: 44px;
+    display: inline-flex; align-items: center; justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgba(200,146,42,0.45);
+    background: rgba(10,13,11,0.82);
+    color: var(--gold-hi);
+    cursor: pointer;
+    z-index: 3;
+    transition: background 0.2s, border-color 0.2s, color 0.2s, opacity 0.2s;
+  }
+  .vehicle-arrow:hover {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--ink);
+  }
+  .vehicle-arrow:disabled {
+    opacity: 0.35;
+    cursor: default;
+    pointer-events: none;
+  }
+  .vehicle-arrow svg { width: 18px; height: 18px; }
+  .vehicle-arrow.prev { left: -22px; }
+  .vehicle-arrow.next { right: -22px; }
+  @media (max-width: 900px) {
+    .vehicle-card { flex-basis: min(86vw, 420px); }
+    .vehicle-arrow.prev { left: 8px; }
+    .vehicle-arrow.next { right: 8px; }
   }
   /* Vehicle note bar */
   .vehicle-note {
@@ -1179,7 +1220,7 @@
   <div class="exp-grid">
     <div class="exp-card reveal">
       <div class="exp-img">
-        <img src="https://images.unsplash.com/photo-1502100347599-2e5ac83c2a0c?auto=format&fit=crop&w=600&q=80" alt="Trekking">
+        <img src="Highland treks.jpg" alt="Highland Treks">
         <span class="exp-badge">Most Popular</span>
       </div>
       <div class="exp-body">
@@ -1188,15 +1229,11 @@
         </div>
         <h3>Highland Treks</h3>
         <p>Trek through Dzukou, Sandakphu, Mechuka and Ziro — valleys where the sky is always close and the silence is sacred.</p>
-        <div class="exp-foot">
-          <div class="exp-price">₹12,500 <span>/ person</span></div>
-          <a href="#" class="exp-link">Explore →</a>
-        </div>
       </div>
     </div>
     <div class="exp-card reveal reveal-delay-1">
       <div class="exp-img">
-        <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=600&q=80" alt="Wildlife Safari">
+        <img src="Wildlife Safaris.jpg" alt="Wildlife Safaris">
       </div>
       <div class="exp-body">
         <div class="exp-ico">
@@ -1204,43 +1241,31 @@
         </div>
         <h3>Wildlife Safaris</h3>
         <p>Jeep and elephant safaris in Kaziranga, Manas, and Nameri. Dawn mists, rhinos, tigers — this is wildlife at its most primal.</p>
-        <div class="exp-foot">
-          <div class="exp-price">₹8,500 <span>/ person</span></div>
-          <a href="#" class="exp-link">Explore →</a>
-        </div>
       </div>
     </div>
     <div class="exp-card reveal reveal-delay-2">
       <div class="exp-img">
-        <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=600&q=80" alt="River Cruise">
+        <img src="river boating.jpg" alt="River Boating">
         <span class="exp-badge">Seasonal</span>
       </div>
       <div class="exp-body">
         <div class="exp-ico">
           <svg viewBox="0 0 24 24" fill="none" stroke="#c8922a" stroke-width="1.5"><path d="M2 20 C5 17 9 15 12 16 C15 17 19 15 22 12"/><path d="M3 10 L12 3 L21 10"/></svg>
         </div>
-        <h3>River Cruises</h3>
+        <h3>River Boating</h3>
         <p>Drift along the Brahmaputra as the sun sets behind the hills. Watch dolphins, herons, and the lights of riverside towns twinkle awake.</p>
-        <div class="exp-foot">
-          <div class="exp-price">₹18,000 <span>/ person</span></div>
-          <a href="#" class="exp-link">Explore →</a>
-        </div>
       </div>
     </div>
     <div class="exp-card reveal reveal-delay-3">
       <div class="exp-img">
-        <img src="https://images.unsplash.com/photo-1471967183320-ee018f6e114a?auto=format&fit=crop&w=600&q=80" alt="Cultural Immersion">
+        <img src="Waterfall Expeditions.jpg" alt="Waterfall Expeditions">
       </div>
       <div class="exp-body">
         <div class="exp-ico">
           <svg viewBox="0 0 24 24" fill="none" stroke="#c8922a" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
         </div>
-        <h3>Tribal Homestays</h3>
-        <p>Sleep in a Khasi longhouse, share meals with Naga warriors' descendants, learn the weave of a Mising loom. Culture isn't observed — it's lived.</p>
-        <div class="exp-foot">
-          <div class="exp-price">₹6,500 <span>/ night</span></div>
-          <a href="#" class="exp-link">Explore →</a>
-        </div>
+        <h3>Waterfall Expeditions</h3>
+        <p>Follow forest trails to hidden cascades, misty plunge pools, and cliffside viewpoints where the roar of falling water fills the valley.</p>
       </div>
     </div>
   </div>
@@ -1258,12 +1283,19 @@
     </div>
     <a href="#contact" class="btn btn-gold" style="flex-shrink:0;">Request a Vehicle</a>
   </div>
-  <div class="vehicles-grid">
+  <div class="vehicles-carousel">
+    <button class="vehicle-arrow prev" type="button" aria-label="Previous vehicles" data-vehicle-prev>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <button class="vehicle-arrow next" type="button" aria-label="Next vehicles" data-vehicle-next>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+    <div class="vehicles-grid" data-vehicle-track>
 
     <!-- Vehicle 1 -->
     <div class="vehicle-card reveal">
       <div class="vehicle-img-wrap">
-        <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=700&q=80" alt="Toyota Innova Crysta">
+        <img src="Innova Crysta.png" alt="Toyota Innova Crysta">
         <div class="vehicle-img-overlay"></div>
         <span class="vehicle-badge">Most Booked</span>
       </div>
@@ -1287,7 +1319,7 @@
         </div>
         <div class="vehicle-foot">
           <div class="vehicle-rate">
-            ₹3,500
+            &#8377;6,500
             <span>per day</span>
           </div>
           <a href="#contact" class="vehicle-btn">Book Now</a>
@@ -1298,13 +1330,13 @@
     <!-- Vehicle 2 -->
     <div class="vehicle-card reveal reveal-delay-1">
       <div class="vehicle-img-wrap">
-        <img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=700&q=80" alt="Mahindra Thar / Bolero">
+        <img src="Thar.png" alt="Mahindra Thar">
         <div class="vehicle-img-overlay"></div>
         <span class="vehicle-badge">Off-Road</span>
       </div>
       <div class="vehicle-body">
         <p class="vehicle-type">4×4 SUV</p>
-        <h3 class="vehicle-name">Mahindra Thar / Bolero</h3>
+        <h3 class="vehicle-name">Mahindra Thar</h3>
         <p class="vehicle-desc">Built for the rugged. When the roads end and the adventure begins — Dzukou, Ziro, Mechuka — this is what you need under you.</p>
         <div class="vehicle-specs">
           <span class="vehicle-spec">
@@ -1322,7 +1354,7 @@
         </div>
         <div class="vehicle-foot">
           <div class="vehicle-rate">
-            ₹3,000
+            &#8377;5,500
             <span>per day</span>
           </div>
           <a href="#contact" class="vehicle-btn">Book Now</a>
@@ -1333,7 +1365,7 @@
     <!-- Vehicle 3 -->
     <div class="vehicle-card reveal reveal-delay-2">
       <div class="vehicle-img-wrap">
-        <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=700&q=80" alt="Tempo Traveller">
+        <img src="traveller.png" alt="Tempo Traveller">
         <div class="vehicle-img-overlay"></div>
       </div>
       <div class="vehicle-body">
@@ -1343,7 +1375,7 @@
         <div class="vehicle-specs">
           <span class="vehicle-spec">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
-            12 Seats
+            14 / 26 Seats
           </span>
           <span class="vehicle-spec">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/></svg>
@@ -1356,7 +1388,43 @@
         </div>
         <div class="vehicle-foot">
           <div class="vehicle-rate">
-            ₹5,500
+            &#8377;7,500
+            <span>14 passengers / per day</span>
+            &#8377;9,000
+            <span>26 passengers / per day</span>
+          </div>
+          <a href="#contact" class="vehicle-btn">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vehicle 4 -->
+    <div class="vehicle-card reveal">
+      <div class="vehicle-img-wrap">
+        <img src="Swift Dzire.png" alt="Maruti Suzuki Swift Dzire">
+        <div class="vehicle-img-overlay"></div>
+      </div>
+      <div class="vehicle-body">
+        <p class="vehicle-type">Compact Sedan</p>
+        <h3 class="vehicle-name">Maruti Suzuki Swift Dzire</h3>
+        <p class="vehicle-desc">A practical and comfortable sedan for couples, small families, and city-to-city transfers across the Northeast.</p>
+        <div class="vehicle-specs">
+          <span class="vehicle-spec">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            4 Seats
+          </span>
+          <span class="vehicle-spec">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 17l4-8 4 4 4-6 4 10"/></svg>
+            City Routes
+          </span>
+          <span class="vehicle-spec">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            AC + Luggage
+          </span>
+        </div>
+        <div class="vehicle-foot">
+          <div class="vehicle-rate">
+            &#8377;4,500
             <span>per day</span>
           </div>
           <a href="#contact" class="vehicle-btn">Book Now</a>
@@ -1364,6 +1432,41 @@
       </div>
     </div>
 
+    <!-- Vehicle 5 -->
+    <div class="vehicle-card reveal reveal-delay-1">
+      <div class="vehicle-img-wrap">
+        <img src="Ertiga.png" alt="Maruti Suzuki Ertiga">
+        <div class="vehicle-img-overlay"></div>
+      </div>
+      <div class="vehicle-body">
+        <p class="vehicle-type">Family MPV</p>
+        <h3 class="vehicle-name">Maruti Suzuki Ertiga</h3>
+        <p class="vehicle-desc">A flexible seven-seater for family trips, airport pickups, and relaxed highway travel with extra room for bags.</p>
+        <div class="vehicle-specs">
+          <span class="vehicle-spec">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            6 Seats
+          </span>
+          <span class="vehicle-spec">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 17l4-8 4 4 4-6 4 10"/></svg>
+            Highway Comfort
+          </span>
+          <span class="vehicle-spec">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/></svg>
+            AC + Music
+          </span>
+        </div>
+        <div class="vehicle-foot">
+          <div class="vehicle-rate">
+            &#8377;5,000
+            <span>per day</span>
+          </div>
+          <a href="#contact" class="vehicle-btn">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    </div>
   </div>
   <div class="vehicle-note reveal">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -1616,6 +1719,35 @@
   window.addEventListener('load', () => {
     document.getElementById('heroBg').classList.add('loaded');
   });
+
+  const vehicleTrack = document.querySelector('[data-vehicle-track]');
+  const vehiclePrev = document.querySelector('[data-vehicle-prev]');
+  const vehicleNext = document.querySelector('[data-vehicle-next]');
+
+  if (vehicleTrack && vehiclePrev && vehicleNext) {
+    const getVehicleStep = () => {
+      const firstCard = vehicleTrack.querySelector('.vehicle-card');
+      if (!firstCard) return 0;
+      const gap = parseFloat(getComputedStyle(vehicleTrack).columnGap) || 0;
+      return firstCard.getBoundingClientRect().width + gap;
+    };
+
+    const updateVehicleArrows = () => {
+      const maxScroll = vehicleTrack.scrollWidth - vehicleTrack.clientWidth - 2;
+      vehiclePrev.disabled = vehicleTrack.scrollLeft <= 2;
+      vehicleNext.disabled = vehicleTrack.scrollLeft >= maxScroll;
+    };
+
+    vehiclePrev.addEventListener('click', () => {
+      vehicleTrack.scrollBy({ left: -getVehicleStep(), behavior: 'smooth' });
+    });
+    vehicleNext.addEventListener('click', () => {
+      vehicleTrack.scrollBy({ left: getVehicleStep(), behavior: 'smooth' });
+    });
+    vehicleTrack.addEventListener('scroll', updateVehicleArrows);
+    window.addEventListener('resize', updateVehicleArrows);
+    updateVehicleArrows();
+  }
 
   const revealEls = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver((entries) => {

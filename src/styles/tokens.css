@@ -1,0 +1,36 @@
+:root {
+  --ink: #0a0d0b;
+  --ink-soft: #131a15;
+  --green-mid: #1c3320;
+  --green: #243d28;
+  --gold: #c8922a;
+  --gold-hi: #e8b44a;
+  --gold-pale: #f5e4c0;
+  --white: #ffffff;
+  --off-white: #f6f4f0;
+  --mist: #e8e3da;
+  --smoke: #b4b0a8;
+  --text: #111510;
+  --text-mid: #3d3c39;
+  --text-soft: #7a7870;
+  --glass: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.10);
+  --gold-glass: rgba(200, 146, 42, 0.12);
+  --container: 1320px;
+  --section-y: 7rem;
+  --section-x: 3rem;
+  --radius-sm: 4px;
+  --radius-md: 7px;
+  --radius-lg: 8px;
+  --radius-pill: 999px;
+  --shadow-sm: 0 10px 30px rgba(10, 13, 11, 0.08);
+  --shadow-md: 0 18px 45px rgba(10, 13, 11, 0.11);
+  --shadow-lg: 0 24px 60px rgba(10, 13, 11, 0.14);
+  --duration-fast: 150ms;
+  --duration-base: 250ms;
+  --duration-slow: 350ms;
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-emphasized: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: var(--duration-fast) var(--ease-standard);
+  --transition-base: var(--duration-base) var(--ease-standard);
+}

@@ -1,0 +1,508 @@
+.fleet-page,
+.vehicle-detail-page {
+  background: var(--off-white);
+  color: var(--text);
+}
+
+.fleet-hero,
+.vehicle-detail-hero {
+  position: relative;
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--ink);
+}
+
+.fleet-hero-bg,
+.vehicle-detail-hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fleet-hero-bg {
+  background-image: url('/Innova Crysta.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.fleet-hero-overlay,
+.vehicle-detail-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(155deg, rgba(6, 10, 7, 0.94), rgba(6, 10, 7, 0.74) 46%, rgba(6, 10, 7, 0.34));
+}
+
+.fleet-hero-inner,
+.vehicle-detail-hero-inner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 8.5rem 3rem 5rem;
+}
+
+.fleet-hero h1,
+.vehicle-detail-hero h1 {
+  max-width: 900px;
+  margin: 1rem 0 1.4rem;
+  font-family: 'Cormorant Garant', serif;
+  font-size: clamp(3.5rem, 7vw, 6.8rem);
+  font-weight: 300;
+  line-height: 0.98;
+  color: var(--white);
+}
+
+.fleet-hero p:not(.label),
+.vehicle-detail-hero p:not(.label) {
+  max-width: 650px;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 1.02rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+.fleet-list-section,
+.fleet-why-section,
+.fleet-faq-section,
+.vehicle-detail-section,
+.vehicle-pricing-section,
+.vehicle-overview-section,
+.vehicle-final-cta {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 7rem 3rem;
+}
+
+.fleet-section-heading {
+  max-width: 780px;
+  margin-bottom: 2.2rem;
+}
+
+.fleet-section-heading h2,
+.vehicle-overview-section h2,
+.vehicle-final-cta h2 {
+  margin: 0.8rem 0 0;
+  font-family: 'Cormorant Garant', serif;
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  font-weight: 400;
+  line-height: 1.12;
+  color: var(--text);
+}
+
+.fleet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.3rem;
+}
+
+.fleet-grid.compact {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.fleet-card {
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.fleet-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 45px rgba(10, 13, 11, 0.11);
+}
+
+.fleet-card-image {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--ink);
+}
+
+.fleet-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.55s ease;
+}
+
+.fleet-card:hover .fleet-card-image img {
+  transform: scale(1.05);
+}
+
+.fleet-card-image span {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--gold);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.fleet-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.45rem;
+}
+
+.fleet-card-body > p:first-child {
+  margin: 0 0 0.45rem;
+  color: var(--gold);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.fleet-card h2 {
+  margin: 0;
+  font-family: 'Cormorant Garant', serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.fleet-card h2 a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.fleet-card-specs,
+.fleet-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 1rem 0;
+}
+
+.fleet-card-specs span,
+.fleet-card-tags span {
+  background: var(--mist);
+  color: var(--text-mid);
+  border-radius: 999px;
+  padding: 0.3rem 0.65rem;
+  font-size: 0.65rem;
+}
+
+.fleet-card-body > p:not(:first-child) {
+  color: var(--text-soft);
+  line-height: 1.65;
+  font-size: 0.84rem;
+  font-weight: 300;
+}
+
+.fleet-card-actions,
+.vehicle-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--mist);
+}
+
+.fleet-card-actions a {
+  color: var(--gold);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.vehicle-actions {
+  border-top: 0;
+  padding-top: 0;
+  justify-content: flex-end;
+}
+
+.vehicle-btn.primary {
+  background: var(--gold);
+  color: var(--ink);
+  border-color: var(--gold);
+}
+
+.fleet-trust-grid,
+.vehicle-feature-grid,
+.vehicle-spec-grid,
+.vehicle-pricing-grid,
+.vehicle-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.fleet-trust-grid article,
+.vehicle-feature-grid article,
+.vehicle-spec-grid div,
+.vehicle-pricing-grid article {
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 7px;
+  padding: 1.35rem;
+}
+
+.fleet-trust-grid h3,
+.vehicle-feature-grid h3,
+.vehicle-pricing-grid h3 {
+  margin: 0 0 0.55rem;
+  font-family: 'Cormorant Garant', serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.fleet-trust-grid p,
+.vehicle-feature-grid p,
+.fleet-driver-section p,
+.vehicle-overview-section p {
+  color: var(--text-soft);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.fleet-driver-section {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 5rem 3rem;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 4rem;
+  align-items: start;
+  background: var(--green);
+  color: var(--white);
+  border-radius: 8px;
+}
+
+.fleet-driver-section h2 {
+  margin: 0.8rem 0 0;
+  font-family: 'Cormorant Garant', serif;
+  font-size: clamp(2.1rem, 4vw, 3.2rem);
+  font-weight: 400;
+  color: var(--white);
+}
+
+.fleet-driver-section p {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+
+.vehicle-hero-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin: 1.7rem 0 0;
+}
+
+.vehicle-hero-facts span {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(200, 146, 42, 0.28);
+  color: var(--gold-hi);
+  border-radius: 999px;
+  padding: 0.55rem 0.8rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.vehicle-overview-section {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.vehicle-ideal-card {
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 7px;
+  padding: 1.5rem;
+}
+
+.vehicle-ideal-card span,
+.vehicle-spec-grid span,
+.pricing-card span {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: var(--gold);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.vehicle-ideal-card ul,
+.vehicle-pricing-grid ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--text-soft);
+  line-height: 1.7;
+}
+
+.vehicle-spec-grid div {
+  min-height: 140px;
+}
+
+.vehicle-spec-grid strong {
+  font-family: 'Cormorant Garant', serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.vehicle-pricing-section {
+  max-width: none;
+  background: var(--ink);
+}
+
+.vehicle-pricing-section > * {
+  max-width: var(--container);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vehicle-pricing-section .fleet-section-heading h2 {
+  color: var(--white);
+}
+
+.vehicle-pricing-grid article {
+  background: var(--glass);
+  border-color: var(--glass-border);
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.vehicle-pricing-grid h3,
+.pricing-card strong {
+  color: var(--white);
+}
+
+.pricing-card.primary {
+  border-color: rgba(200, 146, 42, 0.35);
+}
+
+.pricing-card strong {
+  display: block;
+  font-family: 'Cormorant Garant', serif;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.vehicle-gallery {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.vehicle-gallery img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 7px;
+  display: block;
+  background: var(--ink);
+}
+
+.vehicle-final-cta {
+  margin-bottom: 6rem;
+  background: var(--green);
+  color: var(--white);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.vehicle-final-cta .label {
+  justify-content: center;
+  color: var(--gold-hi);
+}
+
+.vehicle-final-cta h2 {
+  color: var(--white);
+}
+
+.vehicle-final-cta p {
+  max-width: 620px;
+  margin: 1rem auto 2rem;
+  color: rgba(255, 255, 255, 0.64);
+}
+
+@media (max-width: 1120px) {
+  .fleet-grid,
+  .fleet-grid.compact,
+  .fleet-trust-grid,
+  .vehicle-feature-grid,
+  .vehicle-spec-grid,
+  .vehicle-pricing-grid,
+  .vehicle-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 860px) {
+  .fleet-hero-inner,
+  .vehicle-detail-hero-inner,
+  .fleet-list-section,
+  .fleet-why-section,
+  .fleet-faq-section,
+  .vehicle-detail-section,
+  .vehicle-pricing-section,
+  .vehicle-overview-section,
+  .vehicle-final-cta {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+  .fleet-driver-section,
+  .vehicle-overview-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .fleet-driver-section {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    padding: 3rem 1.4rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .fleet-hero,
+  .vehicle-detail-hero {
+    min-height: 680px;
+  }
+  .fleet-grid,
+  .fleet-grid.compact,
+  .fleet-trust-grid,
+  .vehicle-feature-grid,
+  .vehicle-spec-grid,
+  .vehicle-pricing-grid,
+  .vehicle-gallery {
+    grid-template-columns: 1fr;
+  }
+  .vehicle-foot {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .vehicle-actions {
+    justify-content: flex-start;
+  }
+  .vehicle-final-cta {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+}
+

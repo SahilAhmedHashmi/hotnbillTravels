@@ -1,0 +1,212 @@
+.section-shell {
+  max-width: var(--container);
+  margin-inline: auto;
+  padding: var(--section-y) var(--section-x);
+}
+
+.section-heading {
+  max-width: 780px;
+  margin-bottom: 2.2rem;
+}
+
+.section-heading h2 {
+  margin: 0.8rem 0 0;
+  font-family: 'Cormorant Garant', serif;
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  font-weight: 400;
+  line-height: 1.12;
+  color: var(--text);
+}
+
+.card-surface {
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: var(--radius-md);
+}
+
+.card-lift {
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+  will-change: transform;
+}
+
+.card-lift:hover,
+.card-lift:focus-within {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.image-frame {
+  display: block;
+  overflow: hidden;
+  background: var(--mist);
+}
+
+.image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  animation: imageFadeIn var(--duration-slow) var(--ease-standard);
+}
+
+.readability-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(5, 9, 6, 0.9), rgba(5, 9, 6, 0.12) 72%);
+}
+
+.system-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.system-gallery img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  display: block;
+  background: var(--ink);
+  animation: imageFadeIn var(--duration-slow) var(--ease-standard);
+}
+
+.system-faq {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.system-faq details {
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  padding: 1.1rem 1.3rem;
+}
+
+.system-faq summary {
+  cursor: pointer;
+  font-family: 'Cormorant Garant', serif;
+  font-size: 1.25rem;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  list-style: none;
+}
+
+.system-faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.system-faq summary::after {
+  content: '+';
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--mist);
+  color: var(--gold);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  flex: 0 0 auto;
+  transition: transform var(--transition-base), background var(--transition-base);
+}
+
+.system-faq details[open] summary::after {
+  transform: rotate(45deg);
+  background: var(--gold-pale);
+}
+
+.system-faq p {
+  margin: 0.8rem 0 0;
+  color: var(--text-soft);
+  line-height: 1.7;
+}
+
+.system-final-cta {
+  max-width: var(--container);
+  margin: 0 auto 6rem;
+  padding: var(--section-y) var(--section-x);
+  background: var(--green);
+  color: var(--white);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.system-final-cta .label {
+  justify-content: center;
+  color: var(--gold-hi);
+}
+
+.system-final-cta h2 {
+  margin: 0.8rem 0 0;
+  font-family: 'Cormorant Garant', serif;
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  font-weight: 400;
+  line-height: 1.12;
+  color: var(--white);
+}
+
+.system-final-cta p {
+  max-width: 620px;
+  margin: 1rem auto 2rem;
+  color: rgba(255, 255, 255, 0.64);
+  line-height: 1.75;
+}
+
+.empty-state {
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+}
+
+.empty-state p {
+  color: var(--text-soft);
+  line-height: 1.7;
+  margin-top: 0;
+}
+
+.skeleton {
+  display: block;
+  min-height: 1rem;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(90deg, rgba(232, 227, 218, 0.75), rgba(246, 244, 240, 0.95), rgba(232, 227, 218, 0.75));
+  background-size: 220% 100%;
+  animation: skeletonShimmer 1.4s var(--ease-standard) infinite;
+}
+
+.skeleton.image {
+  aspect-ratio: 4 / 3;
+}
+
+@keyframes skeletonShimmer {
+  from { background-position: 100% 0; }
+  to { background-position: -120% 0; }
+}
+
+@keyframes imageFadeIn {
+  from { opacity: 0.001; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 860px) {
+  .section-shell,
+  .system-final-cta {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .system-gallery {
+    grid-template-columns: 1fr;
+  }
+  .system-final-cta {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+}

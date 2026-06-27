@@ -1,0 +1,468 @@
+.experiences-page,
+.experience-detail-page {
+  background: var(--off-white);
+  color: var(--text);
+}
+
+.experience-page-hero,
+.experience-detail-hero {
+  position: relative;
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--ink);
+}
+
+.experience-hero-bg,
+.experience-detail-hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.experience-hero-bg {
+  background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+.experience-hero-overlay,
+.experience-detail-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(155deg, rgba(6, 10, 7, 0.92), rgba(6, 10, 7, 0.68) 48%, rgba(6, 10, 7, 0.32));
+}
+
+.experience-page-hero-inner,
+.experience-detail-hero-inner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 8.5rem 3rem 5rem;
+}
+
+.experience-page-hero h1,
+.experience-detail-hero h1 {
+  max-width: 900px;
+  margin: 1rem 0 1.4rem;
+  font-family: 'Cormorant Garant', serif;
+  font-size: clamp(3.5rem, 7vw, 6.8rem);
+  font-weight: 300;
+  line-height: 0.98;
+  color: var(--white);
+}
+
+.experience-page-hero p:not(.label),
+.experience-detail-hero p:not(.label) {
+  max-width: 650px;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 1.02rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+.experience-listing-section,
+.experience-recommended-section,
+.experience-overview,
+.experience-detail-section,
+.experience-vehicle-section,
+.experience-final-cta {
+  padding: 7rem 3rem;
+}
+
+.experience-listing-intro,
+.experience-recommended-section,
+.experience-overview,
+.experience-detail-section,
+.experience-vehicle-section > *,
+.experience-final-cta {
+  max-width: var(--container);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.experience-listing-intro,
+.experience-overview {
+  display: grid;
+  grid-template-columns: 0.9fr 1.2fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.experience-listing-intro h2,
+.experience-section-heading h2,
+.experience-overview h2,
+.experience-final-cta h2 {
+  margin: 0.8rem 0 0;
+  font-family: 'Cormorant Garant', serif;
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  font-weight: 400;
+  line-height: 1.12;
+  color: var(--text);
+}
+
+.experience-listing-intro p,
+.experience-section-heading p:not(.label),
+.experience-overview p,
+.experience-final-cta p {
+  color: var(--text-soft);
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.experience-list-grid {
+  max-width: var(--container);
+  margin: 2.8rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.4rem;
+}
+
+.experience-list-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 7px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.experience-list-card:hover,
+.experience-list-card:focus-visible {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 45px rgba(10, 13, 11, 0.11);
+}
+
+.experience-list-image {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.experience-list-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.55s ease;
+}
+
+.experience-list-card:hover img { transform: scale(1.06); }
+
+.experience-list-image span {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--ink);
+  color: var(--gold-hi);
+  border-radius: 2px;
+  padding: 4px 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.experience-list-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.45rem;
+}
+
+.experience-icon {
+  width: fit-content;
+  margin-bottom: 0.9rem;
+  color: var(--gold);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.64rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.experience-list-body strong {
+  font-family: 'Cormorant Garant', serif;
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.15;
+}
+
+.experience-list-body > span:not(.experience-icon):not(.experience-tags):not(.experience-card-cta) {
+  margin-top: 0.6rem;
+  color: var(--text-soft);
+  font-size: 0.86rem;
+  line-height: 1.68;
+  font-weight: 300;
+}
+
+.experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 1rem 0 1.3rem;
+}
+
+.experience-tags em {
+  background: var(--mist);
+  color: var(--text-mid);
+  border-radius: 999px;
+  padding: 0.28rem 0.65rem;
+  font-size: 0.65rem;
+  font-style: normal;
+}
+
+.experience-card-cta {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--mist);
+  color: var(--gold);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.experience-section-heading {
+  max-width: 760px;
+  margin-bottom: 2rem;
+}
+
+.experience-destination-grid,
+.experience-package-grid,
+.experience-vehicle-grid,
+.experience-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.experience-destination-card,
+.experience-package-grid article,
+.experience-vehicle-grid article {
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.experience-destination-image,
+.experience-package-grid img,
+.experience-vehicle-grid img,
+.experience-gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.experience-destination-card > div,
+.experience-package-grid article > div,
+.experience-vehicle-grid article > div {
+  padding: 1.35rem;
+}
+
+.experience-destination-card span,
+.experience-vehicle-grid span {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.experience-destination-card h3,
+.experience-package-grid h3,
+.experience-vehicle-grid h3 {
+  margin: 0.4rem 0 0.55rem;
+  font-family: 'Cormorant Garant', serif;
+  font-size: 1.45rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.experience-destination-card p,
+.experience-package-grid p,
+.experience-vehicle-grid p {
+  color: var(--text-soft);
+  font-size: 0.84rem;
+  line-height: 1.65;
+  font-weight: 300;
+}
+
+.experience-destination-actions,
+.experience-package-grid article > div > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  border-top: 1px solid var(--mist);
+}
+
+.experience-destination-actions a,
+.experience-package-grid a,
+.experience-vehicle-grid a {
+  color: var(--gold);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.experience-overview {
+  align-items: stretch;
+}
+
+.experience-fast-facts {
+  display: grid;
+  gap: 1px;
+  background: var(--mist);
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.experience-fast-facts div {
+  background: var(--white);
+  padding: 1.4rem;
+}
+
+.experience-fast-facts span {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: var(--gold);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.experience-fast-facts strong {
+  font-family: 'Cormorant Garant', serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.experience-vehicle-section {
+  max-width: none;
+  background: var(--ink);
+  color: var(--white);
+}
+
+.experience-vehicle-section .experience-section-heading h2,
+.experience-vehicle-grid h3 {
+  color: var(--white);
+}
+
+.experience-vehicle-section .experience-section-heading p:not(.label),
+.experience-vehicle-grid p {
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.experience-vehicle-grid article {
+  background: var(--glass);
+  border-color: var(--glass-border);
+}
+
+.experience-empty-state {
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 7px;
+  padding: 2rem;
+  max-width: 760px;
+}
+
+.experience-empty-state p {
+  color: var(--text-soft);
+  line-height: 1.7;
+  margin-top: 0;
+}
+
+
+.experience-final-cta {
+  margin-bottom: 6rem;
+  background: var(--green);
+  color: var(--white);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.experience-final-cta .label {
+  justify-content: center;
+  color: var(--gold-hi);
+}
+
+.experience-final-cta h2 {
+  color: var(--white);
+}
+
+.experience-final-cta p {
+  max-width: 620px;
+  margin: 1rem auto 2rem;
+  color: rgba(255, 255, 255, 0.64);
+}
+
+@media (max-width: 1120px) {
+  .experience-list-grid,
+  .experience-destination-grid,
+  .experience-package-grid,
+  .experience-vehicle-grid,
+  .experience-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 860px) {
+  .experience-page-hero-inner,
+  .experience-detail-hero-inner,
+  .experience-listing-section,
+  .experience-recommended-section,
+  .experience-overview,
+  .experience-detail-section,
+  .experience-vehicle-section,
+  .experience-final-cta {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+  .experience-listing-intro,
+  .experience-overview {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .experience-page-hero,
+  .experience-detail-hero {
+    min-height: 680px;
+  }
+  .experience-list-grid,
+  .experience-destination-grid,
+  .experience-package-grid,
+  .experience-vehicle-grid,
+  .experience-gallery {
+    grid-template-columns: 1fr;
+  }
+  .experience-destination-actions,
+  .experience-package-grid article > div > div {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .experience-final-cta {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+}
+

@@ -3,7 +3,7 @@ import Button from './Button.jsx';
 import Icon from './Icon.jsx';
 import { contact } from '../../data/contact.js';
 
-export default function FinalCta({ eyebrow, title, text, primaryLabel = 'Plan My Trip', primaryTo, className = '' }) {
+export default function FinalCta({ eyebrow, title, text, primaryLabel = 'Enquire Now', primaryTo = '/contact', className = '' }) {
   return (
     <section className={`system-final-cta ${className}`.trim()}>
       <p className="label">{eyebrow}</p>

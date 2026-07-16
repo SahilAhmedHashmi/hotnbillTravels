@@ -20,7 +20,7 @@ export default function PackageListingCard({ item }) {
         </div>
         <div className="package-list-actions">
           <Link to={`/packages/${item.slug}`}>View Details</Link>
-          <Link to={`/plan-my-trip?package=${item.slug}`}>Plan My Trip</Link>
+          <Link to="/contact">Enquire Now</Link>
         </div>
       </div>
     </article>

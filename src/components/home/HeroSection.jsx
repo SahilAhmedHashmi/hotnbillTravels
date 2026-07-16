@@ -22,7 +22,7 @@ export default function HeroSection() {
           heritage of India's last great frontier.
         </p>
         <div className="hero-actions">
-          <Button to="/plan-my-trip">Plan My Trip</Button>
+          <Button to="/contact">Contact Us</Button>
           <Button to="/destinations" variant="ghost">Explore Destinations</Button>
         </div>
       </div>

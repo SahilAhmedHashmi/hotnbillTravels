@@ -23,7 +23,7 @@ export default function PlaceholderPage({ title, eyebrow, copy, metaDescription 
         <p>{copy}</p>
         {details.map((detail) => <p className="route-note" key={detail}>{detail}</p>)}
         <div className="placeholder-actions">
-          <Link className="btn btn-gold" to="/plan-my-trip">Plan My Trip</Link>
+          <Link className="btn btn-gold" to="/contact">Enquire Now</Link>
           <Link className="btn btn-ghost" to="/">Back Home</Link>
         </div>
       </section>

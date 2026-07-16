@@ -37,11 +37,6 @@ export default function Navbar() {
                 </NavLink>
               </li>
             ))}
-            <li>
-              <NavLink to="/plan-my-trip" className="nav-cta" onClick={() => setOpen(false)}>
-                Plan My Trip
-              </NavLink>
-            </li>
           </ul>
         </div>
       </div>

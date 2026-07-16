@@ -35,7 +35,7 @@ export default function PackagesPage() {
             size, preferred vehicle, and travel interests.
           </p>
           <div className="destination-hero-actions">
-            <Link className="btn btn-gold" to="/plan-my-trip">Plan My Trip</Link>
+            <Link className="btn btn-gold" to="/contact">Enquire Now</Link>
             <a className="btn btn-ghost" href="#package-grid">View Packages</a>
           </div>
         </div>

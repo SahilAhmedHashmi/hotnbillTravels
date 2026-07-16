@@ -26,9 +26,8 @@ export const footerLinks = [
     title: 'Company',
     links: [
       ['About Us', '/about'],
-      ['Travel Guides', '/travel-guides'],
-      ['Responsible Tourism', '/travel-guides'],
-      ['Permits & Legalities', '/travel-guides'],
+      ['Packages', '/packages'],
+      ['Fleet', '/fleet'],
       ['Contact', '/contact'],
     ],
   },

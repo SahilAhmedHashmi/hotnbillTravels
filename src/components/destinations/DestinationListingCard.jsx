@@ -18,7 +18,7 @@ export default function DestinationListingCard({ destination }) {
         </div>
         <div className="destination-card-actions">
           <Link className="destination-learn" to={`/destinations/${destination.slug}`}>Learn More</Link>
-          <Link className="destination-plan" to={`/plan-my-trip?destination=${destination.slug}`}>Plan My Trip</Link>
+          <Link className="destination-plan" to="/contact">Enquire Now</Link>
         </div>
       </div>
     </article>

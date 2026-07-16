@@ -35,7 +35,7 @@ export default function DestinationsPage() {
             journey can begin.
           </p>
           <div className="destination-hero-actions">
-            <Link className="btn btn-gold" to="/plan-my-trip">Plan My Trip</Link>
+            <Link className="btn btn-gold" to="/contact">Enquire Now</Link>
             <a className="btn btn-ghost" href="#destination-grid">Browse Destinations</a>
           </div>
         </div>
@@ -64,7 +64,7 @@ export default function DestinationsPage() {
       <section className="destination-help-strip">
         <strong>Not sure where to begin?</strong>
         <span>Tell us your dates, group size, and travel style. We will suggest a route that fits the season and road realities.</span>
-        <Link to="/plan-my-trip">Plan My Trip</Link>
+        <Link to="/contact">Enquire Now</Link>
       </section>
       <DestinationFinalCta destination={{ name: 'Northeast India', slug: 'northeast-india' }} />
     </main>

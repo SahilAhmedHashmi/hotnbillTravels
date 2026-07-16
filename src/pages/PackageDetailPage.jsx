@@ -52,7 +52,7 @@ export default function PackageDetailPage() {
           <p>The package route may have changed, or this itinerary is not available yet.</p>
           <div className="placeholder-actions">
             <Link className="btn btn-gold" to="/packages">Browse Packages</Link>
-            <Link className="btn btn-ghost" to="/plan-my-trip">Plan My Trip</Link>
+            <Link className="btn btn-ghost" to="/contact">Enquire Now</Link>
           </div>
         </section>
       </main>
@@ -80,7 +80,7 @@ export default function PackageDetailPage() {
             <span>{item.travelStyle}</span>
           </div>
           <div className="destination-hero-actions">
-            <Link className="btn btn-gold" to={`/plan-my-trip?package=${item.slug}`}>Plan My Trip</Link>
+            <Link className="btn btn-gold" to="/contact">Enquire Now</Link>
             <a className="btn btn-ghost" href="#package-itinerary">View Itinerary</a>
           </div>
         </div>

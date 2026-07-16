@@ -22,7 +22,7 @@ export default function ExperiencePackages({ experience }) {
                 <p>{item.description}</p>
                 <div>
                   <Link to={`/packages/${item.slug}`}>View Details</Link>
-                  <Link to={`/plan-my-trip?experience=${experience.slug}&package=${item.slug}`}>Plan My Trip</Link>
+                  <Link to="/contact">Enquire Now</Link>
                 </div>
               </div>
             </article>
@@ -31,7 +31,7 @@ export default function ExperiencePackages({ experience }) {
       ) : (
         <div className="experience-empty-state">
           <p>Custom trips for this experience are available. Tell us your travel dates and group size, and our team will help plan the right route.</p>
-          <Link className="btn btn-gold" to={`/plan-my-trip?experience=${experience.slug}`}>Plan My Trip</Link>
+          <Link className="btn btn-gold" to="/contact">Enquire Now</Link>
         </div>
       )}
     </section>

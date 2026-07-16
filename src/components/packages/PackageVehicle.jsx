@@ -17,7 +17,7 @@ export default function PackageVehicle({ item }) {
           <span>{vehicle.passengerCapacity}</span>
           <h3>{vehicle.name}</h3>
           <p>{vehicle.description}</p>
-          <Link to={`/plan-my-trip?package=${item.slug}&vehicle=${vehicle.slug}`}>Book This Vehicle</Link>
+          <Link to="/contact">Enquire Now</Link>
         </div>
       </article>
     </section>

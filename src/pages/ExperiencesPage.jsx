@@ -31,7 +31,7 @@ export default function ExperiencesPage() {
             travel, discover the experiences that match your journey.
           </p>
           <div className="destination-hero-actions">
-            <Link className="btn btn-gold" to="/plan-my-trip">Plan My Trip</Link>
+            <Link className="btn btn-gold" to="/contact">Enquire Now</Link>
             <a className="btn btn-ghost" href="#experience-grid">Browse Experiences</a>
           </div>
         </div>

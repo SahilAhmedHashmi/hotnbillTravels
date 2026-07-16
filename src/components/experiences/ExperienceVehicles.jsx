@@ -21,7 +21,7 @@ export default function ExperienceVehicles({ experience }) {
               <span>{vehicle.type}</span>
               <h3>{vehicle.name}</h3>
               <p>{vehicle.description}</p>
-              <Link to={`/plan-my-trip?experience=${experience.slug}&vehicle=${vehicle.slug}`}>Book This Vehicle</Link>
+              <Link to="/contact">Enquire Now</Link>
             </div>
           </article>
         ))}

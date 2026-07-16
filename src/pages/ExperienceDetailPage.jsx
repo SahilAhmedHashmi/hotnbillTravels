@@ -53,7 +53,7 @@ export default function ExperienceDetailPage() {
           <p>The route may have changed, or this experience has not been added yet.</p>
           <div className="placeholder-actions">
             <Link className="btn btn-gold" to="/experiences">Browse Experiences</Link>
-            <Link className="btn btn-ghost" to="/plan-my-trip">Plan My Trip</Link>
+            <Link className="btn btn-ghost" to="/contact">Enquire Now</Link>
           </div>
         </section>
       </main>
@@ -80,7 +80,7 @@ export default function ExperienceDetailPage() {
           <h1>{experience.title}</h1>
           <p>{experience.shortDescription}</p>
           <div className="destination-hero-actions">
-            <Link className="btn btn-gold" to={`/plan-my-trip?experience=${experience.slug}`}>Plan My Trip</Link>
+            <Link className="btn btn-gold" to="/contact">Enquire Now</Link>
             <a className="btn btn-ghost" href="#best-destinations">View Destinations</a>
           </div>
         </div>

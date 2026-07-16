@@ -51,7 +51,7 @@ export default function DestinationDetailPage() {
           <p>The route may have changed, or this destination has not been added yet.</p>
           <div className="placeholder-actions">
             <Link className="btn btn-gold" to="/destinations">Browse Destinations</Link>
-            <Link className="btn btn-ghost" to="/plan-my-trip">Plan My Trip</Link>
+            <Link className="btn btn-ghost" to="/contact">Enquire Now</Link>
           </div>
         </section>
       </main>
@@ -78,7 +78,7 @@ export default function DestinationDetailPage() {
           <h1>{destination.name}</h1>
           <p>{destination.shortDescription}</p>
           <div className="destination-hero-actions">
-            <Link className="btn btn-gold" to={`/plan-my-trip?destination=${destination.slug}`}>Plan My Trip</Link>
+            <Link className="btn btn-gold" to="/contact">Enquire Now</Link>
             <a className="btn btn-ghost" href="#itinerary">View Suggested Itinerary</a>
           </div>
         </div>
@@ -146,7 +146,7 @@ export default function DestinationDetailPage() {
                 <span>{vehicle.type}</span>
                 <h3>{vehicle.name}</h3>
                 <p>{vehicle.description}</p>
-                <Link to={`/plan-my-trip?destination=${destination.slug}&vehicle=${vehicle.slug}`}>Book This Vehicle</Link>
+                <Link to="/contact">Enquire Now</Link>
               </div>
             </article>
           ))}

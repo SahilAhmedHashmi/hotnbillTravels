@@ -26,7 +26,7 @@ export default function PackageCard({ item }) {
         </div>
         <div className="pkg-actions">
           <Link className="pkg-btn secondary" to={`/packages/${item.slug}`}>View Details</Link>
-          <Link className="pkg-btn" to={`/plan-my-trip?package=${item.slug}`}>Plan My Trip</Link>
+          <Link className="pkg-btn" to="/contact">Enquire Now</Link>
         </div>
       </div>
     </article>

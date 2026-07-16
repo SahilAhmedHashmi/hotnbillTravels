@@ -11,6 +11,7 @@ import './styles/experiences.css';
 import './styles/fleet.css';
 import './styles/packages.css';
 import './styles/booking.css';
+import './styles/contact.css';
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>

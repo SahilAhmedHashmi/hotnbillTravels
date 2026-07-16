@@ -12,7 +12,7 @@ export default function ExperienceDestinationCard({ experience, destination }) {
         <p>{destination.shortDescription}</p>
         <div className="experience-destination-actions">
           <Link to={`/destinations/${destination.slug}`}>Learn More</Link>
-          <Link to={`/plan-my-trip?experience=${experience.slug}&destination=${destination.slug}`}>Plan My Trip</Link>
+          <Link to="/contact">Enquire Now</Link>
         </div>
       </div>
     </article>

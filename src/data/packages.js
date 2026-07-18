@@ -36,7 +36,7 @@ export const packages = [
     ],
     inclusions: ['Private vehicle with driver', 'Route planning', 'Pickup support', 'Safari coordination guidance', 'Basic permit guidance'],
     exclusions: ['Flights', 'Hotels unless quoted', 'Meals', 'Entry tickets', 'Safari fees', 'Personal expenses'],
-    gallery: packageGallery('https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=1200&q=80', ['/Kaziranga National Park.jpg', '/majuli island.jpg']),
+    gallery: packageGallery('https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=1200&q=80', ['/images/destinations/kaziranga-national-park.jpg', '/images/destinations/majuli-island.jpg']),
     faq: [
       { question: 'Can this itinerary be customized?', answer: 'Yes. Safari zones, stay category, Majuli pacing, and departure city can be adjusted.' },
       { question: 'Is hotel booking included?', answer: 'Hotel booking can be included in the quote or kept separate based on preference.' },
@@ -74,7 +74,7 @@ export const packages = [
     ],
     inclusions: ['Private vehicle with driver', 'Pickup and drop support', 'Route planning', 'Parking guidance', 'Driver allowance placeholder'],
     exclusions: ['Flights', 'Hotels unless quoted', 'Meals', 'Entry fees', 'Boating charges', 'Personal expenses'],
-    gallery: packageGallery('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80', ['/root_bridge.jpg', '/river boating.jpg']),
+    gallery: packageGallery('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80', ['/images/destinations/root-bridge.jpg', '/images/experiences/river-boating.jpg']),
     faq: [
       { question: 'Can I skip the root bridge trek?', answer: 'Yes. We can replace it with lighter viewpoints, waterfalls, or village visits.' },
       { question: 'Is Dawki always clear?', answer: 'Water clarity is best outside heavy rain periods. The route can be adjusted seasonally.' },
@@ -114,7 +114,7 @@ export const packages = [
     ],
     inclusions: ['Private vehicle with driver', 'Route support', 'Festival timing guidance', 'Trailhead transfers', 'Basic permit guidance'],
     exclusions: ['Flights', 'Hotels unless quoted', 'Meals', 'Festival entry fees', 'Trek guide/porter if required', 'Personal expenses'],
-    gallery: packageGallery('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80', ['/dzukou valley.jpg']),
+    gallery: packageGallery('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80', ['/images/destinations/dzukou-valley.jpg']),
     faq: [
       { question: 'Is this trek difficult?', answer: 'Dzukou requires reasonable fitness. We can adjust pacing and support based on your group.' },
       { question: 'Can the festival dates change?', answer: 'Hornbill Festival usually follows fixed dates, but final planning should confirm current schedules.' },
@@ -127,8 +127,8 @@ export const packages = [
     title: 'Tawang Mountain Expedition',
     duration: '7 Days / 6 Nights',
     price: '₹58,000',
-    coverImage: '/tawang valley.jpg',
-    image: '/tawang valley.jpg',
+    coverImage: '/images/destinations/tawang-valley.jpg',
+    image: '/images/destinations/tawang-valley.jpg',
     alt: 'Tawang mountain expedition package',
     destinations: ['tezpur', 'bomdila', 'dirang', 'tawang'],
     recommendedVehicle: 'mahindra-thar',
@@ -153,7 +153,7 @@ export const packages = [
     ],
     inclusions: ['Private vehicle with driver', 'Route planning', 'Permit guidance', 'Mountain road support', 'Pickup coordination'],
     exclusions: ['Flights', 'Hotels unless quoted', 'Meals', 'Entry fees', 'Permits if charged separately', 'Personal expenses'],
-    gallery: packageGallery('/tawang valley.jpg', ['https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&q=80']),
+    gallery: packageGallery('/images/destinations/tawang-valley.jpg', ['https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&q=80']),
     faq: [
       { question: 'Is this route suitable in winter?', answer: 'Winter is possible but weather and pass conditions must be checked carefully.' },
       { question: 'Can I use an Innova instead of a Thar?', answer: 'Yes for many dates, but rough weather or road conditions may make a higher-clearance vehicle preferable.' },

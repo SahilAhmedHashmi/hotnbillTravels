@@ -4,7 +4,7 @@
     legacySlugs: ['toyota-innova-crysta'],
     type: 'Premium MPV',
     name: 'Toyota Innova Crysta',
-    image: '/Innova Crysta.png',
+    image: '/images/fleet/innova-crysta.png',
     alt: 'Toyota Innova Crysta for Northeast India travel',
     badge: 'Most Booked',
     description:
@@ -31,7 +31,7 @@
     rateNote: 'per day',
     recommendedFor: ['Families', 'Small groups', 'Airport transfers', 'Multi-state itineraries'],
     features: ['Comfortable captain seats', 'Strong highway performance', 'Reliable on hill roads', 'Good luggage balance'],
-    gallery: ['/Innova Crysta.png', '/Innova Crysta.png', '/Innova Crysta.png'],
+    gallery: ['/images/fleet/innova-crysta.png', '/images/fleet/innova-crysta.png', '/images/fleet/innova-crysta.png'],
     driverNote:
       'Your Innova comes with an experienced local driver familiar with hill weather, early safari departures, narrow village roads, and long Northeast transfer days.',
     faq: [
@@ -44,7 +44,7 @@
     slug: 'mahindra-thar',
     type: '4x4 SUV',
     name: 'Mahindra Thar',
-    image: '/Thar.png',
+    image: '/images/fleet/thar.png',
     alt: 'Mahindra Thar 4x4 SUV',
     badge: 'Off-Road',
     description:
@@ -71,7 +71,7 @@
     rateNote: 'per day',
     recommendedFor: ['Adventure routes', 'Couples', 'Small groups', 'Rough-road access'],
     features: ['High ground clearance', 'Confident on broken roads', 'Compact for narrow routes', 'Adventure-ready feel'],
-    gallery: ['/Thar.png', '/Thar.png', '/Thar.png'],
+    gallery: ['/images/fleet/thar.png', '/images/fleet/thar.png', '/images/fleet/thar.png'],
     driverNote:
       'A local driver is especially important on rough Northeast routes where road conditions, weather, and detours can change quickly.',
     faq: [
@@ -84,7 +84,7 @@
     slug: 'tempo-traveller',
     type: 'Group Transport',
     name: 'Tempo Traveller',
-    image: '/traveller.png',
+    image: '/images/fleet/traveller.png',
     alt: 'Tempo Traveller group vehicle',
     description:
       'Ideal for groups and families. Push-back seats, air conditioning, and generous luggage space for longer itineraries.',
@@ -113,7 +113,7 @@
     secondaryRateNote: '26 passengers / per day',
     recommendedFor: ['Large families', 'Groups', 'Educational trips', 'Festival departures'],
     features: ['Group seating', 'Push-back seats', 'Music system', 'Better luggage handling'],
-    gallery: ['/traveller.png', '/traveller.png', '/traveller.png'],
+    gallery: ['/images/fleet/traveller.png', '/images/fleet/traveller.png', '/images/fleet/traveller.png'],
     driverNote:
       'Group vehicles include drivers used to longer travel days, coordinated stops, luggage handling, and safe pacing for larger groups.',
     faq: [
@@ -126,7 +126,7 @@
     slug: 'swift-dzire',
     type: 'Compact Sedan',
     name: 'Maruti Suzuki Swift Dzire',
-    image: '/Swift Dzire.png',
+    image: '/images/fleet/swift-dzire.png',
     alt: 'Maruti Suzuki Swift Dzire sedan',
     description:
       'A practical and comfortable sedan for couples, small families, airport pickups, and city-to-city transfers.',
@@ -152,7 +152,7 @@
     rateNote: 'per day',
     recommendedFor: ['Couples', 'Airport transfers', 'City use', 'Short routes'],
     features: ['Efficient transfers', 'Comfortable sedan cabin', 'Easy city movement', 'Good for light luggage'],
-    gallery: ['/Swift Dzire.png', '/Swift Dzire.png', '/Swift Dzire.png'],
+    gallery: ['/images/fleet/swift-dzire.png', '/images/fleet/swift-dzire.png', '/images/fleet/swift-dzire.png'],
     driverNote:
       'For airport and city transfers, local drivers help with timing, pickup coordination, and practical route choices.',
     faq: [
@@ -165,7 +165,7 @@
     slug: 'maruti-ertiga',
     type: 'Family MPV',
     name: 'Maruti Suzuki Ertiga',
-    image: '/Ertiga.png',
+    image: '/images/fleet/ertiga.png',
     alt: 'Maruti Suzuki Ertiga family MPV',
     description:
       'A flexible seven-seater for family trips, relaxed highway travel, and itineraries that need extra room for bags.',
@@ -191,7 +191,7 @@
     rateNote: 'per day',
     recommendedFor: ['Families', 'Couples with luggage', 'Short hill trips', 'Airport pickups'],
     features: ['Flexible seating', 'Family-friendly cabin', 'Efficient highway travel', 'Good value for comfort'],
-    gallery: ['/Ertiga.png', '/Ertiga.png', '/Ertiga.png'],
+    gallery: ['/images/fleet/ertiga.png', '/images/fleet/ertiga.png', '/images/fleet/ertiga.png'],
     driverNote:
       'The Ertiga includes a local driver who understands family pacing, meal stops, road timing, and comfortable day planning.',
     faq: [

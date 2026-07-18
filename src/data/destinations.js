@@ -9,12 +9,21 @@
   Tripura: 'https://images.unsplash.com/photo-1470770903676-69b98201ea1c?auto=format&fit=crop&w=1200&q=80',
 };
 
+// Local hero images kept in public/images/. Where a slug has no local match,
+// makeDestination falls back to the state image below (all verified-live CDN URLs).
 const localImages = {
-  kaziranga: '/Kaziranga National Park.jpg',
-  majuli: '/majuli island.jpg',
-  tawang: '/tawang valley.jpg',
-  cherrapunji: '/root_bridge.jpg',
-  'dzukou-valley': '/dzukou valley.jpg',
+  kaziranga: '/images/destinations/kaziranga-national-park.jpg',
+  majuli: '/images/destinations/majuli-island.jpg',
+  tawang: '/images/destinations/tawang-valley.jpg',
+  bomdila: '/images/destinations/tawang-valley.jpg',
+  cherrapunji: '/images/destinations/root-bridge.jpg',
+  mawlynnong: '/images/destinations/root-bridge.jpg',
+  'dzukou-valley': '/images/destinations/dzukou-valley.jpg',
+  dawki: '/images/experiences/river-boating.jpg',
+  mawsynram: '/images/experiences/waterfall-expeditions.jpg',
+  jowai: '/images/experiences/waterfall-expeditions.jpg',
+  aizawl: '/images/experiences/waterfall-expeditions.jpg',
+  reiek: '/images/experiences/highland-treks.jpg',
 };
 
 const regionCopy = {
@@ -104,7 +113,6 @@ export const destinations = [
     bestTimeToVisit: 'October to April',
     recommendedDuration: '2-3 Days',
     relatedDestinations: ['cherrapunji', 'dawki', 'mawlynnong'],
-    image: 'https://source.unsplash.com/featured/1600x900/?laitlum,canyons,meghalaya',
   }),
   makeDestination({
     slug: 'cherrapunji',
@@ -113,7 +121,6 @@ export const destinations = [
     shortDescription: 'Trek through centuries-old living root bridges wrapped in rainforest and fed by some of India’s most dramatic waterfalls.',
     highlights: ['Nongriat Trail', 'Rainforest Walks', 'River Crossings', 'Cascading Falls'],
     relatedDestinations: ['shillong', 'dawki', 'mawlynnong'],
-    image: 'https://source.unsplash.com/featured/1600x900/?living+root+bridges,meghalaya',
     featured: true,
   }),
   makeDestination({
@@ -123,7 +130,6 @@ export const destinations = [
     shortDescription: 'Glide over crystal-clear water in one of Northeast India’s most photogenic river landscapes, framed by limestone cliffs.',
     highlights: ['Umngot River', 'Boating', 'Shnongpdeng', 'Limestone Scenery'],
     relatedDestinations: ['shillong', 'cherrapunji', 'mawlynnong'],
-    image: 'https://source.unsplash.com/featured/1600x900/?dawki,river,meghalaya',
   }),
   makeDestination({
     slug: 'mawlynnong',
@@ -132,7 +138,6 @@ export const destinations = [
     shortDescription: 'Explore a spotless Khasi village where tidy lanes, living root bridges, and warm local hospitality make for a memorable village stay.',
     highlights: ['Village Walks', 'Sky Viewpoint', 'Root Bridges', 'Local Culture'],
     relatedDestinations: ['shillong', 'cherrapunji', 'dawki'],
-    image: 'https://source.unsplash.com/featured/1600x900/?mawlynnong,meghalaya,village',
   }),
   makeDestination({
     slug: 'mawsynram',
@@ -141,7 +146,6 @@ export const destinations = [
     shortDescription: 'Stand in awe before one of India’s tallest plunge waterfalls, where sheer cliffs and cloud forests create a cinematic backdrop.',
     highlights: ['Plunge Waterfall', 'Viewpoints', 'Misty Cliffs', 'Photography Stops'],
     relatedDestinations: ['shillong', 'cherrapunji', 'mawlynnong'],
-    image: 'https://source.unsplash.com/featured/1600x900/?nohkalikai,falls,meghalaya',
   }),
   makeDestination({
     slug: 'jowai',
@@ -150,7 +154,6 @@ export const destinations = [
     shortDescription: 'Follow the trails to one of the state’s most dramatic cascades, where the falls spill across layered cliffs in a spectacular display.',
     highlights: ['Waterfall Viewpoints', 'Forest Trails', 'Photography', 'Scenic Drives'],
     relatedDestinations: ['shillong', 'cherrapunji', 'mawlynnong'],
-    image: 'https://source.unsplash.com/featured/1600x900/?seven+sisters,falls,meghalaya',
   }),
   makeDestination({
     slug: 'guwahati',
@@ -159,7 +162,6 @@ export const destinations = [
     shortDescription: 'Visit one of Northeast India’s most revered pilgrimage sites, set high above the Brahmaputra with a spiritual energy that is impossible to miss.',
     highlights: ['Temple Complex', 'Sacred Rituals', 'River Views', 'Pilgrimage History'],
     relatedDestinations: ['kaziranga', 'majuli', 'tezpur'],
-    image: 'https://source.unsplash.com/featured/1600x900/?kamakhya,temple,assam',
   }),
   makeDestination({
     slug: 'kaziranga',
@@ -170,7 +172,6 @@ export const destinations = [
     bestTimeToVisit: 'November to April',
     recommendedDuration: '2-3 Days',
     relatedDestinations: ['guwahati', 'majuli', 'tezpur'],
-    image: 'https://source.unsplash.com/featured/1600x900/?kaziranga,national+park,assam,rhino',
     featured: true,
   }),
   makeDestination({
@@ -180,7 +181,6 @@ export const destinations = [
     shortDescription: 'Discover the world’s largest river island, where satras, mask-making, pottery villages, and river ferries shape a singular cultural landscape.',
     highlights: ['Satras', 'Mask-Making', 'Pottery Villages', 'River Ferries'],
     relatedDestinations: ['kaziranga', 'guwahati', 'tezpur'],
-    image: 'https://source.unsplash.com/featured/1600x900/?majuli,island,assam',
     featured: true,
   }),
   makeDestination({
@@ -190,7 +190,6 @@ export const destinations = [
     shortDescription: 'Step into an Ahom heritage landscape of temples, tanks, and palaces that reveal Assam’s royal past.',
     highlights: ['Rang Ghar', 'Talatal Ghar', 'Shiva Dol', 'Historic Tanks'],
     relatedDestinations: ['majuli', 'kaziranga', 'tezpur'],
-    image: 'https://source.unsplash.com/featured/1600x900/?sivasagar,assam,temple',
   }),
   makeDestination({
     slug: 'tezpur',
@@ -199,7 +198,6 @@ export const destinations = [
     shortDescription: 'Enjoy riverside views and heritage walks at this scenic hilltop landmark that frames the Brahmaputra valley beautifully.',
     highlights: ['River Views', 'Heritage Walks', 'Sunset Points', 'Brahmaputra Scenery'],
     relatedDestinations: ['guwahati', 'kaziranga', 'majuli'],
-    image: 'https://source.unsplash.com/featured/1600x900/?agnigarh,tezpur,assam',
   }),
   makeDestination({
     slug: 'tawang',
@@ -210,7 +208,6 @@ export const destinations = [
     bestTimeToVisit: 'March to June and October to November',
     recommendedDuration: '4-5 Days',
     relatedDestinations: ['bomdila', 'dirang', 'ziro'],
-    image: 'https://source.unsplash.com/featured/1600x900/?tawang,monastery,arunachal',
     featured: true,
   }),
   makeDestination({
@@ -220,7 +217,6 @@ export const destinations = [
     shortDescription: 'Cross one of the most dramatic high-altitude passes in the Himalaya, where frozen lakes and snow-clad peaks reward every turn.',
     highlights: ['High Pass Roads', 'Frozen Lakes', 'Snow Landscapes', 'Scenic Drives'],
     relatedDestinations: ['tawang', 'dirang', 'ziro'],
-    image: 'https://source.unsplash.com/featured/1600x900/?sela,pass,arunachal',
   }),
   makeDestination({
     slug: 'dirang',
@@ -229,7 +225,6 @@ export const destinations = [
     shortDescription: 'Lose yourself in a pine-fringed valley of Apatani villages, paddy fields, and a culture that feels wonderfully rooted in the landscape.',
     highlights: ['Apatani Villages', 'Paddy Fields', 'Ziro Music Festival', 'Village Stays'],
     relatedDestinations: ['tawang', 'bomdila', 'ziro'],
-    image: 'https://source.unsplash.com/featured/1600x900/?ziro,valley,arunachal',
   }),
   makeDestination({
     slug: 'ziro',
@@ -238,7 +233,6 @@ export const destinations = [
     shortDescription: 'Travel into a remote Himalayan valley where mountain roads, tribal heritage, and windswept scenery make for a true adventure.',
     highlights: ['Remote Valley Roads', 'Mountain Villages', 'Tribal Culture', 'Scenic Drives'],
     relatedDestinations: ['tawang', 'bomdila', 'dirang'],
-    image: 'https://source.unsplash.com/featured/1600x900/?mechuka,valley,arunachal',
   }),
   makeDestination({
     slug: 'itanagar',
@@ -257,7 +251,6 @@ export const destinations = [
     bestTimeToVisit: 'March to June and October to November',
     recommendedDuration: '3-4 Days',
     relatedDestinations: ['pelling', 'lachung', 'yumthang-valley'],
-    image: 'https://source.unsplash.com/featured/1600x900/?gurudongmar,lake,sikkim',
     featured: true,
   }),
   makeDestination({
@@ -267,7 +260,6 @@ export const destinations = [
     shortDescription: 'Step onto a glassy skywalk with jaw-dropping views of Kanchenjunga and the surrounding valleys.',
     highlights: ['Skywalk', 'Kanchenjunga Views', 'Sunset Spots', 'Mountain Vistas'],
     relatedDestinations: ['gangtok', 'lachung', 'yumthang-valley'],
-    image: 'https://source.unsplash.com/featured/1600x900/?pelling,skywalk,sikkim',
   }),
   makeDestination({
     slug: 'lachung',
@@ -276,7 +268,6 @@ export const destinations = [
     shortDescription: 'Wander through a blooming alpine valley of rhododendrons, hot springs, and icy streams beneath the Himalaya.',
     highlights: ['Rhododendrons', 'Hot Springs', 'River Views', 'Alpine Scenery'],
     relatedDestinations: ['gangtok', 'pelling', 'yumthang-valley'],
-    image: 'https://source.unsplash.com/featured/1600x900/?yumthang,valley,sikkim',
   }),
   makeDestination({
     slug: 'yumthang-valley',
@@ -285,7 +276,6 @@ export const destinations = [
     shortDescription: 'Pause at a brilliant alpine lake that mirrors the sky and makes every mountain pass feel cinematic.',
     highlights: ['Alpine Lake', 'Snow-Capped Peaks', 'Scenic Stops', 'Highway Views'],
     relatedDestinations: ['gangtok', 'pelling', 'lachung'],
-    image: 'https://source.unsplash.com/featured/1600x900/?tsomgo,lake,sikkim',
   }),
   makeDestination({
     slug: 'kohima',
@@ -294,7 +284,6 @@ export const destinations = [
     shortDescription: 'Experience one of Nagaland’s most celebrated village communities, known for terrace fields, conservation traditions, and warm hospitality.',
     highlights: ['Village Homestays', 'Terrace Farming', 'Conservation Trails', 'Local Culture'],
     relatedDestinations: ['dzukou-valley', 'mon', 'loktak-lake'],
-    image: 'https://source.unsplash.com/featured/1600x900/?khonoma,nagaland,village',
   }),
   makeDestination({
     slug: 'dzukou-valley',
@@ -305,7 +294,6 @@ export const destinations = [
     bestTimeToVisit: 'June to September and November to March',
     recommendedDuration: '2-3 Days',
     relatedDestinations: ['kohima', 'mon', 'loktak-lake'],
-    image: 'https://source.unsplash.com/featured/1600x900/?dzukou,valley,nagaland',
     featured: true,
   }),
   makeDestination({
@@ -316,7 +304,6 @@ export const destinations = [
     highlights: ['Heritage Trails', 'Cultural Ceremonies', 'Village Architecture', 'Festival Atmosphere'],
     recommendedDuration: '3-4 Days',
     relatedDestinations: ['kohima', 'dzukou-valley', 'loktak-lake'],
-    image: 'https://source.unsplash.com/featured/1600x900/?kisama,heritage,nagaland',
   }),
   makeDestination({
     slug: 'aizawl',
@@ -325,7 +312,6 @@ export const destinations = [
     shortDescription: 'Follow forested trails to one of Mizoram’s most dramatic waterfalls, where clear water drops into a green valley below.',
     highlights: ['Waterfall Trek', 'Forest Trails', 'River Views', 'Photography Spots'],
     relatedDestinations: ['reiek', 'champhai', 'imphal'],
-    image: 'https://source.unsplash.com/featured/1600x900/?vantawng,falls,mizoram',
   }),
   makeDestination({
     slug: 'reiek',
@@ -334,7 +320,6 @@ export const destinations = [
     shortDescription: 'Climb to the highest peak in Mizoram for sweeping vistas, cool pine air, and an unforgettable sense of remoteness.',
     highlights: ['Mountain Summit', 'Cloud Views', 'Pine Forests', 'Adventure Trek'],
     relatedDestinations: ['aizawl', 'champhai', 'imphal'],
-    image: 'https://source.unsplash.com/featured/1600x900/?phawngpui,blue+mountain,mizoram',
   }),
   makeDestination({
     slug: 'champhai',
@@ -344,7 +329,6 @@ export const destinations = [
     highlights: ['Lakefront Views', 'Boating', 'Picnic Spots', 'Quiet Nature'],
     recommendedDuration: '3-4 Days',
     relatedDestinations: ['aizawl', 'reiek', 'imphal'],
-    image: 'https://source.unsplash.com/featured/1600x900/?tamdil,lake,mizoram',
   }),
   makeDestination({
     slug: 'imphal',
@@ -353,7 +337,6 @@ export const destinations = [
     shortDescription: 'Explore India’s largest freshwater lake, famous for its floating islands and the unique ecosystem that supports local life.',
     highlights: ['Floating Phumdis', 'Keibul Lamjao', 'Shoreline Homestays', 'Lake Boat Rides'],
     relatedDestinations: ['loktak-lake', 'kohima', 'aizawl'],
-    image: 'https://source.unsplash.com/featured/1600x900/?loktak,lake,manipur',
     featured: true,
   }),
   makeDestination({
@@ -363,7 +346,6 @@ export const destinations = [
     shortDescription: 'Walk through the heart of Manipur’s history at this storied fort complex, where royal heritage and modern memory meet.',
     highlights: ['Historic Complex', 'Royal Heritage', 'Museum Displays', 'City Access'],
     relatedDestinations: ['imphal', 'kohima', 'aizawl'],
-    image: 'https://source.unsplash.com/featured/1600x900/?kangla,fort,manipur',
   }),
   makeDestination({
     slug: 'agartala',
@@ -372,7 +354,6 @@ export const destinations = [
     shortDescription: 'Visit Tripura’s magnificent lake palace, where Hindu and Mughal influences come together in a breathtaking waterside setting.',
     highlights: ['Lake Palace', 'Architecture', 'Waterfront Views', 'Heritage Photography'],
     relatedDestinations: ['unakoti', 'aizawl', 'imphal'],
-    image: 'https://source.unsplash.com/featured/1600x900/?neermahal,palace,tripura',
     featured: true,
   }),
   makeDestination({
@@ -383,7 +364,6 @@ export const destinations = [
     highlights: ['Rock Reliefs', 'Forest Walks', 'Pilgrimage Trails', 'Heritage Ruins'],
     recommendedDuration: '1-2 Days',
     relatedDestinations: ['agartala', 'aizawl', 'imphal'],
-    image: 'https://source.unsplash.com/featured/1600x900/?unakoti,tripura,rock+carvings',
   }),
 ];
 

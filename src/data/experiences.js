@@ -1,14 +1,14 @@
 const images = {
-  adventure: '/Highland treks.jpg',
-  wildlife: '/Wildlife Safaris.jpg',
+  adventure: '/images/experiences/highland-treks.jpg',
+  wildlife: '/images/experiences/wildlife-safaris.jpg',
   photography: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80',
   culture: 'https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&w=1200&q=80',
   family: 'https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=1200&q=80',
   romantic: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80',
   road: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80',
-  nature: '/Waterfall Expeditions.jpg',
-  spiritual: '/tawang valley.jpg',
-  river: '/river boating.jpg',
+  nature: '/images/experiences/waterfall-expeditions.jpg',
+  spiritual: '/images/destinations/tawang-valley.jpg',
+  river: '/images/experiences/river-boating.jpg',
 };
 
 const galleryFor = (primary) => [

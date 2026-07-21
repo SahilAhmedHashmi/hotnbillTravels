@@ -3,6 +3,6 @@ export const navigation = [
   { label: 'Destinations', to: '/destinations' },
   { label: 'Packages', to: '/packages' },
   { label: 'Fleet', to: '/fleet' },
-  { label: 'About Us', to: '/about' },
+  { label: 'About Us', to: '/#about-preview' },
   { label: 'Contact', to: '/contact' },
 ];

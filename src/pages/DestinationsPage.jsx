@@ -1,17 +1,32 @@
-import { useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useMemo } from 'react';
+import { Link, useSearchParams } from 'react-router-dom';
 import Breadcrumbs from '../components/common/Breadcrumbs.jsx';
 import DestinationFilters from '../components/destinations/DestinationFilters.jsx';
 import DestinationListingCard from '../components/destinations/DestinationListingCard.jsx';
 import DestinationMapPlaceholder from '../components/destinations/DestinationMapPlaceholder.jsx';
 import DestinationFinalCta from '../components/destinations/DestinationFinalCta.jsx';
-import { destinations } from '../data/destinations.js';
+import { destinations, destinationStates } from '../data/destinations.js';
 import { usePageMeta } from '../hooks/usePageMeta.js';
 
 export default function DestinationsPage() {
-  const [activeState, setActiveState] = useState('All');
+  // The active state filter is derived from the `state` query param so links from
+  // elsewhere (e.g. the footer) can deep-link to a pre-filtered listing.
+  const [searchParams, setSearchParams] = useSearchParams();
+  const stateParam = searchParams.get('state');
+  const activeState = stateParam && destinationStates.includes(stateParam) ? stateParam : 'All';
+
+  const handleStateChange = (nextState) => {
+    const params = new URLSearchParams(searchParams);
+    if (nextState === 'All') {
+      params.delete('state');
+    } else {
+      params.set('state', nextState);
+    }
+    setSearchParams(params, { replace: true });
+  };
+
   const filteredDestinations = useMemo(
-    () => activeState === 'All' ? destinations : destinations.filter((item) => item.state === activeState),
+    () => (activeState === 'All' ? destinations : destinations.filter((item) => item.state === activeState)),
     [activeState],
   );
 
@@ -52,7 +67,7 @@ export default function DestinationsPage() {
             and the vehicle your route needs.
           </p>
         </div>
-        <DestinationFilters activeState={activeState} onChange={setActiveState} />
+        <DestinationFilters activeState={activeState} onChange={handleStateChange} />
         <div className="destination-list-grid" aria-live="polite">
           {filteredDestinations.map((destination) => (
             <DestinationListingCard key={destination.slug} destination={destination} />
@@ -60,7 +75,7 @@ export default function DestinationsPage() {
         </div>
       </section>
 
-      <DestinationMapPlaceholder activeState={activeState} onChange={setActiveState} />
+      <DestinationMapPlaceholder activeState={activeState} onChange={handleStateChange} />
       <section className="destination-help-strip">
         <strong>Not sure where to begin?</strong>
         <span>Tell us your dates, group size, and travel style. We will suggest a route that fits the season and road realities.</span>

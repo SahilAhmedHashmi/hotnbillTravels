@@ -15,11 +15,11 @@ export default function HeroSection() {
       <div className="hero-overlay" />
       <div className="hero-grain" />
       <div className="hero-content">
-        <p className="hero-eyebrow"><span className="hero-eyebrow-line" />Discover the Unexplored</p>
-        <h1 className="hero-title">Where the <em>Wild</em><br />Meets the <em>Sacred</em></h1>
+        <p className="hero-eyebrow"><span className="hero-eyebrow-line" />Curated Northeast India Tours</p>
+        <h1 className="hero-title">Travel the <em>Wild</em><br /><em>Northeast</em> of India</h1>
         <p className="hero-desc">
-          Journey through mist-draped valleys, ancient living bridges, rhino sanctuaries, and the vibrant tribal
-          heritage of India's last great frontier.
+          Tailor-made trips across Assam, Meghalaya, Nagaland, Arunachal, and beyond — with expert local guides,
+          comfortable private vehicles, and itineraries planned entirely around you.
         </p>
         <div className="hero-actions">
           <Button to="/contact">Contact Us</Button>

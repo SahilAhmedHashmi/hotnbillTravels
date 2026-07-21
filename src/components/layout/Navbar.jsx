@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Logo from '../common/Logo.jsx';
 import { navigation } from '../../data/navigation.js';
 import { useScrolledNav } from '../../hooks/useScrolledNav.js';
@@ -32,9 +32,17 @@ export default function Navbar() {
           <ul className="nav-links">
             {navigation.map((item) => (
               <li key={item.to}>
-                <NavLink to={item.to} onClick={() => setOpen(false)}>
-                  {item.label}
-                </NavLink>
+                {item.to.includes('#') ? (
+                  // Hash links (e.g. in-page section anchors) render as plain links so they
+                  // don't pick up NavLink's "active" state on every matching pathname.
+                  <Link to={item.to} onClick={() => setOpen(false)}>
+                    {item.label}
+                  </Link>
+                ) : (
+                  <NavLink to={item.to} onClick={() => setOpen(false)}>
+                    {item.label}
+                  </NavLink>
+                )}
               </li>
             ))}
           </ul>

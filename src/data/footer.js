@@ -1,16 +1,23 @@
+// Footer destination links point to the destinations listing with the matching
+// state pre-selected in the filter (query param) and scroll to the results grid (hash).
+const destinationFooterStates = [
+  'Assam',
+  'Meghalaya',
+  'Nagaland',
+  'Manipur',
+  'Arunachal Pradesh',
+  'Mizoram',
+  'Tripura',
+  'Sikkim',
+];
+
+const destinationFilterLink = (state) =>
+  `/destinations?state=${encodeURIComponent(state)}#destination-grid`;
+
 export const footerLinks = [
   {
     title: 'Destinations',
-    links: [
-      ['Assam', '/destinations/assam'],
-      ['Meghalaya', '/destinations/meghalaya'],
-      ['Nagaland', '/destinations/nagaland'],
-      ['Manipur', '/destinations/manipur'],
-      ['Arunachal Pradesh', '/destinations/arunachal-pradesh'],
-      ['Mizoram', '/destinations/mizoram'],
-      ['Tripura', '/destinations/tripura'],
-      ['Sikkim', '/destinations/sikkim'],
-    ],
+    links: destinationFooterStates.map((state) => [state, destinationFilterLink(state)]),
   },
   {
     title: 'Experiences',

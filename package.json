@@ -1,4 +1,9 @@
 {
+  "name": "hotnbill-travels",
+  "version": "1.0.0",
+  "description": "Hornbill Journeys — premium Northeast India travel website (React + Vite).",
+  "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

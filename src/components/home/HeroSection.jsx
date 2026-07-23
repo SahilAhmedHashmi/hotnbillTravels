@@ -15,7 +15,6 @@ export default function HeroSection() {
       <div className="hero-overlay" />
       <div className="hero-grain" />
       <div className="hero-content">
-        <p className="hero-eyebrow"><span className="hero-eyebrow-line" />Curated Northeast India Tours</p>
         <h1 className="hero-title">Travel the <em>Wild</em><br /><em>Northeast</em> of India</h1>
         <p className="hero-desc">
           Tailor-made trips across Assam, Meghalaya, Nagaland, Arunachal, and beyond — with expert local guides,

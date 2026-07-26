@@ -25,7 +25,6 @@ export default function HeroSection() {
           <Button to="/destinations" variant="ghost">Explore Destinations</Button>
         </div>
       </div>
-      <div className="hero-scroll-indicator"><div className="scroll-track" />Scroll</div>
     </section>
   );
 }

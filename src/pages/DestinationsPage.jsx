@@ -3,7 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom';
 import Breadcrumbs from '../components/common/Breadcrumbs.jsx';
 import DestinationFilters from '../components/destinations/DestinationFilters.jsx';
 import DestinationListingCard from '../components/destinations/DestinationListingCard.jsx';
-import DestinationMapPlaceholder from '../components/destinations/DestinationMapPlaceholder.jsx';
+import DestinationMap from '../components/destinations/DestinationMap.jsx';
 import DestinationFinalCta from '../components/destinations/DestinationFinalCta.jsx';
 import { destinations, destinationStates } from '../data/destinations.js';
 import { usePageMeta } from '../hooks/usePageMeta.js';
@@ -75,7 +75,7 @@ export default function DestinationsPage() {
         </div>
       </section>
 
-      <DestinationMapPlaceholder activeState={activeState} onChange={handleStateChange} />
+      <DestinationMap activeState={activeState} onChange={handleStateChange} />
       <section className="destination-help-strip">
         <strong>Not sure where to begin?</strong>
         <span>Tell us your dates, group size, and travel style. We will suggest a route that fits the season and road realities.</span>

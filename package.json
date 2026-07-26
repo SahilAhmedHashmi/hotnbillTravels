@@ -11,10 +11,12 @@
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
-    "vite": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-router-dom": "latest"
+    "react-router-dom": "latest",
+    "vite": "latest"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "sharp": "^0.35.3"
+  }
 }

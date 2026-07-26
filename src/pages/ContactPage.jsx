@@ -5,6 +5,7 @@ import Button from '../components/common/Button.jsx';
 import Icon from '../components/common/Icon.jsx';
 import Reveal from '../components/common/Reveal.jsx';
 import FinalCta from '../components/common/FinalCta.jsx';
+import ContactMap from '../components/contact/ContactMap.jsx';
 import { contact } from '../data/contact.js';
 
 const INTERESTS = [
@@ -387,13 +388,8 @@ export default function ContactPage() {
               <Icon name="whatsapp" /> Ask for directions
             </Button>
           </Reveal>
-          <Reveal className="contact-office-visual" delay={1}>
-            <div className="contact-office-grid-lines" />
-            <div className="contact-office-pin">
-              <span className="contact-office-pin-dot" />
-              <span className="contact-office-pin-ring" />
-            </div>
-            <span className="contact-office-tag">Northeast India</span>
+          <Reveal className="contact-office-map" delay={1}>
+            <ContactMap />
           </Reveal>
         </div>
       </section>

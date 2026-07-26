@@ -512,6 +512,23 @@
   letter-spacing: 0.04em;
 }
 
+.map-state-label {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  background: rgba(12, 15, 15, 0.96);
+  border: 1px solid rgba(200, 146, 42, 0.28);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28);
+  color: var(--gold-hi);
+  font-family: 'Cormorant Garant', serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 3;
+}
+
 .map-helper {
   margin: 0;
   color: rgba(255, 255, 255, 0.65);

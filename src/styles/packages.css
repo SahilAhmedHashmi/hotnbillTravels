@@ -137,6 +137,77 @@
   transform: scale(1.05);
 }
 
+/* --------------------------------------------------------------------------
+   Package image carousel — auto-advancing destination images
+   Used by PackageListingCard and the home PackageCard.
+   -------------------------------------------------------------------------- */
+.pkg-carousel {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  overflow: hidden;
+  background: var(--ink);
+}
+
+.pkg-carousel .pkg-carousel-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.05);
+  transition: opacity 1.1s ease, transform 5s ease;
+}
+
+.pkg-carousel .pkg-carousel-img.is-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.package-list-card:hover .pkg-carousel .pkg-carousel-img.is-active,
+.pkg-item:hover .pkg-carousel .pkg-carousel-img.is-active {
+  transform: scale(1.07);
+}
+
+.pkg-carousel-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.7rem;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  pointer-events: none;
+}
+
+.pkg-carousel-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  transition: width 0.3s ease, background 0.3s ease;
+}
+
+.pkg-carousel-dot.is-active {
+  width: 16px;
+  background: var(--gold-hi);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pkg-carousel .pkg-carousel-img {
+    transition: opacity 0.3s ease;
+    transform: none;
+  }
+  .pkg-carousel .pkg-carousel-img.is-active {
+    transform: none;
+  }
+}
+
 .package-list-body {
   flex: 1;
   display: flex;

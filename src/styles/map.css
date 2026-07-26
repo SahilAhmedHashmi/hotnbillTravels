@@ -1,0 +1,197 @@
+/* ==========================================================================
+   NortheastMap — shared interactive atlas (base panel + per-state focus modal)
+   Relies on base .map-state / .map-state-label from destinations.css.
+   ========================================================================== */
+
+.ne-map {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  padding: 1.4rem;
+  background:
+    radial-gradient(circle at 62% 40%, rgba(200, 146, 42, 0.18), transparent 46%),
+    var(--ink);
+  border: 1px solid rgba(200, 146, 42, 0.24);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03), 0 30px 80px rgba(0, 0, 0, 0.4);
+}
+
+.ne-map-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.ne-map.is-visible .map-state {
+  animation: map-trace 1.2s ease forwards;
+}
+
+.ne-map-tag {
+  position: absolute;
+  left: 1.4rem;
+  bottom: 1.4rem;
+  padding: 0.5rem 1rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-hi);
+  background: rgba(10, 13, 11, 0.7);
+  border: 1px solid rgba(200, 146, 42, 0.3);
+  border-radius: var(--radius-pill);
+  backdrop-filter: blur(6px);
+}
+
+.ne-map-hint {
+  position: absolute;
+  right: 1.4rem;
+  bottom: 1.5rem;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* --------------------------------------------------------------------------
+   Fullscreen per-state focus
+   -------------------------------------------------------------------------- */
+.ne-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(5, 7, 6, 0.9);
+  backdrop-filter: blur(10px);
+  animation: ne-fade 0.35s var(--ease-emphasized);
+}
+
+.ne-modal-close {
+  position: absolute;
+  top: 1.4rem;
+  right: 1.6rem;
+  width: 46px;
+  height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(200, 146, 42, 0.32);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.ne-modal-close:hover {
+  background: rgba(200, 146, 42, 0.16);
+  border-color: var(--gold);
+  transform: rotate(90deg);
+}
+
+.ne-modal-stage {
+  width: min(94vw, 720px);
+  text-align: center;
+}
+
+.ne-modal-head .label {
+  justify-content: center;
+}
+
+.ne-modal-head h3 {
+  margin: 0.5rem 0 0.4rem;
+  font-family: 'Cormorant Garant', serif;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 300;
+  line-height: 1;
+  color: var(--white);
+}
+
+.ne-modal-head p {
+  max-width: 460px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.ne-modal-svg {
+  width: 100%;
+  height: auto;
+  max-height: 64vh;
+  margin-top: 1rem;
+  overflow: visible;
+}
+
+/* The focused state stays dark with a plain border (no highlight). */
+.ne-focus-state {
+  fill: rgba(255, 255, 255, 0.03);
+  stroke: rgba(200, 146, 42, 0.5);
+  cursor: default;
+}
+
+/* Destination points */
+.ne-point {
+  cursor: pointer;
+}
+
+.ne-point-halo {
+  fill: rgba(200, 146, 42, 0.16);
+  transition: r 0.2s ease, fill 0.2s ease;
+}
+
+.ne-point-dot {
+  fill: var(--gold-hi);
+  stroke: #0d0f0f;
+  stroke-width: 0.6;
+  vector-effect: non-scaling-stroke;
+  transition: fill 0.2s ease;
+}
+
+.ne-point.is-hovered .ne-point-halo {
+  fill: rgba(200, 146, 42, 0.3);
+}
+
+.ne-point.is-hovered .ne-point-dot {
+  fill: #fff;
+}
+
+.ne-point-label {
+  fill: #fff;
+  stroke: #0d0f0f;
+  paint-order: stroke;
+  stroke-linejoin: round;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.ne-point.is-hovered .ne-point-label {
+  opacity: 1;
+}
+
+@keyframes ne-fade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ne-map.is-visible .map-state {
+    animation: none;
+  }
+}

@@ -75,7 +75,7 @@ export default function DestinationsPage() {
         </div>
       </section>
 
-      <DestinationMap activeState={activeState} onChange={handleStateChange} />
+      <DestinationMap />
       <section className="destination-help-strip">
         <strong>Not sure where to begin?</strong>
         <span>Tell us your dates, group size, and travel style. We will suggest a route that fits the season and road realities.</span>

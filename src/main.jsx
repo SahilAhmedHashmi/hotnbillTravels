@@ -7,6 +7,7 @@ import './styles/global.css';
 import './styles/system.css';
 import './styles/home.css';
 import './styles/destinations.css';
+import './styles/map.css';
 import './styles/experiences.css';
 import './styles/fleet.css';
 import './styles/packages.css';

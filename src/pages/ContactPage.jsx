@@ -5,7 +5,7 @@ import Button from '../components/common/Button.jsx';
 import Icon from '../components/common/Icon.jsx';
 import Reveal from '../components/common/Reveal.jsx';
 import FinalCta from '../components/common/FinalCta.jsx';
-import ContactMap from '../components/contact/ContactMap.jsx';
+import NortheastMap from '../components/map/NortheastMap.jsx';
 import { contact } from '../data/contact.js';
 
 const INTERESTS = [
@@ -389,7 +389,7 @@ export default function ContactPage() {
             </Button>
           </Reveal>
           <Reveal className="contact-office-map" delay={1}>
-            <ContactMap />
+            <NortheastMap />
           </Reveal>
         </div>
       </section>

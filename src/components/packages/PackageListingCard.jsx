@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom';
 import { getDestinationBySlug } from '../../data/destinations.js';
+import PackageImageCarousel from './PackageImageCarousel.jsx';
 
 export default function PackageListingCard({ item }) {
   const destinationNames = item.destinations.map((slug) => getDestinationBySlug(slug)?.name).filter(Boolean);
 
   return (
     <article className="package-list-card">
-      <Link className="package-list-image" to={`/packages/${item.slug}`}>
-        <img src={item.coverImage} alt={item.alt} loading="lazy" decoding="async" />
+      <Link className="package-list-image" to={`/packages/${item.slug}`} aria-label={`View ${item.title}`}>
+        <PackageImageCarousel item={item} />
       </Link>
       <div className="package-list-body">
         <p>{item.duration}</p>

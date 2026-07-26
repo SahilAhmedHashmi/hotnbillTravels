@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
+import PackageImageCarousel from '../packages/PackageImageCarousel.jsx';
 
 export default function PackageCard({ item }) {
   return (
     <article className="pkg-item">
       <Link className="pkg-image-link" to={`/packages/${item.slug}`} aria-label={`View ${item.title}`}>
-        <img className="pkg-img" src={item.image} alt={item.alt} loading="lazy" decoding="async" />
+        <PackageImageCarousel item={item} />
       </Link>
       <div className="pkg-body">
         <div className="pkg-meta">

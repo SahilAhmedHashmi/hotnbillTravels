@@ -7,8 +7,6 @@ import ExperiencesPage from '../pages/ExperiencesPage.jsx';
 import ExperienceDetailPage from '../pages/ExperienceDetailPage.jsx';
 import FleetPage from '../pages/FleetPage.jsx';
 import VehicleDetailPage from '../pages/VehicleDetailPage.jsx';
-import PackagesPage from '../pages/PackagesPage.jsx';
-import PackageDetailPage from '../pages/PackageDetailPage.jsx';
 import PlanMyTripPage from '../pages/PlanMyTripPage.jsx';
 import BookingConfirmationPage from '../pages/BookingConfirmationPage.jsx';
 import TravelGuidesPage from '../pages/TravelGuidesPage.jsx';
@@ -28,8 +26,6 @@ export const router = createBrowserRouter([
       { path: 'experiences/:slug', element: <ExperienceDetailPage /> },
       { path: 'fleet', element: <FleetPage /> },
       { path: 'fleet/:vehicleSlug', element: <VehicleDetailPage /> },
-      { path: 'packages', element: <PackagesPage /> },
-      { path: 'packages/:slug', element: <PackageDetailPage /> },
       { path: 'plan-my-trip', element: <PlanMyTripPage /> },
       { path: 'booking-confirmation', element: <BookingConfirmationPage /> },
       { path: 'travel-guides', element: <TravelGuidesPage /> },

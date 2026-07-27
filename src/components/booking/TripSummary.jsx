@@ -26,10 +26,6 @@ export default function TripSummary({ form, labels }) {
         <strong>{labels.vehicle || 'No preference'}</strong>
       </div>
       <div>
-        <span>Estimated Package</span>
-        <strong>{labels.package || 'Custom trip'}</strong>
-      </div>
-      <div>
         <span>Booking Type</span>
         <strong>{labels.experience || form.tripType || 'Personalised enquiry'}</strong>
       </div>

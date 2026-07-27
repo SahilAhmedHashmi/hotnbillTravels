@@ -53,7 +53,7 @@ export default function VehicleDetailPage() {
           <p>The vehicle route may have changed, or this option is not available yet.</p>
           <div className="placeholder-actions">
             <Link className="btn btn-gold" to="/fleet">Browse Fleet</Link>
-            <Link className="btn btn-ghost" to="/contact">Enquire Now</Link>
+            <Link className="btn btn-ghost" to="/contact#contact">Enquire Now</Link>
           </div>
         </section>
       </main>
@@ -81,7 +81,7 @@ export default function VehicleDetailPage() {
             <span>Driver Included</span>
           </div>
           <div className="destination-hero-actions">
-            <Link className="btn btn-gold" to="/contact">Enquire Now</Link>
+            <Link className="btn btn-gold" to="/contact#contact">Enquire Now</Link>
             <a className="btn btn-ghost" href="#vehicle-pricing">View Pricing</a>
           </div>
         </div>

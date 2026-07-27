@@ -591,12 +591,10 @@ footer {
   .btn:hover,
   .card-lift:hover,
   .fleet-card:hover,
-  .package-list-card:hover,
   .destination-list-card:hover,
   .experience-list-card:hover,
   .vehicle-card:hover,
-  .exp-card:hover,
-  .pkg-item:hover {
+  .exp-card:hover {
     transform: none !important;
   }
 }

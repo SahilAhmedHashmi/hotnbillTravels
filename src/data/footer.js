@@ -3,8 +3,6 @@
 const destinationFooterStates = [
   'Assam',
   'Meghalaya',
-  'Nagaland',
-  'Manipur',
   'Arunachal Pradesh',
   'Mizoram',
   'Tripura',
@@ -33,7 +31,6 @@ export const footerLinks = [
     title: 'Company',
     links: [
       ['About Us', '/about'],
-      ['Packages', '/packages'],
       ['Fleet', '/fleet'],
       ['Contact', '/contact'],
     ],

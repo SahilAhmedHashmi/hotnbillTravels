@@ -11,7 +11,6 @@ import ReviewStep from '../components/booking/ReviewStep.jsx';
 import TripSummary from '../components/booking/TripSummary.jsx';
 import { destinations, getDestinationBySlug } from '../data/destinations.js';
 import { getExperienceBySlug } from '../data/experiences.js';
-import { getPackageBySlug } from '../data/packages.js';
 import { getVehicleBySlug } from '../data/vehicles.js';
 import { submitBooking } from '../services/bookingService.js';
 import { usePageMeta } from '../hooks/usePageMeta.js';
@@ -19,7 +18,6 @@ import { usePageMeta } from '../hooks/usePageMeta.js';
 const initialFromParams = (params) => ({
   destination: params.get('destination') || destinations[0]?.slug || '',
   experience: params.get('experience') || '',
-  package: params.get('package') || '',
   startDate: '',
   endDate: '',
   days: '',
@@ -54,9 +52,8 @@ export default function PlanMyTripPage() {
   const labels = useMemo(() => ({
     destination: getDestinationBySlug(form.destination)?.name,
     experience: getExperienceBySlug(form.experience)?.title,
-    package: getPackageBySlug(form.package)?.title,
     vehicle: getVehicleBySlug(form.vehicle)?.name,
-  }), [form.destination, form.experience, form.package, form.vehicle]);
+  }), [form.destination, form.experience, form.vehicle]);
 
   const update = (field, value) => {
     setForm((current) => ({ ...current, [field]: value }));

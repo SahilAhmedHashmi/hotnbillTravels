@@ -1,7 +1,6 @@
 import FormField from './FormField.jsx';
 import { destinations } from '../../data/destinations.js';
 import { experiences } from '../../data/experiences.js';
-import { packages } from '../../data/packages.js';
 
 export default function DestinationStep({ form, update, errors }) {
   return (
@@ -23,14 +22,6 @@ export default function DestinationStep({ form, update, errors }) {
             <option value="">Optional experience style</option>
             {experiences.map((experience) => (
               <option key={experience.slug} value={experience.slug}>{experience.title}</option>
-            ))}
-          </select>
-        </FormField>
-        <FormField label="Estimated Package">
-          <select value={form.package} onChange={(event) => update('package', event.target.value)}>
-            <option value="">Optional package</option>
-            {packages.map((item) => (
-              <option key={item.slug} value={item.slug}>{item.title}</option>
             ))}
           </select>
         </FormField>

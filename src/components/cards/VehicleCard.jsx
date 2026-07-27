@@ -30,7 +30,7 @@ export default function VehicleCard({ vehicle }) {
           </div>
           <div className="vehicle-actions">
             <Link className="vehicle-btn" to={`/fleet/${vehicle.slug}`}>View Details</Link>
-            <Link className="vehicle-btn primary" to="/contact">Enquire Now</Link>
+            <Link className="vehicle-btn primary" to="/contact#contact">Enquire Now</Link>
           </div>
         </div>
       </div>

@@ -10,7 +10,7 @@
     description:
       'The trusted workhorse of Northeast travel. Spacious, powerful, and reliable on highways, hill roads, and long transfers.',
     overview:
-      'The Innova Crysta is the most versatile choice for families, couples who want extra comfort, and small groups covering mixed terrain across Assam, Meghalaya, Arunachal, Nagaland, and Sikkim.',
+      'The Innova Crysta is the most versatile choice for families, couples who want extra comfort, and small groups covering mixed terrain across Assam, Meghalaya, Arunachal, Mizoram, Tripura, and Sikkim.',
     passengerCapacity: '6 passengers',
     luggageCapacity: '4 large bags',
     transmission: 'Manual',
@@ -120,7 +120,47 @@
       { question: 'Which Tempo Traveller size should I choose?', answer: 'A 14-seater works for smaller groups with luggage. Larger groups can request the 26-seater.' },
       { question: 'Can it go everywhere?', answer: 'It works well on most main routes, but some narrow mountain or village roads may need smaller vehicles.' },
     ],
-    relatedVehicles: ['innova-crysta', 'maruti-ertiga'],
+    relatedVehicles: ['force-urbania', 'innova-crysta', 'maruti-ertiga'],
+  },
+  {
+    slug: 'force-urbania',
+    type: 'Premium Group Van',
+    name: 'Force Urbania',
+    image: '/Force Urbania.png',
+    alt: 'White Force Urbania premium group van on a mountain road',
+    badge: 'Premium Group',
+    description:
+      'A premium shared-mobility van with reclining seats, individual AC vents, and a tall cabin for comfortable group journeys.',
+    overview:
+      'The Force Urbania is suited to families, corporate groups, and small tour groups who want more cabin space than an MPV while retaining a premium, comfortable feel for long Northeast India transfers.',
+    passengerCapacity: '10, 13, or 16 passengers',
+    luggageCapacity: 'Group luggage space',
+    transmission: 'Manual',
+    airConditioning: true,
+    driverIncluded: true,
+    fuelType: 'Diesel',
+    groundClearance: '200 mm',
+    suitableTerrain: 'Highways, city transfers, group routes, and accessible hill roads',
+    specs: ['10 / 13 / 16 Seats', 'Triple AC', 'Recliner Seats'],
+    pricing: {
+      perDay: '₹8,500',
+      airportTransfer: 'On request',
+      included: ['Experienced local driver', 'Triple air conditioning', 'Reclining seats', 'Group luggage support'],
+      notIncluded: ['Parking fees', 'Tolls and permits', 'Driver accommodation on overnight routes', 'Restricted-route charges'],
+      extras: ['Airport pickup', 'Multiple pickup points', 'Permit coordination'],
+    },
+    rate: '₹8,500',
+    rateNote: 'per day',
+    recommendedFor: ['Premium group travel', 'Corporate trips', 'Large families', 'Long transfers'],
+    features: ['Reclining passenger seats', 'Individual AC vents', 'Stand-up cabin height', 'USB and reading lamps'],
+    gallery: ['/Force Urbania.png', '/Force Urbania.png', '/Force Urbania.png'],
+    driverNote:
+      'Your Urbania includes an experienced local driver who can pace long transfer days, manage group stops, and handle practical route decisions across Northeast India.',
+    faq: [
+      { question: 'How many passengers can the Force Urbania carry?', answer: 'The Urbania is available in 10, 13, and 16 passenger seating layouts excluding the driver.' },
+      { question: 'Is the Urbania air conditioned?', answer: 'Yes. The Urbania is equipped with a triple AC system and individual AC vents for passengers.' },
+    ],
+    relatedVehicles: ['tempo-traveller', 'innova-crysta', 'maruti-ertiga'],
   },
   {
     slug: 'swift-dzire',

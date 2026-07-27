@@ -1,7 +1,6 @@
 import { Link, useParams } from 'react-router-dom';
 import Breadcrumbs from '../components/common/Breadcrumbs.jsx';
 import ExperienceDestinationCard from '../components/experiences/ExperienceDestinationCard.jsx';
-import ExperiencePackages from '../components/experiences/ExperiencePackages.jsx';
 import ExperienceVehicles from '../components/experiences/ExperienceVehicles.jsx';
 import ExperienceGallery from '../components/experiences/ExperienceGallery.jsx';
 import ExperienceFaqs from '../components/experiences/ExperienceFaqs.jsx';
@@ -110,7 +109,6 @@ export default function ExperienceDetailPage() {
         </div>
       </section>
 
-      <ExperiencePackages experience={experience} />
       <ExperienceVehicles experience={experience} />
       <ExperienceGallery experience={experience} />
       <ExperienceFaqs experience={experience} />

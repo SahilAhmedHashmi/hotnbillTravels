@@ -17,7 +17,7 @@ export default function HeroSection() {
       <div className="hero-content">
         <h1 className="hero-title">Travel the <em>Wild</em><br /><em>Northeast</em> of India</h1>
         <p className="hero-desc">
-          Tailor-made trips across Assam, Meghalaya, Nagaland, Arunachal, and beyond — with expert local guides,
+          Tailor-made trips across Assam, Meghalaya, Arunachal, Mizoram, Tripura, and Sikkim — with expert local guides,
           comfortable private vehicles, and itineraries planned entirely around you.
         </p>
         <div className="hero-actions">

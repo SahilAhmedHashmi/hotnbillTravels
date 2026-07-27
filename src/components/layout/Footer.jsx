@@ -12,8 +12,8 @@ export default function Footer() {
           <Logo asLink={false} />
           {/* TODO: Replace this launch copy with verified business registration details before production. */}
           <p>
-            Crafting authentic, responsible journeys through the eight extraordinary states of Northeast India since
-            2010. Registered business details to be verified before launch.
+            Crafting authentic, responsible journeys through Northeast India since 2010. Registered business details to
+            be verified before launch.
           </p>
           <div className="footer-contact">
             <a href={contact.phoneHref}>{contact.phoneLabel}</a>
@@ -43,12 +43,10 @@ export default function Footer() {
         ))}
       </div>
       <div className="footer-bottom">
-        <p>Copyright (c) 2026 Hornbill Journeys Pvt. Ltd. Jorhat, Assam. All rights reserved.</p>
+        <p>Copyright (c) 2026 Hornbill Journeys Pvt. Ltd. Guwahati, Assam. All rights reserved.</p>
         <div className="footer-states">
           <span>Assam</span>
           <span>Meghalaya</span>
-          <span>Nagaland</span>
-          <span>Manipur</span>
           <span>Arunachal</span>
           <span>Mizoram</span>
           <span>Tripura</span>

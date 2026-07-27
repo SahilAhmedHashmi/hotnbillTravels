@@ -3,7 +3,6 @@ import StatsBar from '../components/home/StatsBar.jsx';
 import AboutSection from '../components/home/AboutSection.jsx';
 import DestinationsPreview from '../components/home/DestinationsPreview.jsx';
 import FleetPreview from '../components/home/FleetPreview.jsx';
-import PackagesPreview from '../components/home/PackagesPreview.jsx';
 import TrustSection from '../components/home/TrustSection.jsx';
 import TestimonialsSection from '../components/home/TestimonialsSection.jsx';
 import FinalCtaSection from '../components/home/FinalCtaSection.jsx';
@@ -28,7 +27,6 @@ export default function HomePage() {
       <SectionDivider />
       <FleetPreview />
       <SectionDivider />
-      <PackagesPreview />
       <TrustSection />
       <TestimonialsSection />
       <FinalCtaSection />

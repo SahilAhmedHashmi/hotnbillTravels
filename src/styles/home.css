@@ -168,8 +168,7 @@
 }
 
 .about,
-.experiences,
-.packages {
+.experiences {
   padding: 7.5rem 3rem;
   background: var(--off-white);
 }
@@ -235,12 +234,10 @@
 }
 
 .about-text,
-.experiences,
-.packages { color: var(--text); }
+.experiences { color: var(--text); }
 
 .about-text h2,
 .exp-header h2,
-.pkg-header h2,
 .trust-copy h2 {
   font-family: 'Cormorant Garant', serif;
   font-size: clamp(2.2rem, 3.5vw, 3.2rem);
@@ -346,7 +343,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.7s cubic-bezier(.25, .46, .45, .94);
+  transition: transform 0.6s ease;
 }
 
 .dest-card:hover img,
@@ -688,8 +685,7 @@
   margin: 2px 0 6px;
 }
 
-.vehicle-btn,
-.pkg-btn {
+.vehicle-btn {
   font-family: 'Inter', sans-serif;
   font-size: 0.72rem;
   font-weight: 500;
@@ -749,137 +745,6 @@
   color: rgba(255, 255, 255, 0.58);
   line-height: 1.6;
 }
-
-.pkg-list {
-  max-width: var(--container);
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.pkg-item {
-  display: grid;
-  grid-template-columns: 300px 1fr auto;
-  background: var(--white);
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  border-radius: 6px;
-  overflow: hidden;
-  transition: box-shadow 0.25s, transform 0.25s;
-}
-
-.pkg-item:hover {
-  box-shadow: 0 10px 40px rgba(10, 13, 11, 0.1);
-  transform: translateY(-2px);
-}
-
-.pkg-image-link { display: block; }
-
-.pkg-img {
-  width: 100%;
-  height: 100%;
-  min-height: 190px;
-  object-fit: cover;
-  display: block;
-}
-
-.pkg-body {
-  padding: 1.6rem 2rem;
-  border-right: 1px solid var(--mist);
-}
-
-.pkg-meta {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 0.9rem;
-}
-
-.pkg-meta-item {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.68rem;
-  color: var(--text-soft);
-  letter-spacing: 0.06em;
-}
-
-.pkg-meta-item.rating { color: var(--gold); }
-
-.pkg-body h3 {
-  font-family: 'Cormorant Garant', serif;
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: var(--text);
-  margin: 0 0 0.5rem;
-}
-
-.pkg-body h3 a { text-decoration: none; }
-
-.pkg-body p {
-  font-size: 0.84rem;
-  color: var(--text-soft);
-  line-height: 1.65;
-  font-weight: 300;
-  max-width: 540px;
-}
-
-.pkg-tags {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-}
-
-.pkg-tag {
-  background: var(--mist);
-  color: var(--text-mid);
-  font-family: 'Inter', sans-serif;
-  font-size: 0.63rem;
-  padding: 4px 10px;
-  border-radius: 20px;
-  letter-spacing: 0.06em;
-}
-
-.pkg-price-col {
-  padding: 1.6rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: space-between;
-  min-width: 190px;
-}
-
-.pkg-price-from {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.62rem;
-  color: var(--text-soft);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-.pkg-price-amt {
-  font-family: 'Cormorant Garant', serif;
-  font-size: 2.1rem;
-  font-weight: 500;
-  color: var(--text);
-  line-height: 1;
-  margin: 0;
-}
-
-.pkg-price-per {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.62rem;
-  color: var(--text-soft);
-  margin: 0;
-}
-
-.pkg-btn {
-  background: var(--ink);
-  color: var(--gold-hi);
-}
-
-.pkg-btn:hover { background: var(--green); }
 
 .trust-section {
   background: var(--off-white);
@@ -1078,13 +943,6 @@
     grid-template-rows: 320px 260px 260px;
   }
   .vehicles-grid > .reveal { flex-basis: min(48vw, 430px); }
-  .pkg-item { grid-template-columns: 240px 1fr; }
-  .pkg-price-col {
-    grid-column: 1 / -1;
-    align-items: center;
-    flex-direction: row;
-    border-top: 1px solid var(--mist);
-  }
 }
 
 @media (max-width: 900px) {
@@ -1105,7 +963,6 @@
   .destinations,
   .experiences,
   .vehicles,
-  .packages,
   .trust-section,
   .testimonials,
   .cta-section {
@@ -1136,14 +993,6 @@
     flex: 0 0 min(86vw, 390px);
     height: 430px;
     scroll-snap-align: start;
-  }
-  .pkg-item { grid-template-columns: 1fr; }
-  .pkg-img { height: 230px; }
-  .pkg-body { border-right: 0; }
-  .pkg-price-col {
-    align-items: flex-start;
-    gap: 1rem;
-    flex-direction: column;
   }
   .cta-actions .btn { width: 100%; }
 }

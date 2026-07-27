@@ -21,7 +21,7 @@ export default function FleetVehicleCard({ vehicle }) {
         </div>
         <div className="fleet-card-actions">
           <Link to={`/fleet/${vehicle.slug}`}>View Details</Link>
-          <Link to="/contact">Enquire Now</Link>
+          <Link to="/contact#contact">Enquire Now</Link>
         </div>
       </div>
     </article>

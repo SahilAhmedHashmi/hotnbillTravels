@@ -1,11 +1,12 @@
 import { useMemo } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import Breadcrumbs from '../components/common/Breadcrumbs.jsx';
+import ImageCarousel from '../components/common/ImageCarousel.jsx';
 import DestinationFilters from '../components/destinations/DestinationFilters.jsx';
 import DestinationListingCard from '../components/destinations/DestinationListingCard.jsx';
 import DestinationMap from '../components/destinations/DestinationMap.jsx';
 import DestinationFinalCta from '../components/destinations/DestinationFinalCta.jsx';
-import { destinations, destinationStates } from '../data/destinations.js';
+import { destinationHeroImages, destinations, destinationStates } from '../data/destinations.js';
 import { usePageMeta } from '../hooks/usePageMeta.js';
 
 export default function DestinationsPage() {
@@ -39,7 +40,13 @@ export default function DestinationsPage() {
   return (
     <main className="destinations-page">
       <section className="destination-page-hero">
-        <div className="destination-hero-bg" />
+        <ImageCarousel
+          className="destination-hero-bg"
+          images={destinationHeroImages}
+          fallbackAlt="Northeast India nature landscape"
+          interval={3800}
+          eager
+        />
         <div className="destination-hero-overlay" />
         <div className="destination-page-hero-inner">
           <Breadcrumbs items={[{ label: 'Destinations', current: true }]} />

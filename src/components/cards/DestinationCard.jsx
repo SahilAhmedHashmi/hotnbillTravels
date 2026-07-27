@@ -3,12 +3,7 @@ import { Link } from 'react-router-dom';
 export default function DestinationCard({ destination }) {
   return (
     <Link className={`dest-card ${destination.featured ? 'featured' : ''}`} to={`/destinations/${destination.slug}`}>
-      <img
-        src={destination.image}
-        alt={destination.alt}
-        loading={destination.featured ? 'eager' : 'lazy'}
-        decoding="async"
-      />
+      <img src={destination.image} alt={destination.alt} loading={destination.featured ? 'eager' : 'lazy'} decoding="async" />
       <span className="dest-overlay" />
       <span className="dest-info">
         <span className="dest-tag">{destination.tag}</span>

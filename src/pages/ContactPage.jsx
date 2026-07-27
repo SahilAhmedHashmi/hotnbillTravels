@@ -162,7 +162,7 @@ export default function ContactPage() {
       </section>
 
       {/* Get in touch — form + direct contact rail */}
-      <section className="contact-connect">
+      <section className="contact-connect" id="contact">
         <div className="contact-connect-inner">
           {/* Enquiry form */}
           <Reveal className="contact-form-panel">
@@ -398,8 +398,6 @@ export default function ContactPage() {
         eyebrow="Ready When You Are"
         title="Start planning your adventure"
         text="Send an enquiry above, or reach out on your favourite channel — either way, a real person on our team will help you shape the trip."
-        primaryLabel="Explore Packages"
-        primaryTo="/packages"
       />
     </main>
   );

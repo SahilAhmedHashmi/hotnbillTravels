@@ -6,6 +6,7 @@ import { destinations } from '../../data/destinations.js';
 
 // Resolve each signature marker to its destination slug (markers are keyed by name).
 const slugByName = new Map(destinations.map((item) => [item.name, item.slug]));
+const disabledStates = new Set(['Manipur', 'Nagaland']);
 
 /**
  * Interactive atlas of Northeast India. Clicking a state opens a focused,
@@ -27,28 +28,36 @@ export default function NortheastMap({ tag = 'Northeast India · 8 States', hint
     <>
       <div className={`ne-map ${isVisible ? 'is-visible' : ''}`}>
         <svg viewBox="0 0 620 620" className="ne-map-svg">
-          {northeastStates.map((state) => (
-            <path
-              key={state.name}
-              d={state.path}
-              pathLength="100"
-              className={`map-state ${hoveredState === state.name ? 'is-hovered' : ''}`}
-              role="button"
-              tabIndex={0}
-              aria-label={`Explore ${state.name}`}
-              onMouseEnter={() => setHoveredState(state.name)}
-              onMouseLeave={() => setHoveredState(null)}
-              onFocus={() => setHoveredState(state.name)}
-              onBlur={() => setHoveredState(null)}
-              onClick={() => setOpenName(state.name)}
-              onKeyDown={(event) => {
-                if (event.key === 'Enter' || event.key === ' ') {
-                  event.preventDefault();
-                  setOpenName(state.name);
-                }
-              }}
-            />
-          ))}
+          {northeastStates.map((state) => {
+            const isDisabled = disabledStates.has(state.name);
+            const isHovered = hoveredState === state.name;
+
+            return (
+              <path
+                key={state.name}
+                d={state.path}
+                pathLength="100"
+                className={`map-state ${isDisabled ? 'is-disabled' : ''} ${!isDisabled && isHovered ? 'is-hovered' : ''}`}
+                role={isDisabled ? 'img' : 'button'}
+                tabIndex={isDisabled ? -1 : 0}
+                aria-label={isDisabled ? state.name : `Explore ${state.name}`}
+                onMouseEnter={() => setHoveredState(state.name)}
+                onMouseLeave={() => setHoveredState(null)}
+                onFocus={() => setHoveredState(state.name)}
+                onBlur={() => setHoveredState(null)}
+                onClick={() => {
+                  if (!isDisabled) setOpenName(state.name);
+                }}
+                onKeyDown={(event) => {
+                  if (isDisabled) return;
+                  if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    setOpenName(state.name);
+                  }
+                }}
+              />
+            );
+          })}
         </svg>
 
         {northeastStates.map((state) =>

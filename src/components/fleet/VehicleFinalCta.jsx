@@ -7,7 +7,7 @@ export default function VehicleFinalCta({ vehicle }) {
       title={`Ready to travel with ${vehicle.name}?`}
       text="Share your route, dates, group size, and luggage needs. We will confirm the right vehicle and final quote."
       primaryLabel="Enquire Now"
-      primaryTo="/contact"
+      primaryTo="/contact#contact"
       className="vehicle-final-cta"
     />
   );

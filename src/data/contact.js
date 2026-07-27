@@ -5,5 +5,5 @@ export const contact = {
   whatsappHref: 'https://wa.me/910000000000',
   emailLabel: 'hello@hornbilljourneys.com',
   emailHref: 'mailto:hello@hornbilljourneys.com',
-  address: 'Jorhat, Assam - office address to be confirmed',
+  address: 'Guwahati, Assam',
 };

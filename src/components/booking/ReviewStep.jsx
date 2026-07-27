@@ -3,7 +3,6 @@ export default function ReviewStep({ form, labels }) {
   const rows = [
     ['Destination', labels.destination || 'Not selected'],
     ['Experience', labels.experience || 'Not selected'],
-    ['Package', labels.package || 'Not selected'],
     ['Dates', `${form.startDate || 'TBD'} to ${form.endDate || 'TBD'}`],
     ['Travellers', `${travellers} total`],
     ['Vehicle', labels.vehicle || 'No preference'],

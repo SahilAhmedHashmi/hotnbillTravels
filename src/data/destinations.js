@@ -3,11 +3,16 @@
   Assam: 'https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=1200&q=80',
   'Arunachal Pradesh': 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80',
   Sikkim: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80',
-  Nagaland: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80',
   Mizoram: 'https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=1200&q=80',
-  Manipur: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
   Tripura: 'https://images.unsplash.com/photo-1470770903676-69b98201ea1c?auto=format&fit=crop&w=1200&q=80',
 };
+
+export const destinationHeroImages = [
+  'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1920&q=80',
+  'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80',
+  'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80',
+  'https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&w=1920&q=80',
+];
 
 // Local destination photography, served from public/destinations/.
 // Keyed by slug — the filename reflects the destination's display name.
@@ -32,14 +37,9 @@ const localImages = {
   pelling: '/destinations/pelling-skywalk.jpg',
   lachung: '/destinations/yumthang-valley.jpg',
   'yumthang-valley': '/destinations/tsomgo-lake.jpg',
-  kohima: '/destinations/khonoma-village.jpg',
-  'dzukou-valley': '/destinations/dzukou-valley.jpg',
-  mon: '/destinations/kisama-heritage-village.jpg',
   aizawl: '/destinations/vantawng-falls.jpg',
   reiek: '/destinations/phawngpui-blue-mountain.jpg',
   champhai: '/destinations/tamdil-lake.jpg',
-  imphal: '/destinations/loktak-lake.jpg',
-  'loktak-lake': '/destinations/kangla-fort.jpg',
   agartala: '/destinations/neermahal-palace.jpg',
   unakoti: '/destinations/unakoti.jpg',
 };
@@ -49,9 +49,7 @@ const regionCopy = {
   Assam: 'wildlife reserves, tea gardens, river islands, temple towns, and Brahmaputra valley culture',
   'Arunachal Pradesh': 'high passes, monasteries, pine valleys, frontier towns, and remote mountain roads',
   Sikkim: 'Himalayan viewpoints, monasteries, alpine valleys, and mountain towns',
-  Nagaland: 'tribal heritage, hill settlements, festival culture, and highland trekking routes',
   Mizoram: 'quiet hill towns, forest ridges, viewpoints, and gentle village experiences',
-  Manipur: 'lake landscapes, markets, cultural heritage, and soft valley scenery',
   Tripura: 'palaces, rock carvings, temples, and slower heritage routes',
 };
 
@@ -115,9 +113,7 @@ export const destinationStates = [
   'Assam',
   'Arunachal Pradesh',
   'Sikkim',
-  'Nagaland',
   'Mizoram',
-  'Manipur',
   'Tripura',
 ];
 
@@ -315,43 +311,12 @@ export const destinations = [
     image: 'https://source.unsplash.com/featured/1600x900/?tsomgo,lake,sikkim',
   }),
   makeDestination({
-    slug: 'kohima',
-    name: 'Khonoma Heritage Village',
-    state: 'Nagaland',
-    shortDescription: 'Experience one of Nagaland’s most celebrated village communities, known for terrace fields, conservation traditions, and warm hospitality.',
-    highlights: ['Village Homestays', 'Terrace Farming', 'Conservation Trails', 'Local Culture'],
-    relatedDestinations: ['dzukou-valley', 'mon', 'loktak-lake'],
-    image: 'https://source.unsplash.com/featured/1600x900/?khonoma,nagaland,village',
-  }),
-  makeDestination({
-    slug: 'dzukou-valley',
-    name: 'Dzukou Valley',
-    state: 'Nagaland',
-    shortDescription: 'Hike through a rolling valley of seasonal flowers, mist, and quiet meadows that feels a world away from the usual road trip circuit.',
-    highlights: ['Trekking Trails', 'Flower Season', 'Meadow Views', 'Camping Stops'],
-    bestTimeToVisit: 'June to September and November to March',
-    recommendedDuration: '2-3 Days',
-    relatedDestinations: ['kohima', 'mon', 'loktak-lake'],
-    image: 'https://source.unsplash.com/featured/1600x900/?dzukou,valley,nagaland',
-    featured: true,
-  }),
-  makeDestination({
-    slug: 'mon',
-    name: 'Kisama Heritage Village',
-    state: 'Nagaland',
-    shortDescription: 'Discover one of the state’s most important cultural landscapes, where traditional architecture and festival heritage come to life.',
-    highlights: ['Heritage Trails', 'Cultural Ceremonies', 'Village Architecture', 'Festival Atmosphere'],
-    recommendedDuration: '3-4 Days',
-    relatedDestinations: ['kohima', 'dzukou-valley', 'loktak-lake'],
-    image: 'https://source.unsplash.com/featured/1600x900/?kisama,heritage,nagaland',
-  }),
-  makeDestination({
     slug: 'aizawl',
     name: 'Vantawng Falls',
     state: 'Mizoram',
     shortDescription: 'Follow forested trails to one of Mizoram’s most dramatic waterfalls, where clear water drops into a green valley below.',
     highlights: ['Waterfall Trek', 'Forest Trails', 'River Views', 'Photography Spots'],
-    relatedDestinations: ['reiek', 'champhai', 'imphal'],
+    relatedDestinations: ['reiek', 'champhai', 'agartala'],
     image: 'https://source.unsplash.com/featured/1600x900/?vantawng,falls,mizoram',
   }),
   makeDestination({
@@ -360,7 +325,7 @@ export const destinations = [
     state: 'Mizoram',
     shortDescription: 'Climb to the highest peak in Mizoram for sweeping vistas, cool pine air, and an unforgettable sense of remoteness.',
     highlights: ['Mountain Summit', 'Cloud Views', 'Pine Forests', 'Adventure Trek'],
-    relatedDestinations: ['aizawl', 'champhai', 'imphal'],
+    relatedDestinations: ['aizawl', 'champhai', 'unakoti'],
     image: 'https://source.unsplash.com/featured/1600x900/?phawngpui,blue+mountain,mizoram',
   }),
   makeDestination({
@@ -370,27 +335,8 @@ export const destinations = [
     shortDescription: 'Unwind beside a calm hill lake surrounded by forest, perfect for easy walks, boating, and lingering in nature.',
     highlights: ['Lakefront Views', 'Boating', 'Picnic Spots', 'Quiet Nature'],
     recommendedDuration: '3-4 Days',
-    relatedDestinations: ['aizawl', 'reiek', 'imphal'],
+    relatedDestinations: ['aizawl', 'reiek', 'agartala'],
     image: 'https://source.unsplash.com/featured/1600x900/?tamdil,lake,mizoram',
-  }),
-  makeDestination({
-    slug: 'imphal',
-    name: 'Loktak Lake',
-    state: 'Manipur',
-    shortDescription: 'Explore India’s largest freshwater lake, famous for its floating islands and the unique ecosystem that supports local life.',
-    highlights: ['Floating Phumdis', 'Keibul Lamjao', 'Shoreline Homestays', 'Lake Boat Rides'],
-    relatedDestinations: ['loktak-lake', 'kohima', 'aizawl'],
-    image: 'https://source.unsplash.com/featured/1600x900/?loktak,lake,manipur',
-    featured: true,
-  }),
-  makeDestination({
-    slug: 'loktak-lake',
-    name: 'Kangla Fort',
-    state: 'Manipur',
-    shortDescription: 'Walk through the heart of Manipur’s history at this storied fort complex, where royal heritage and modern memory meet.',
-    highlights: ['Historic Complex', 'Royal Heritage', 'Museum Displays', 'City Access'],
-    relatedDestinations: ['imphal', 'kohima', 'aizawl'],
-    image: 'https://source.unsplash.com/featured/1600x900/?kangla,fort,manipur',
   }),
   makeDestination({
     slug: 'agartala',
@@ -398,7 +344,7 @@ export const destinations = [
     state: 'Tripura',
     shortDescription: 'Visit Tripura’s magnificent lake palace, where Hindu and Mughal influences come together in a breathtaking waterside setting.',
     highlights: ['Lake Palace', 'Architecture', 'Waterfront Views', 'Heritage Photography'],
-    relatedDestinations: ['unakoti', 'aizawl', 'imphal'],
+    relatedDestinations: ['unakoti', 'aizawl', 'champhai'],
     image: 'https://source.unsplash.com/featured/1600x900/?neermahal,palace,tripura',
     featured: true,
   }),
@@ -409,7 +355,7 @@ export const destinations = [
     shortDescription: 'Marvel at ancient rock carvings scattered across forested hills in one of Tripura’s most spellbinding heritage sites.',
     highlights: ['Rock Reliefs', 'Forest Walks', 'Pilgrimage Trails', 'Heritage Ruins'],
     recommendedDuration: '1-2 Days',
-    relatedDestinations: ['agartala', 'aizawl', 'imphal'],
+    relatedDestinations: ['agartala', 'aizawl', 'champhai'],
     image: 'https://source.unsplash.com/featured/1600x900/?unakoti,tripura,rock+carvings',
   }),
 ];

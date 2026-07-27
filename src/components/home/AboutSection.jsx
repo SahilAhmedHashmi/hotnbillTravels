@@ -31,8 +31,8 @@ export default function AboutSection() {
           <h2>Born from the valleys of Assam, raised by the Northeast</h2>
           <p>
             We are a homegrown travel agency rooted in the rich, layered culture of Northeast India. For over a
-            decade, we have been quietly crafting journeys that take travellers deep into Assam, Meghalaya, Nagaland,
-            Manipur, Mizoram, Arunachal Pradesh, Tripura, and Sikkim.
+            decade, we have been quietly crafting journeys that take travellers deep into Assam, Meghalaya, Mizoram,
+            Arunachal Pradesh, Tripura, and Sikkim.
           </p>
           <p>
             From the world's largest river island to the world's wettest place, from one-horned rhinos to hornbill

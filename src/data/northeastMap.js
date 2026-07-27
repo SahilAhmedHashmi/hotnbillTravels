@@ -45,8 +45,6 @@ export const destinationMarkers = [
   { id: 'majuli-island', name: 'Majuli Island', location: 'Brahmaputra, Assam', type: 'Culture • River Life', state: 'Assam', x: 393.3, y: 230.4 },
   { id: 'tawang-monastery', name: 'Tawang Monastery', location: 'Tawang, Arunachal Pradesh', type: 'Culture • Monastery', state: 'Arunachal Pradesh', x: 260.8, y: 190.0 },
   { id: 'sela-pass', name: 'Sela Pass', location: 'Arunachal Pradesh', type: 'Scenery • Mountain Roads', state: 'Arunachal Pradesh', x: 275.4, y: 194.8 },
-  { id: 'dzukou-valley', name: 'Dzukou Valley', location: 'Nagaland', type: 'Trekking • Meadow Views', state: 'Nagaland', x: 390.3, y: 317.1 },
-  { id: 'loktak-lake', name: 'Loktak Lake', location: 'Manipur', type: 'Lake • Floating Islands', state: 'Manipur', x: 371.3, y: 385.8 },
   { id: 'neermahal-palace', name: 'Neermahal Palace', location: 'Tripura', type: 'Heritage • Palace Stay', state: 'Tripura', x: 242.0, y: 443.2 },
   { id: 'vantawng-falls', name: 'Vantawng Falls', location: 'Mizoram', type: 'Nature • Waterfall Trail', state: 'Mizoram', x: 316.7, y: 459.1 },
   { id: 'gurudongmar-lake', name: 'Gurudongmar Lake', location: 'North Sikkim', type: 'High Altitude • Sacred', state: 'Sikkim', x: 79.2, y: 161.5 },

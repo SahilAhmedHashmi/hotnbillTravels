@@ -29,12 +29,21 @@ const emptyForm = {
 
 const methods = [
   {
-    key: 'phone',
+    key: 'primary-phone',
     icon: 'phone',
-    label: 'Call Us',
-    value: contact.phoneLabel,
+    label: 'Primary Phone',
+    value: contact.primaryPhoneLabel,
     note: 'Mon–Sat, 9am–6pm IST',
-    href: contact.phoneHref,
+    href: contact.primaryPhoneHref,
+    action: 'Call now',
+  },
+  {
+    key: 'secondary-phone',
+    icon: 'phone',
+    label: 'Secondary Phone',
+    value: contact.secondaryPhoneLabel,
+    note: 'Alternate number for direct calls',
+    href: contact.secondaryPhoneHref,
     action: 'Call now',
   },
   {
@@ -77,7 +86,7 @@ export default function ContactPage() {
       '@type': 'TravelAgency',
       name: 'Hornbill Journeys',
       email: contact.emailLabel,
-      telephone: contact.phoneLabel,
+      telephone: [contact.primaryPhoneLabel, contact.secondaryPhoneLabel],
       address: contact.address,
       areaServed: 'Northeast India',
     },

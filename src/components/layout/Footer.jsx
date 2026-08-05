@@ -16,7 +16,8 @@ export default function Footer() {
             be verified before launch.
           </p>
           <div className="footer-contact">
-            <a href={contact.phoneHref}>{contact.phoneLabel}</a>
+            <a href={contact.primaryPhoneHref}>{contact.primaryPhoneLabel}</a>
+            <a href={contact.secondaryPhoneHref}>{contact.secondaryPhoneLabel}</a>
             <a href={contact.emailHref}>{contact.emailLabel}</a>
             <span>{contact.address}</span>
           </div>

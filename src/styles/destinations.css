@@ -223,6 +223,7 @@
   text-transform: uppercase;
   cursor: pointer;
   transition: background 0.2s, color 0.2s, border-color 0.2s;
+  min-height: 44px;
 }
 
 .destination-filters button:hover,
@@ -347,6 +348,9 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .destination-learn {

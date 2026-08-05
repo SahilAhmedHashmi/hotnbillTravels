@@ -28,7 +28,7 @@ export default function FloatingContactWidget() {
 
   return (
     <div className={`floating-contact ${open ? 'is-open' : ''}`} ref={widgetRef}>
-      <div className="floating-panel" aria-hidden={!open}>
+      <div className="floating-panel" id="contact-options" aria-hidden={!open}>
         <a href={contact.phoneHref}><Icon name="phone" /> Call Us</a>
         <a href={contact.whatsappHref}><Icon name="whatsapp" /> WhatsApp</a>
         <a href={contact.emailHref}><Icon name="mail" /> Email</a>
@@ -38,6 +38,7 @@ export default function FloatingContactWidget() {
         className="floating-toggle"
         type="button"
         aria-label={open ? 'Close contact options' : 'Open contact options'}
+        aria-controls="contact-options"
         aria-expanded={open}
         onClick={() => setOpen((value) => !value)}
       >

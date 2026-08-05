@@ -694,7 +694,11 @@
   color: var(--gold);
   background: transparent;
   border: 1px solid rgba(200, 146, 42, 0.4);
-  padding: 8px 18px;
+  padding: 10px 18px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 3px;
   cursor: pointer;
   text-decoration: none;
@@ -988,6 +992,8 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     padding-bottom: 0.5rem;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: thin;
   }
   .dest-grid > .reveal {
     flex: 0 0 min(86vw, 390px);
@@ -995,4 +1001,16 @@
     scroll-snap-align: start;
   }
   .cta-actions .btn { width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .hero { min-height: max(600px, 100svh); }
+  .hero-title { font-size: clamp(2.75rem, 16vw, 4rem); }
+  .hero-sub { font-size: 0.96rem; }
+  .stats-inner { gap: 0; }
+  .stat-item { padding-inline: 0.65rem; }
+  .stat-num { font-size: 2.35rem; }
+  .about-img-main { height: 340px; }
+  .dest-grid > .reveal { flex-basis: calc(100vw - 2.4rem); height: 390px; }
+  .vehicles-grid > .reveal { flex-basis: calc(100vw - 2.4rem); }
 }

@@ -690,3 +690,9 @@
     stroke-dashoffset: 0;
   }
 }
+
+@media (max-width: 480px) {
+  .contact-hero { min-height: 540px; }
+  .contact-form-panel { padding: 1.25rem; }
+  .contact-summary > div { align-items: flex-start; flex-direction: column; gap: 0.3rem; }
+}

@@ -17,8 +17,8 @@
   --glass-border: rgba(255, 255, 255, 0.10);
   --gold-glass: rgba(200, 146, 42, 0.12);
   --container: 1320px;
-  --section-y: 7rem;
-  --section-x: 3rem;
+  --section-y: clamp(4.5rem, 7vw, 7rem);
+  --section-x: clamp(1.2rem, 3vw, 3rem);
   --radius-sm: 4px;
   --radius-md: 7px;
   --radius-lg: 8px;

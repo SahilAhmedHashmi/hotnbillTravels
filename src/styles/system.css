@@ -4,6 +4,12 @@
   padding: var(--section-y) var(--section-x);
 }
 
+.section-shell > *,
+.section-header > *,
+.card-surface > * {
+  min-width: 0;
+}
+
 .section-heading {
   max-width: 780px;
   margin-bottom: 2.2rem;
@@ -93,6 +99,7 @@
   justify-content: space-between;
   gap: 1rem;
   list-style: none;
+  min-height: 44px;
 }
 
 .system-faq summary::-webkit-details-marker {
@@ -209,4 +216,6 @@
     margin-left: 1.2rem;
     margin-right: 1.2rem;
   }
+  .system-faq details { padding: 0.9rem 1rem; }
+  .system-faq summary { font-size: 1.15rem; }
 }

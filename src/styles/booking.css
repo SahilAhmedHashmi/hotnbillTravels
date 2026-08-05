@@ -390,3 +390,13 @@
     width: 100%;
   }
 }
+
+@media (max-width: 480px) {
+  .booking-hero { min-height: 480px; }
+  .booking-hero h1 { font-size: clamp(2.8rem, 15vw, 4rem); }
+  .booking-main { padding: 1rem; }
+  .booking-stepper { gap: 0.7rem 0.35rem; }
+  .booking-stepper li { align-items: center; text-align: center; }
+  .booking-stepper span { margin-inline: auto; }
+  .booking-stepper strong { font-size: 0.55rem; letter-spacing: 0.04em; }
+}

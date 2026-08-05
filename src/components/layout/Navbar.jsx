@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { useEffect, useRef, useState } from 'react';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import Logo from '../common/Logo.jsx';
 import { navigation } from '../../data/navigation.js';
 import { useScrolledNav } from '../../hooks/useScrolledNav.js';
@@ -7,10 +7,19 @@ import { useScrolledNav } from '../../hooks/useScrolledNav.js';
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const isScrolled = useScrolledNav();
+  const location = useLocation();
+  const toggleRef = useRef(null);
+
+  useEffect(() => {
+    setOpen(false);
+  }, [location.pathname, location.search, location.hash]);
 
   useEffect(() => {
     const onKeyDown = (event) => {
-      if (event.key === 'Escape') setOpen(false);
+      if (event.key === 'Escape' && open) {
+        setOpen(false);
+        toggleRef.current?.focus();
+      }
     };
     document.body.classList.toggle('nav-open', open);
     window.addEventListener('keydown', onKeyDown);
@@ -24,11 +33,11 @@ export default function Navbar() {
     <nav className={`site-nav ${isScrolled || open ? 'scrolled' : ''}`} aria-label="Main navigation">
       <div className="nav-inner">
         <Logo />
-        <button className="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded={open} onClick={() => setOpen((value) => !value)}>
+        <button ref={toggleRef} className="menu-toggle" type="button" aria-label={open ? 'Close navigation menu' : 'Open navigation menu'} aria-controls="primary-navigation" aria-expanded={open} onClick={() => setOpen((value) => !value)}>
           <span />
           <span />
         </button>
-        <div className={`nav-menu ${open ? 'is-open' : ''}`}>
+        <div className={`nav-menu ${open ? 'is-open' : ''}`} id="primary-navigation">
           <ul className="nav-links">
             {navigation.map((item) => (
               <li key={item.to}>

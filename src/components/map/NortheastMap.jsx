@@ -13,7 +13,7 @@ const disabledStates = new Set(['Manipur', 'Nagaland']);
  * enlarged view of only that state with its destinations as points; clicking a
  * point navigates to that destination. Shared by the contact and destinations pages.
  */
-export default function NortheastMap({ tag = 'Northeast India · 8 States', hint = 'Tap a state to explore' }) {
+export default function NortheastMap({ tag = 'Six states we travel', hint = 'Select a highlighted state' }) {
   const [isVisible, setIsVisible] = useState(false);
   const [hoveredState, setHoveredState] = useState(null);
   const [openName, setOpenName] = useState(null);

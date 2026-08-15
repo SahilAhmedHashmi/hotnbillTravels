@@ -30,9 +30,8 @@ export async function submitBooking(form, labels) {
   const reference = createBookingReference();
   const message = buildBookingMessage(form, labels, reference);
 
-  // TODO: Replace placeholder email recipient with the official company email and backend/API submission.
   const emailPayload = {
-    to: 'hello@example.com',
+    to: contact.emailLabel,
     subject: `Booking Enquiry ${reference}`,
     body: message,
   };

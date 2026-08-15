@@ -1,16 +1,12 @@
-import HeroSection from '../components/home/HeroSection.jsx';
-import StatsBar from '../components/home/StatsBar.jsx';
-import AboutSection from '../components/home/AboutSection.jsx';
-import DestinationsPreview from '../components/home/DestinationsPreview.jsx';
-import FleetPreview from '../components/home/FleetPreview.jsx';
-import TrustSection from '../components/home/TrustSection.jsx';
-import TestimonialsSection from '../components/home/TestimonialsSection.jsx';
-import FinalCtaSection from '../components/home/FinalCtaSection.jsx';
-import SectionDivider from '../components/common/SectionDivider.jsx';
+import VersionHome from '../components/versions/VersionHome.jsx';
 import { destinations } from '../data/destinations.js';
 import { usePageMeta } from '../hooks/usePageMeta.js';
+import { useDesign } from '../context/DesignContext.jsx';
+import { useDirectionMotion } from '../hooks/useDirectionMotion.js';
 
 export default function HomePage() {
+  const { direction } = useDesign();
+  const motionScope = useDirectionMotion(direction);
   usePageMeta({
     title: 'Hornbill Journeys | Northeast India Travel',
     description: 'Premium Northeast India travel planning with curated destinations, guided experiences, reliable vehicles, and custom itineraries.',
@@ -18,18 +14,8 @@ export default function HomePage() {
   });
 
   return (
-    <main>
-      <HeroSection />
-      <StatsBar />
-      <AboutSection />
-      <SectionDivider />
-      <DestinationsPreview />
-      <SectionDivider />
-      <FleetPreview />
-      <SectionDivider />
-      <TrustSection />
-      <TestimonialsSection />
-      <FinalCtaSection />
+    <main ref={motionScope} className={`home home--${direction}`}>
+      <VersionHome direction={direction} />
     </main>
   );
 }

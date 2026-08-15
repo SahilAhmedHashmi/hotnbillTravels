@@ -7,17 +7,23 @@ import { experiences } from '../src/data/experiences.js';
 import { vehicles } from '../src/data/vehicles.js';
 
 const widths = [320, 375, 390, 430, 768, 1024, 1280, 1440, 1920];
-const routes = [
-  '/', '/destinations', ...destinations.map(({ slug }) => `/destinations/${slug}`),
+const allRoutes = [
+  '/', ...['cinematic','editorial','earthy','minimal','photographic'].map((version) => `/?version=${version}`),
+  ...['cinematic','editorial','earthy','minimal','photographic'].map((version) => `/?version=${version}&theme=dark`),
+  '/destinations', ...destinations.map(({ slug }) => `/destinations/${slug}`),
   '/experiences', ...experiences.map(({ slug }) => `/experiences/${slug}`),
   '/fleet', ...vehicles.map(({ slug }) => `/fleet/${slug}`),
-  '/about', '/contact', '/plan-my-trip', '/booking-confirmation', '/travel-guides', '/route-that-does-not-exist',
+  '/packages', '/about', '/contact', '/plan-my-trip', '/booking-confirmation', '/travel-guides', '/route-that-does-not-exist',
 ];
+const routes = process.env.AUDIT_HOME_ONLY === '1'
+  ? allRoutes.filter((route) => route === '/' || route.startsWith('/?version='))
+  : allRoutes;
 const baseUrl = process.env.AUDIT_URL || 'http://127.0.0.1:4173';
 const edgePath = process.env.EDGE_PATH || 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe';
 const profile = mkdtempSync(join(tmpdir(), 'hornbill-edge-'));
 const edge = spawn(edgePath, [
-  '--headless=new', '--disable-gpu', '--no-first-run', '--no-default-browser-check',
+  '--headless=new', '--no-sandbox', '--disable-gpu-sandbox', '--use-gl=swiftshader', '--enable-unsafe-swiftshader',
+  '--no-first-run', '--no-default-browser-check',
   '--remote-debugging-port=9223', '--remote-allow-origins=*', `--user-data-dir=${profile}`, 'about:blank',
 ], { stdio: 'ignore' });
 
@@ -86,12 +92,20 @@ try {
             return !clippedByAncestor;
           }).slice(0, 12).map((el) => ({ tag: el.tagName, className: String(el.className).slice(0, 100), box: el.getBoundingClientRect().toJSON() }));
           const brokenImages = [...document.images].filter((img) => img.complete && img.naturalWidth === 0).map((img) => img.currentSrc || img.src);
+          const missingAlt = [...document.images].filter((img) => !img.hasAttribute('alt')).map((img) => img.currentSrc || img.src);
+          const ids = [...document.querySelectorAll('[id]')].map((el) => el.id).filter(Boolean);
+          const duplicateIds = [...new Set(ids.filter((id, index) => ids.indexOf(id) !== index))];
+          const unlabeledControls = [...document.querySelectorAll('button,input,select,textarea')].filter((el) => {
+            if (el.type === 'hidden') return false;
+            const label = el.labels?.[0]?.textContent || el.getAttribute('aria-label') || el.getAttribute('aria-labelledby') || el.textContent || el.title;
+            return !String(label || '').trim();
+          }).map((el) => ({ tag: el.tagName, type: el.type || '', id: el.id || '' }));
           const smallTargets = [...document.querySelectorAll('button, a, input, select, textarea')].filter((el) => {
             const box = el.getBoundingClientRect();
             const style = getComputedStyle(el);
             return style.visibility !== 'hidden' && box.width > 0 && box.height > 0 && (box.width < 40 || box.height < 40);
           }).slice(0, 12).map((el) => ({ tag: el.tagName, label: (el.textContent || el.getAttribute('aria-label') || '').trim().slice(0, 60), width: Math.round(el.getBoundingClientRect().width), height: Math.round(el.getBoundingClientRect().height) }));
-          return { title: document.title, documentOverflow: root.scrollWidth - viewport, offenders, brokenImages, smallTargets };
+          return { title: document.title, documentOverflow: root.scrollWidth - viewport, offenders, brokenImages, missingAlt, duplicateIds, unlabeledControls, smallTargets };
         })()`,
       });
       socket.removeEventListener('message', errorHandler);
@@ -99,7 +113,7 @@ try {
     }
   }
   socket.close();
-  const failures = results.filter(({ documentOverflow, offenders, brokenImages, browserErrors }) => documentOverflow > 1 || offenders.length || brokenImages.length || browserErrors.length);
+  const failures = results.filter(({ documentOverflow, offenders, brokenImages, missingAlt, duplicateIds, unlabeledControls, browserErrors }) => documentOverflow > 1 || offenders.length || brokenImages.length || missingAlt.length || duplicateIds.length || unlabeledControls.length || browserErrors.length);
   const report = { generatedAt: new Date().toISOString(), baseUrl, widths, routesAudited: routes.length, checks: results.length, failureCount: failures.length, failures, results };
   writeFileSync(new URL('../docs/responsive-audit.json', import.meta.url), `${JSON.stringify(report, null, 2)}\n`);
   console.log(`Audited ${results.length} route/viewport combinations; ${failures.length} require review.`);

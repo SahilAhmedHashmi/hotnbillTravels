@@ -1,0 +1,80 @@
+/* Five art directions share content and behaviour, never composition rules. */
+:root[data-theme='light'] { --canvas:#f3f0e8; --surface:#fffdf8; --copy:#172018; --muted:#667066; --line:rgba(23,32,24,.16); }
+:root[data-theme='dark'] { --canvas:#101511; --surface:#171d18; --copy:#f3efe5; --muted:#aab1a8; --line:rgba(243,239,229,.17); }
+body { background:var(--canvas); color:var(--copy); transition:background .3s ease,color .3s ease; }
+.sr-only { position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0; }
+.design-controls { display:flex; align-items:center; gap:.35rem; margin-left:1.2rem; }
+.design-controls select,.theme-toggle { min-height:38px;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;padding:.45rem .7rem;font:600 .65rem/1 Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase; }
+.design-controls option { color:#111;background:#fff; }.theme-toggle{cursor:pointer;min-width:48px}.hero-kicker,.hero-caption{position:relative;z-index:2;text-transform:uppercase;letter-spacing:.2em;font:600 .66rem/1.5 Inter,sans-serif}.hero-kicker{margin:0 0 1.4rem}.hero-caption{position:absolute;right:3rem;bottom:2rem;margin:0;color:rgba(255,255,255,.64)}
+.hero-title,.hero-desc,.hero-actions{opacity:1;animation:none}
+:root[data-theme='light'] .about-section,:root[data-theme='light'] .trust-section,:root[data-theme='light'] .fleet-preview,:root[data-theme='light'] .experiences-preview { color:var(--copy); }
+:root[data-theme='dark'] .destinations-preview,:root[data-theme='dark'] .about-section { background:var(--canvas);color:var(--copy); }
+
+/* 01 — cinematic: full-frame, low horizon, slow dissolves, concentrated drama. */
+[data-direction='cinematic'] { --gold:#d7a347;--gold-hi:#f0c76d;--container:1380px;--section-y:clamp(6rem,10vw,10rem); }
+[data-direction='cinematic'] .hero { min-height:100svh; }
+[data-direction='cinematic'] .hero-bg { background-image:url('/tawang valley.jpg');filter:saturate(.74) contrast(1.08);transform:scale(1.05);transition:opacity 1.4s ease,transform 9s cubic-bezier(.2,.8,.2,1); }
+[data-direction='cinematic'] .hero-bg.loaded{transform:scale(1)}
+[data-direction='cinematic'] .hero-overlay{background:linear-gradient(90deg,rgba(6,10,8,.82) 0%,rgba(6,10,8,.18) 67%),linear-gradient(0deg,rgba(6,10,8,.62),transparent 48%)}
+[data-direction='cinematic'] .hero-content{max-width:900px;left:max(5vw,2rem);bottom:10vh;top:auto;transform:none}.hero-cinematic .hero-title{font-size:clamp(4rem,8.2vw,8.7rem);line-height:.83;letter-spacing:-.045em;color:#fff;text-shadow:0 2px 28px rgba(0,0,0,.3)}.hero-cinematic .hero-desc{max-width:600px}
+[data-direction='cinematic'] .dest-grid .dest-card:nth-child(even){transform:translateY(4rem)}
+[data-direction='cinematic'] .site-nav.scrolled{background:rgba(5,9,7,.78);border-bottom-color:rgba(215,163,71,.24)}
+
+/* 02 — editorial: paper, asymmetry, fine rules, typographic authority. */
+[data-direction='editorial'] { --gold:#8a392d;--gold-hi:#a64a3b;--container:1240px;--section-y:clamp(7rem,11vw,11rem); }
+[data-direction='editorial'] body{font-family:Georgia,'Times New Roman',serif}
+[data-direction='editorial'] .hero{min-height:92svh;background:var(--canvas);color:var(--copy);display:grid;grid-template-columns:55% 45%}
+[data-direction='editorial'] .hero-bg{position:relative;inset:auto;width:100%;height:100%;grid-column:2;background-image:url('/destinations/majuli-island.jpg');opacity:1!important;filter:grayscale(.12) sepia(.08)}
+[data-direction='editorial'] .hero-overlay,[data-direction='editorial'] .hero-grain{display:none}
+[data-direction='editorial'] .hero-content{position:absolute;left:6vw;top:25%;max-width:62vw;color:var(--copy)}
+[data-direction='editorial'] .hero-title{font-family:Georgia,serif;font-size:clamp(4.5rem,9vw,10rem);line-height:.82;letter-spacing:-.065em;color:var(--copy)}
+[data-direction='editorial'] .hero-desc,[data-direction='editorial'] .hero-kicker{color:var(--copy);max-width:470px}
+[data-direction='editorial'] .hero-caption{color:var(--copy)}
+[data-direction='editorial'] .btn-ghost{color:var(--copy);border-color:var(--line)}
+[data-direction='editorial'] .dest-card,[data-direction='editorial'] .exp-card,[data-direction='editorial'] .vehicle-card{border-radius:0;box-shadow:none}
+[data-direction='editorial'] .site-nav.scrolled{background:color-mix(in srgb,var(--canvas) 94%,transparent);border-bottom:1px solid var(--line)}
+[data-direction='editorial'] .site-nav.scrolled .logo-name,[data-direction='editorial'] .site-nav.scrolled .nav-links a{color:var(--copy)}
+[data-direction='editorial'] .site-nav .logo-name,[data-direction='editorial'] .site-nav .nav-links a,[data-direction='editorial'] .design-controls select,[data-direction='editorial'] .theme-toggle{color:var(--copy);border-color:var(--line)}
+
+/* 03 — terrain: warm mineral colour, soft contours, tactile section rhythm. */
+[data-direction='earthy'] { --gold:#b55a36;--gold-hi:#d57b55;--container:1280px;--section-y:clamp(5rem,8vw,8rem); }
+[data-direction='earthy'][data-theme='light']{--canvas:#e8e0cf;--surface:#f6f0e2;--copy:#20372b;--muted:#637166}
+[data-direction='earthy'][data-theme='dark']{--canvas:#18251c;--surface:#223126;--copy:#f1eadc}
+[data-direction='earthy'] .hero{min-height:94svh;border-radius:0 0 48% 8%/0 0 10% 4%;overflow:hidden}
+[data-direction='earthy'] .hero-bg{background-image:url('/Waterfall Expeditions.jpg');filter:saturate(.72) sepia(.12)}
+[data-direction='earthy'] .hero-overlay{background:linear-gradient(90deg,rgba(21,44,30,.76),rgba(21,44,30,.1))}
+[data-direction='earthy'] .hero-content{left:8vw;max-width:760px}.hero-earthy .hero-title{font-size:clamp(4rem,7vw,7.5rem);line-height:.9}.hero-earthy .hero-title em{color:#e0a16b}
+[data-direction='earthy'] .dest-card,[data-direction='earthy'] .exp-card{border-radius:45% 45% 12px 12px/12% 12% 12px 12px;overflow:hidden}
+[data-direction='earthy'] .site-nav.scrolled{background:color-mix(in srgb,var(--surface) 90%,transparent);border-bottom:0;box-shadow:0 8px 30px rgba(25,44,31,.1)}
+
+/* 04 — minimal: monochrome grid, strong baseline, functional motion only. */
+[data-direction='minimal'] { --gold:#2457e6;--gold-hi:#4d74e8;--container:1440px;--section-y:clamp(5rem,7vw,7rem); }
+[data-direction='minimal'][data-theme='light']{--canvas:#f7f7f4;--surface:#fff;--copy:#111;--muted:#666}
+[data-direction='minimal'] .hero{min-height:86svh;background:var(--canvas);color:var(--copy);border-bottom:1px solid var(--line)}
+[data-direction='minimal'] .hero-bg{left:56%;top:15%;right:3%;bottom:7%;width:auto;height:auto;background-image:url('/destinations/sela-pass.jpg');opacity:1!important;filter:grayscale(1);}
+[data-direction='minimal'] .hero-overlay,[data-direction='minimal'] .hero-grain{display:none}
+[data-direction='minimal'] .hero-content{left:3vw;top:29%;max-width:48%;color:var(--copy)}
+[data-direction='minimal'] .hero-title{font-family:Arial,sans-serif;font-size:clamp(3.5rem,7vw,7.5rem);line-height:.88;letter-spacing:-.075em;color:var(--copy)}
+[data-direction='minimal'] .hero-title em{font-style:normal;color:var(--copy)}
+[data-direction='minimal'] .hero-desc,[data-direction='minimal'] .hero-kicker,[data-direction='minimal'] .hero-caption{color:var(--copy)}
+[data-direction='minimal'] .btn{border-radius:0;box-shadow:none!important;transform:none!important}[data-direction='minimal'] .btn-ghost{color:var(--copy);border-color:var(--copy)}
+[data-direction='minimal'] .dest-card,[data-direction='minimal'] .exp-card,[data-direction='minimal'] .vehicle-card{border-radius:0;box-shadow:none;border-top:1px solid var(--line)}
+[data-direction='minimal'] .site-nav{padding:0 2vw}[data-direction='minimal'] .site-nav.scrolled{background:var(--canvas);backdrop-filter:none;border-bottom:1px solid var(--copy)}
+[data-direction='minimal'] .site-nav.scrolled .logo-name,[data-direction='minimal'] .site-nav.scrolled .nav-links a{color:var(--copy)}
+[data-direction='minimal'] .site-nav .logo-name,[data-direction='minimal'] .site-nav .nav-links a,[data-direction='minimal'] .design-controls select,[data-direction='minimal'] .theme-toggle{color:var(--copy);border-color:var(--line)}
+[data-direction='minimal'] .hero-content{max-width:47%}[data-direction='minimal'] .hero-title{font-size:clamp(3.5rem,5.7vw,6.2rem)}[data-direction='minimal'] .hero-desc{max-width:410px}[data-direction='minimal'] .hero-actions .btn{background:var(--canvas);color:var(--copy);border-color:var(--copy)}[data-direction='minimal'] .hero-actions .btn-gold{background:var(--gold);color:#fff;border-color:var(--gold)}
+
+/* 05 — photographic: contact-sheet composition and image-first navigation. */
+[data-direction='photographic'] { --gold:#ff5a36;--gold-hi:#ff8065;--container:1500px;--section-y:clamp(4rem,7vw,7rem); }
+[data-direction='photographic'] .hero{min-height:100svh}.hero-photographic .hero-bg{background-image:url('/destinations/dawki-river.jpg');filter:saturate(1.06) contrast(1.04)}
+[data-direction='photographic'] .hero-overlay{background:linear-gradient(0deg,rgba(0,0,0,.76),transparent 65%)}
+[data-direction='photographic'] .hero-content{top:auto;bottom:6vh;left:3vw;max-width:94vw;transform:none;display:grid;grid-template-columns:2fr 1fr;align-items:end;gap:2rem}
+[data-direction='photographic'] .hero-kicker{grid-column:1/-1}.hero-photographic .hero-title{font-family:Arial,sans-serif;font-weight:700;font-size:clamp(4rem,10vw,11rem);line-height:.79;letter-spacing:-.075em;margin:0}.hero-photographic .hero-title em{font-style:normal}.hero-photographic .hero-desc{max-width:420px}.hero-photographic .hero-actions{grid-column:2}.hero-photographic .hero-caption{display:none}
+[data-direction='photographic'] .dest-grid{grid-template-columns:2fr 1fr 1fr}[data-direction='photographic'] .dest-card:first-child{grid-row:span 2}
+[data-direction='photographic'] .site-nav.scrolled{background:#111;border-bottom:4px solid var(--gold);backdrop-filter:none}
+:root[data-theme='light'][data-direction='photographic'] .site-nav:not(.scrolled) .logo-name,:root[data-theme='light'][data-direction='photographic'] .site-nav:not(.scrolled) .nav-links a,:root[data-theme='light'][data-direction='photographic'] .site-nav:not(.scrolled) .design-controls select,:root[data-theme='light'][data-direction='photographic'] .site-nav:not(.scrolled) .theme-toggle{color:#111;border-color:rgba(0,0,0,.2)}
+:root[data-theme='light'][data-direction='minimal'] .site-nav:not(.scrolled) .logo-name,:root[data-theme='light'][data-direction='minimal'] .site-nav:not(.scrolled) .nav-links a{color:#111!important}
+
+@media(max-width:900px){.nav-menu .design-controls{margin:1rem 0 0}.design-controls select,.theme-toggle{color:var(--white)}[data-direction] .hero{display:block;min-height:88svh;border-radius:0}[data-direction] .hero-bg{position:absolute;inset:0;width:100%;height:100%;opacity:1!important}[data-direction] .hero-overlay{display:block;background:linear-gradient(0deg,rgba(5,9,7,.8),rgba(5,9,7,.15))}[data-direction] .hero-content{position:absolute;left:1.25rem;right:1.25rem;top:auto;bottom:3rem;width:auto;padding:0;max-width:none;display:block;color:#fff;transform:none}[data-direction] .hero-title{font-size:clamp(3rem,14vw,5.4rem);color:#fff;line-height:.86;overflow-wrap:anywhere}[data-direction] .hero-desc,[data-direction] .hero-kicker{color:#fff}[data-direction] .hero-caption{display:none}[data-direction] .hero-actions{display:grid;grid-template-columns:1fr;grid-column:auto;gap:.65rem;margin-top:1.7rem}[data-direction] .hero-actions .btn{width:100%;justify-content:center}.dest-grid{transform:none!important}.hero-photographic .hero-actions{grid-column:auto}}
+@media(max-width:900px){[data-direction] .hero-content{right:auto!important;width:calc(100vw - 2.5rem)!important;max-width:calc(100vw - 2.5rem)!important}[data-direction] .hero-title{font-size:clamp(2.8rem,12.5vw,5rem);line-height:.88;overflow-wrap:anywhere}}
+@media(prefers-reduced-motion:reduce){[data-direction] .hero-bg{transition:none!important;transform:none!important}.reveal{transition:none!important}}

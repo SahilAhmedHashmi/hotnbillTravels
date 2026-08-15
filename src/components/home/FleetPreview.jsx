@@ -38,8 +38,8 @@ export default function FleetPreview() {
       </div>
       <Reveal className="vehicle-note">
         <span aria-hidden="true">i</span>
-        All vehicles come with experienced local drivers who double as informal guides. Rates are indicative and vary
-        by season and itinerary. Permit assistance for restricted areas is available.
+        Every listed vehicle includes an experienced local driver. Published rates come from the current fleet data;
+        final pricing may depend on route, season, tolls, permits, parking, and overnight requirements.
       </Reveal>
     </section>
   );

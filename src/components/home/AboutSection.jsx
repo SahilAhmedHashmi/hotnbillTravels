@@ -2,10 +2,10 @@ import Reveal from '../common/Reveal.jsx';
 import SectionLabel from '../common/SectionLabel.jsx';
 
 const features = [
-  ['Local Expertise', 'Born and raised guides who know every hidden trail'],
-  ['Community Tourism', 'Direct benefits to indigenous communities'],
-  ['Responsible Travel', 'Low-impact, sustainable tourism practices'],
-  ['Fully Customised', 'Every itinerary hand-crafted for you'],
+  ['Route Knowledge', 'Practical local judgement for transfers and road days'],
+  ['Vehicle Choice', 'A listed fleet for couples, families, and groups'],
+  ['Complete Trips', 'Destinations, experiences, and transport planned together'],
+  ['Custom Enquiries', 'Dates, pacing, and preferences collected in one flow'],
 ];
 
 export default function AboutSection() {
@@ -30,13 +30,12 @@ export default function AboutSection() {
           <SectionLabel>Who We Are</SectionLabel>
           <h2>Born from the valleys of Assam, raised by the Northeast</h2>
           <p>
-            We are a homegrown travel agency rooted in the rich, layered culture of Northeast India. For over a
-            decade, we have been quietly crafting journeys that take travellers deep into Assam, Meghalaya, Mizoram,
-            Arunachal Pradesh, Tripura, and Sikkim.
+            Hornbill Journeys plans travel across Assam, Meghalaya, Mizoram, Arunachal Pradesh, Tripura, and Sikkim.
+            Choose a private vehicle with an experienced local driver or ask us to shape the complete journey.
           </p>
           <p>
-            From the world's largest river island to the world's wettest place, from one-horned rhinos to hornbill
-            festivals - we connect you to places that still feel like secrets.
+            The catalogue brings together wildlife landscapes, river islands, waterfalls, caves, monasteries,
+            mountain roads, valleys, villages, and city gateways without reducing the region to a single story.
           </p>
           <div className="about-features">
             {features.map(([title, copy]) => (

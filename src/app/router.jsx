@@ -13,6 +13,7 @@ import TravelGuidesPage from '../pages/TravelGuidesPage.jsx';
 import AboutPage from '../pages/AboutPage.jsx';
 import ContactPage from '../pages/ContactPage.jsx';
 import NotFoundPage from '../pages/NotFoundPage.jsx';
+import JourneysPage from '../pages/JourneysPage.jsx';
 
 export const router = createBrowserRouter([
   {
@@ -24,6 +25,7 @@ export const router = createBrowserRouter([
       { path: 'destinations/:slug', element: <DestinationDetailPage /> },
       { path: 'experiences', element: <ExperiencesPage /> },
       { path: 'experiences/:slug', element: <ExperienceDetailPage /> },
+      { path: 'packages', element: <JourneysPage /> },
       { path: 'fleet', element: <FleetPage /> },
       { path: 'fleet/:vehicleSlug', element: <VehicleDetailPage /> },
       { path: 'plan-my-trip', element: <PlanMyTripPage /> },

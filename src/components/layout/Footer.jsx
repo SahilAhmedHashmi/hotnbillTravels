@@ -12,8 +12,7 @@ export default function Footer() {
           <Logo asLink={false} />
           {/* TODO: Replace this launch copy with verified business registration details before production. */}
           <p>
-            Crafting authentic, responsible journeys through Northeast India since 2010. Registered business details to
-            be verified before launch.
+            Private vehicles and complete journey planning across six states of Northeast India.
           </p>
           <div className="footer-contact">
             <a href={contact.primaryPhoneHref}>{contact.primaryPhoneLabel}</a>

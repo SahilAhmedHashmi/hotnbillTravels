@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T11:24:29.935Z",
+  "generatedAt": "2026-08-15T17:22:43.033Z",
   "baseUrl": "http://127.0.0.1:4180",
   "widths": [
     320,
@@ -21,7 +21,7 @@
       "width": 320,
       "route": "/",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
@@ -34,7 +34,7 @@
       "width": 320,
       "route": "/?version=cinematic",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
@@ -47,7 +47,7 @@
       "width": 320,
       "route": "/?version=editorial",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
@@ -60,7 +60,7 @@
       "width": 320,
       "route": "/?version=earthy",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
@@ -73,7 +73,7 @@
       "width": 320,
       "route": "/?version=minimal",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
@@ -86,7 +86,7 @@
       "width": 320,
       "route": "/?version=photographic",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
@@ -99,7 +99,7 @@
       "width": 320,
       "route": "/?version=cinematic&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
@@ -112,7 +112,7 @@
       "width": 320,
       "route": "/?version=editorial&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
@@ -125,7 +125,7 @@
       "width": 320,
       "route": "/?version=earthy&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
@@ -138,7 +138,7 @@
       "width": 320,
       "route": "/?version=minimal&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
@@ -151,7 +151,7 @@
       "width": 320,
       "route": "/?version=photographic&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
@@ -164,7 +164,7 @@
       "width": 375,
       "route": "/",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
@@ -177,7 +177,7 @@
       "width": 375,
       "route": "/?version=cinematic",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
@@ -190,7 +190,7 @@
       "width": 375,
       "route": "/?version=editorial",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
@@ -203,7 +203,7 @@
       "width": 375,
       "route": "/?version=earthy",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
@@ -216,7 +216,7 @@
       "width": 375,
       "route": "/?version=minimal",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
@@ -229,7 +229,7 @@
       "width": 375,
       "route": "/?version=photographic",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
@@ -242,7 +242,7 @@
       "width": 375,
       "route": "/?version=cinematic&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
@@ -255,7 +255,7 @@
       "width": 375,
       "route": "/?version=editorial&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
@@ -268,7 +268,7 @@
       "width": 375,
       "route": "/?version=earthy&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
@@ -281,7 +281,7 @@
       "width": 375,
       "route": "/?version=minimal&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
@@ -294,7 +294,7 @@
       "width": 375,
       "route": "/?version=photographic&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
@@ -307,7 +307,7 @@
       "width": 390,
       "route": "/",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
@@ -320,7 +320,7 @@
       "width": 390,
       "route": "/?version=cinematic",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
@@ -333,7 +333,7 @@
       "width": 390,
       "route": "/?version=editorial",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
@@ -346,3413 +346,963 @@
       "width": 390,
       "route": "/?version=earthy",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 29
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 29
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 29
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 29
-        },
-        {
-          "tag": "A",
-          "label": "Choose a vehicle ↗",
-          "width": 166,
-          "height": 21
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 390,
       "route": "/?version=minimal",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 390,
       "route": "/?version=photographic",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Open field note ↗",
-          "width": 124,
-          "height": 17
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 390,
       "route": "/?version=cinematic&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Enter this landscape ↗",
-          "width": 189,
-          "height": 32
-        },
-        {
-          "tag": "A",
-          "label": "All route ideas ↗",
-          "width": 108,
-          "height": 36
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 390,
       "route": "/?version=editorial&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Assam",
-          "width": 39,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 390,
       "route": "/?version=earthy&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Choose a vehicle ↗",
-          "width": 166,
-          "height": 21
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 390,
       "route": "/?version=minimal&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 390,
       "route": "/?version=photographic&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Open field note ↗",
-          "width": 124,
-          "height": 17
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 430,
       "route": "/",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Open field note ↗",
-          "width": 124,
-          "height": 17
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 430,
       "route": "/?version=cinematic",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Enter this landscape ↗",
-          "width": 189,
-          "height": 32
-        },
-        {
-          "tag": "A",
-          "label": "All route ideas ↗",
-          "width": 115,
-          "height": 18
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 430,
       "route": "/?version=editorial",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Assam",
-          "width": 39,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 430,
       "route": "/?version=earthy",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Choose a vehicle ↗",
-          "width": 166,
-          "height": 21
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 430,
       "route": "/?version=minimal",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 430,
       "route": "/?version=photographic",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Open field note ↗",
-          "width": 125,
-          "height": 17
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 430,
       "route": "/?version=cinematic&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Enter this landscape ↗",
-          "width": 189,
-          "height": 32
-        },
-        {
-          "tag": "A",
-          "label": "All route ideas ↗",
-          "width": 115,
-          "height": 18
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 430,
       "route": "/?version=editorial&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Assam",
-          "width": 39,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 430,
       "route": "/?version=earthy&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Choose a vehicle ↗",
-          "width": 166,
-          "height": 21
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 430,
       "route": "/?version=minimal&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 430,
       "route": "/?version=photographic&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Open field note ↗",
-          "width": 124,
-          "height": 17
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 768,
       "route": "/",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Open field note ↗",
-          "width": 124,
-          "height": 17
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 768,
       "route": "/?version=cinematic",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Enter this landscape ↗",
-          "width": 189,
-          "height": 32
-        },
-        {
-          "tag": "A",
-          "label": "All route ideas ↗",
-          "width": 115,
-          "height": 18
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 768,
       "route": "/?version=editorial",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Assam",
-          "width": 39,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 768,
       "route": "/?version=earthy",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Choose a vehicle ↗",
-          "width": 166,
-          "height": 21
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 768,
       "route": "/?version=minimal",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 768,
       "route": "/?version=photographic",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Open field note ↗",
-          "width": 125,
-          "height": 17
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 768,
       "route": "/?version=cinematic&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Enter this landscape ↗",
-          "width": 189,
-          "height": 32
-        },
-        {
-          "tag": "A",
-          "label": "All route ideas ↗",
-          "width": 115,
-          "height": 18
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 768,
       "route": "/?version=editorial&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Assam",
-          "width": 39,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 768,
       "route": "/?version=earthy&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Choose a vehicle ↗",
-          "width": 166,
-          "height": 21
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 768,
       "route": "/?version=minimal&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 768,
       "route": "/?version=photographic&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Open field note ↗",
-          "width": 124,
-          "height": 17
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1024,
       "route": "/",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Open field note ↗",
-          "width": 124,
-          "height": 17
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1024,
       "route": "/?version=cinematic",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Enter this landscape ↗",
-          "width": 189,
-          "height": 32
-        },
-        {
-          "tag": "A",
-          "label": "All route ideas ↗",
-          "width": 115,
-          "height": 18
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1024,
       "route": "/?version=editorial",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Assam",
-          "width": 39,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1024,
       "route": "/?version=earthy",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Choose a vehicle ↗",
-          "width": 166,
-          "height": 21
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1024,
       "route": "/?version=minimal",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1024,
       "route": "/?version=photographic",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Open field note ↗",
-          "width": 124,
-          "height": 17
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1024,
       "route": "/?version=cinematic&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Enter this landscape ↗",
-          "width": 189,
-          "height": 32
-        },
-        {
-          "tag": "A",
-          "label": "All route ideas ↗",
-          "width": 115,
-          "height": 18
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1024,
       "route": "/?version=editorial&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Assam",
-          "width": 39,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1024,
       "route": "/?version=earthy&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Choose a vehicle ↗",
-          "width": 166,
-          "height": 21
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1024,
       "route": "/?version=minimal&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1024,
       "route": "/?version=photographic&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Open field note ↗",
-          "width": 125,
-          "height": 17
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1280,
       "route": "/",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Open field note ↗",
-          "width": 124,
-          "height": 17
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1280,
       "route": "/?version=cinematic",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Enter this landscape ↗",
-          "width": 189,
-          "height": 32
-        },
-        {
-          "tag": "A",
-          "label": "All route ideas ↗",
-          "width": 115,
-          "height": 18
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1280,
       "route": "/?version=editorial",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Assam",
-          "width": 39,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1280,
       "route": "/?version=earthy",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Choose a vehicle ↗",
-          "width": 166,
-          "height": 21
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1280,
       "route": "/?version=minimal",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1280,
       "route": "/?version=photographic",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Open field note ↗",
-          "width": 124,
-          "height": 17
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1280,
       "route": "/?version=cinematic&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Enter this landscape ↗",
-          "width": 189,
-          "height": 32
-        },
-        {
-          "tag": "A",
-          "label": "All route ideas ↗",
-          "width": 115,
-          "height": 18
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1280,
       "route": "/?version=editorial&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Assam",
-          "width": 39,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1280,
       "route": "/?version=earthy&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Choose a vehicle ↗",
-          "width": 166,
-          "height": 21
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1280,
       "route": "/?version=minimal&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1280,
       "route": "/?version=photographic&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Open field note ↗",
-          "width": 124,
-          "height": 17
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1440,
       "route": "/",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Open field note ↗",
-          "width": 124,
-          "height": 17
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1440,
       "route": "/?version=cinematic",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Enter this landscape ↗",
-          "width": 189,
-          "height": 32
-        },
-        {
-          "tag": "A",
-          "label": "All route ideas ↗",
-          "width": 115,
-          "height": 18
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1440,
       "route": "/?version=editorial",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Assam",
-          "width": 39,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1440,
       "route": "/?version=earthy",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Choose a vehicle ↗",
-          "width": 166,
-          "height": 21
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1440,
       "route": "/?version=minimal",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1440,
       "route": "/?version=photographic",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Open field note ↗",
-          "width": 124,
-          "height": 17
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1440,
       "route": "/?version=cinematic&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Enter this landscape ↗",
-          "width": 189,
-          "height": 32
-        },
-        {
-          "tag": "A",
-          "label": "All route ideas ↗",
-          "width": 115,
-          "height": 18
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1440,
       "route": "/?version=editorial&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Assam",
-          "width": 39,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1440,
       "route": "/?version=earthy&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Choose a vehicle ↗",
-          "width": 166,
-          "height": 21
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1440,
       "route": "/?version=minimal&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1440,
       "route": "/?version=photographic&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Open field note ↗",
-          "width": 124,
-          "height": 17
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1920,
       "route": "/",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Open field note ↗",
-          "width": 125,
-          "height": 17
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1920,
       "route": "/?version=cinematic",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Enter this landscape ↗",
-          "width": 189,
-          "height": 32
-        },
-        {
-          "tag": "A",
-          "label": "All route ideas ↗",
-          "width": 115,
-          "height": 18
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1920,
       "route": "/?version=editorial",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Assam",
-          "width": 39,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1920,
       "route": "/?version=earthy",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Choose a vehicle ↗",
-          "width": 166,
-          "height": 21
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1920,
       "route": "/?version=minimal",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1920,
       "route": "/?version=photographic",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Open field note ↗",
-          "width": 124,
-          "height": 17
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1920,
       "route": "/?version=cinematic&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Enter this landscape ↗",
-          "width": 189,
-          "height": 32
-        },
-        {
-          "tag": "A",
-          "label": "All route ideas ↗",
-          "width": 115,
-          "height": 18
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1920,
       "route": "/?version=editorial&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Assam",
-          "width": 39,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1920,
       "route": "/?version=earthy&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Follow the route ↗",
-          "width": 158,
-          "height": 30
-        },
-        {
-          "tag": "A",
-          "label": "Choose a vehicle ↗",
-          "width": 166,
-          "height": 21
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1920,
       "route": "/?version=minimal&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     },
     {
       "width": 1920,
       "route": "/?version=photographic&theme=dark",
       "browserErrors": [],
-      "title": "Hornbill Journeys | Northeast India Travel",
+      "title": "",
       "documentOverflow": 0,
       "offenders": [],
       "brokenImages": [],
       "missingAlt": [],
       "duplicateIds": [],
       "unlabeledControls": [],
-      "smallTargets": [
-        {
-          "tag": "A",
-          "label": "Home",
-          "width": 37,
-          "height": 44
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 39,
-          "height": 44
-        },
-        {
-          "tag": "SELECT",
-          "label": "01 Film02 Editorial03 Terrain04 Minimal05 Photo",
-          "width": 125,
-          "height": 38
-        },
-        {
-          "tag": "BUTTON",
-          "label": "Sun",
-          "width": 49,
-          "height": 38
-        },
-        {
-          "tag": "A",
-          "label": "Open field note ↗",
-          "width": 124,
-          "height": 17
-        },
-        {
-          "tag": "A",
-          "label": "Sikkim",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "tag": "A",
-          "label": "Fleet",
-          "width": 30,
-          "height": 40
-        }
-      ]
+      "smallTargets": []
     }
   ]
 }

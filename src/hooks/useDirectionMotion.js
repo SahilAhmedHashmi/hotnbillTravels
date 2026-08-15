@@ -108,19 +108,42 @@ function minimalDesktop(root, { media, title, copy }) {
 }
 
 function photographicDesktop(root, { hero, media, title, copy }) {
-  gsap.timeline({ defaults: { ease: 'power3.inOut' } }).from(media, { clipPath: 'inset(7% 7% 7% 7%)', scale: 1.11, duration: 1.5 }).from(title, { yPercent: 80, duration: .9, ease: 'power3.out' }, .25).from(copy, { y: 15, stagger: .1, duration: .55 }, .65);
-  gsap.to(media, { scale: 1.08, ease: 'none', scrollTrigger: { trigger: hero, start: 'top top', end: 'bottom top', scrub: true } });
-  gsap.from('.ph-opening h2', { clipPath: 'inset(0 0 100% 0)', yPercent: 18, duration: 1, ease: 'power4.out', scrollTrigger: { trigger: '.ph-opening', start: 'top 70%' } });
-  gsap.utils.toArray('[data-photo-frame]', root).forEach((frame, index) => {
-    const image = frame.querySelector('img');
-    gsap.fromTo(frame, { clipPath: index % 2 ? 'inset(12% 0 12% 0)' : 'inset(0 12% 0 12%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 1, ease: 'power3.inOut', scrollTrigger: { trigger: frame, start: 'top 85%' } });
-    gsap.fromTo(image, { scale: 1.12 }, { scale: 1, ease: 'none', scrollTrigger: { trigger: frame, start: 'top bottom', end: 'bottom top', scrub: .7 } });
-  });
-  gsap.to('.ph-sequence__sticky>img', { scale: 1.1, yPercent: 5, ease: 'none', scrollTrigger: { trigger: '.ph-sequence', start: 'top top', end: 'bottom bottom', scrub: true } });
-  gsap.fromTo('.ph-choice__image', { clipPath: 'inset(0 100% 0 0)' }, { clipPath: 'inset(0 0% 0 0)', ease: 'power3.inOut', scrollTrigger: { trigger: '.ph-choice', start: 'top 85%', end: 'top 25%', scrub: true } });
+  gsap.from('.photo-prologue h2', { clipPath: 'inset(0 0 100% 0)', yPercent: 20, duration: 1.05, ease: 'power4.out', scrollTrigger: { trigger: '.photo-prologue', start: 'top 68%' } });
+  gsap.fromTo('.photo-prologue figure', { yPercent: -10 }, { yPercent: 18, ease: 'none', scrollTrigger: { trigger: '.photo-prologue', start: 'top bottom', end: 'bottom top', scrub: .65 } });
+
+  const horizontal = root.querySelector('.photo-horizontal');
+  const track = root.querySelector('.photo-horizontal__track');
+  if (horizontal && track) {
+    const horizontalTween = gsap.to(track, {
+      x: () => -(track.scrollWidth - window.innerWidth), ease: 'none',
+      scrollTrigger: { trigger: horizontal, start: 'top top', end: () => `+=${track.scrollWidth - window.innerWidth}`, pin: true, scrub: .65, invalidateOnRefresh: true },
+    });
+    gsap.to('.photo-horizontal__progress i', { scaleX: 5.55, ease: 'none', scrollTrigger: { trigger: horizontal, containerAnimation: horizontalTween, start: 'left left', end: 'right right', scrub: true } });
+    gsap.utils.toArray('[data-photo-destination]', root).forEach((card, index) => {
+      const image = card.querySelector('img');
+      gsap.timeline({ scrollTrigger: { trigger: card, containerAnimation: horizontalTween, start: 'left 94%', end: 'right 6%', scrub: .55 } })
+        .fromTo(card, { autoAlpha: .46, scale: .94 }, { autoAlpha: 1, scale: 1, duration: .42, ease: 'none' })
+        .to(card, { autoAlpha: .58, scale: .965, duration: .42, ease: 'none' }, .58);
+      gsap.fromTo(image, { xPercent: index % 2 ? 8 : -8, scale: 1.1 }, { xPercent: 0, scale: 1, ease: 'none', scrollTrigger: { trigger: card, containerAnimation: horizontalTween, start: 'left right', end: 'right left', scrub: true } });
+    });
+  }
+
+  const atlas = root.querySelector('.photo-atlas');
+  const atlasRows = gsap.utils.toArray('[data-atlas-row]', root);
+  const activateAtlas = (index) => { atlas.dataset.active = index; atlas.querySelector('.photo-atlas__counter span').textContent = `0${index + 1}`; atlas.querySelectorAll('.photo-atlas__visual>img').forEach((img, imageIndex) => img.classList.toggle('active', imageIndex === index)); };
+  atlasRows.forEach((row, index) => ScrollTrigger.create({ trigger: row, start: 'top 58%', end: 'bottom 42%', onEnter: () => activateAtlas(index), onEnterBack: () => activateAtlas(index) }));
+  gsap.to('.photo-fleet__landscape>img', { yPercent: -12, ease: 'none', scrollTrigger: { trigger: '.photo-fleet__landscape', start: 'top bottom', end: 'bottom top', scrub: .7 } });
+  gsap.from('.photo-fleet__stage>header h2', { x: -45, duration: .8, ease: 'power3.out', scrollTrigger: { trigger: '.photo-fleet__stage', start: 'top 70%' } });
+  gsap.utils.toArray('[data-photo-journey]', root).forEach((card, index, cards) => { if (index < cards.length - 1) gsap.to(card, { scale: .94, filter: 'brightness(.55)', transformOrigin: 'center top', ease: 'none', scrollTrigger: { trigger: cards[index + 1], start: 'top 58%', end: 'top 8%', scrub: true } }); });
+  gsap.fromTo('.photo-final>img', { scale: 1.12 }, { scale: 1, ease: 'none', scrollTrigger: { trigger: '.photo-final', start: 'top bottom', end: 'bottom top', scrub: true } });
+  gsap.from('.photo-final>h2', { clipPath: 'inset(0 0 100% 0)', yPercent: 18, duration: 1, ease: 'power4.out', scrollTrigger: { trigger: '.photo-final', start: 'top 60%' } });
 }
 
 function mobileMotion(direction, root, { media, title, copy }) {
+  if (direction === 'photographic') {
+    gsap.utils.toArray('.photo-atlas__list>a,.photo-journey', root).forEach((item) => gsap.from(item, { y: 16, duration: .45, ease: 'power2.out', scrollTrigger: { trigger: item, start: 'top 92%', once: true } }));
+    return;
+  }
   const ease = direction === 'earthy' ? 'sine.out' : direction === 'minimal' ? 'none' : 'power2.out';
   gsap.timeline().from(media, { scale: direction === 'minimal' ? 1 : 1.045, duration: .7, ease }).from(title, { y: direction === 'minimal' ? 0 : 20, duration: .45, ease }, .12).from(copy, { y: 6, stagger: .06, duration: .3 }, .25);
   const selector = direction === 'cinematic' ? '.cine-scene__copy' : direction === 'editorial' ? '.ed-plate' : direction === 'earthy' ? '.earth-stop' : direction === 'minimal' ? '[data-min-row]' : '[data-photo-frame]';

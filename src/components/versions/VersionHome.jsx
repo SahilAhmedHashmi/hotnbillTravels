@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import HeroSection from '../home/HeroSection.jsx';
+import PhotoHero from '../home/PhotoHero.jsx';
 import { featuredDestinations } from '../../data/destinations.js';
 import { homepageExperiences } from '../../data/experiences.js';
 import { vehicles } from '../../data/vehicles.js';
@@ -121,17 +123,59 @@ function MinimalHome() {
 }
 
 function PhotographicHome() {
-  const photos = [...featuredDestinations.slice(0, 5), ...homepageExperiences.slice(0, 3)];
+  const destinations = featuredDestinations.slice(0, 5);
+  const journeyImages = ['/destinations/kaziranga-hero-v2.webp', '/destinations/root-bridge-hero-v2.webp', '/destinations/tawang-hero-v2.webp', '/destinations/gurudongmar-lake.jpg'];
   return <>
-    <HeroSection direction="photographic" />
-    <section className="ph-opening"><p>Field sequence / Northeast India</p><h2>Look first.<br />Choose the road after.</h2></section>
-    <section className="ph-story" aria-label="Photographic destination story">
-      {photos.slice(0, 4).map((item, index) => <Link className={`ph-story__frame ph-story__frame--${index + 1}`} to={item.state ? destinationPath(item) : experiencePath(item)} key={item.slug} data-photo-frame><Picture item={item} /><span><b>0{index + 1}</b>{item.name || item.title}</span></Link>)}
+    <PhotoHero />
+    <section className="photo-prologue">
+      <p>Hornbill field journal / 01</p>
+      <h2>Not one Northeast.<br /><em>Many ways through it.</em></h2>
+      <figure><img src="/Waterfall Expeditions.jpg" alt="A waterfall and clear pool in Meghalaya" loading="eager" decoding="async"/><figcaption>Water country / Meghalaya</figcaption></figure>
+      <div><span>Six states</span><p>Rain forests and river islands. Wildlife grasslands and mountain passes. Journeys built around what you want to see—and the road required to reach it.</p></div>
     </section>
-    <section className="ph-sequence"><div className="ph-sequence__sticky"><Picture item={photos[4]} /><div className="ph-sequence__caption"><p>Frame 05</p><h2>{photos[4].name}</h2><Link to={destinationPath(photos[4])}>Open field note <Arrow /></Link></div></div><div className="ph-sequence__notes">{photos.slice(5).map((item, index) => <Link to={experiencePath(item)} key={item.slug}><span>0{index + 6}</span><h3>{item.title}</h3><p>{item.shortDescription || item.description}</p></Link>)}</div></section>
-    <section className="ph-choice"><div className="ph-choice__image"><Picture item={journeyIdeas[0]} /></div><div><p>Two ways forward</p><h2>The vehicle,<br />or the whole journey.</h2><Link to="/fleet">Book a vehicle <Arrow /></Link><Link to="/packages">Plan a complete trip <Arrow /></Link></div></section>
-    <LandingCta direction="ph" title={<>The next frame<br /><em>starts on the road.</em></>} />
+    <section className="photo-horizontal" aria-label="Featured destinations">
+      <div className="photo-horizontal__track">
+        <header className="photo-horizontal__intro"><p>Destination sequence / 02</p><h2>Five frames.<br />Five reasons to go.</h2><span>Scroll to move east</span></header>
+        {destinations.map((item, index) => <article className={`photo-destination photo-destination--${index + 1}`} key={item.slug} data-photo-destination>
+          <Link to={destinationPath(item)}><div className="photo-destination__image"><Picture item={item} /></div><div className="photo-destination__meta"><small>0{index + 1} / {item.state}</small><h3>{item.name}</h3><p>{item.shortDescription}</p><span>View field note <Arrow /></span></div></Link>
+        </article>)}
+        <Link className="photo-horizontal__end" to="/destinations"><span>Continue exploring</span><strong>All destinations</strong><Arrow /></Link>
+      </div>
+      <div className="photo-horizontal__progress" aria-hidden="true"><i /></div>
+    </section>
+    <PhotoExperienceAtlas />
+    <PhotoFleetStage />
+    <section className="photo-journeys">
+      <header><p>Complete journeys / 05</p><h2>A route is more than<br />a list of places.</h2><span>Start with a visual idea. We shape the sequence, transport and pacing around your enquiry.</span></header>
+      <div className="photo-journeys__stack">{journeyIdeas.map((item, index) => <article key={item.slug} className="photo-journey" data-photo-journey style={{'--stack-index': index}}><img src={journeyImages[index]} alt={item.title} loading="lazy" decoding="async"/><div className="photo-journey__veil"/><div className="photo-journey__copy"><small>Journey 0{index + 1}</small><h3>{item.title}</h3><p>{item.summary}</p><div>{item.destinations.map(destination => <span key={destination.slug}>{destination.name}</span>)}</div><Link to={journeyPath(item)}>Use this as a starting point <Arrow /></Link></div></article>)}</div>
+    </section>
+    <section className="photo-final"><img src="/destinations/yumthang-valley.jpg" alt="A mountain road through the Yumthang Valley in Sikkim" loading="lazy" decoding="async"/><div className="photo-final__shade"/><p>Start with what draws you in.</p><h2>We’ll shape<br />the road around it.</h2><div className="photo-final__actions"><Link to="/plan-my-trip">Plan a complete trip <Arrow /></Link><Link to="/fleet">Book a vehicle <Arrow /></Link></div></section>
   </>;
+}
+
+function PhotoExperienceAtlas() {
+  const items = homepageExperiences.slice(0, 4);
+  const visuals = ['/destinations/gurudongmar-lake.jpg', '/destinations/kaziranga-hero-v2.webp', '/destinations/majuli-hero-v2.webp', '/destinations/tawang-hero-v2.webp'];
+  const [active, setActive] = useState(0);
+  return <section className="photo-atlas" data-active={active} aria-labelledby="photo-atlas-title">
+    <div className="photo-atlas__visual">{items.map((item,index)=><img key={item.slug} src={visuals[index]} alt="" aria-hidden="true" className={index===active?'active':''} loading="eager" decoding="async"/>)}<div className="photo-atlas__counter"><span>0{active+1}</span><i/><span>0{items.length}</span></div></div>
+    <div className="photo-atlas__content"><header><p>Ways to experience it / 03</p><h2 id="photo-atlas-title">Choose how<br />you enter.</h2></header><div className="photo-atlas__list">{items.map((item,index)=><Link to={experiencePath(item)} key={item.slug} data-atlas-row data-index={index} onMouseEnter={()=>setActive(index)} onFocus={()=>setActive(index)} onClick={()=>setActive(index)}><small>0{index+1}</small><h3>{item.title}</h3><p>{item.shortDescription || item.description}</p><Arrow /></Link>)}</div></div>
+  </section>;
+}
+
+function PhotoFleetStage() {
+  const fleet = vehicles.slice(0, 3);
+  const [active, setActive] = useState(0);
+  const vehicle = fleet[active];
+  return <section className="photo-fleet" aria-labelledby="photo-fleet-title">
+    <div className="photo-fleet__landscape"><img src="/tawang valley.jpg" alt="Mountain road landscape in Arunachal Pradesh" loading="lazy" decoding="async"/><div><p>The road is part of the picture.</p><span>Local route knowledge · Comfortable transport · Experienced drivers</span></div></div>
+    <div className="photo-fleet__stage">
+      <header><p>Vehicles / 04</p><h2 id="photo-fleet-title">Choose the cabin<br />for what lies ahead.</h2></header>
+      <div className="photo-fleet__product" key={vehicle.slug}><span className="photo-fleet__number">0{active+1}</span><img src={vehicle.image} alt={vehicle.alt} loading="lazy" decoding="async"/><div><small>{vehicle.type}</small><h3>{vehicle.name}</h3><p>{vehicle.passengerCapacity} · {vehicle.rate} {vehicle.rateNote}</p><Link to={`/fleet/${vehicle.slug}`}>View vehicle details <Arrow /></Link></div></div>
+      <div className="photo-fleet__tabs" aria-label="Select a vehicle">{fleet.map((item,index)=><button type="button" aria-pressed={index===active} key={item.slug} onClick={()=>setActive(index)}><span>0{index+1}</span>{item.name}</button>)}</div>
+      <Link className="photo-fleet__all" to="/fleet">Compare the complete fleet <Arrow /></Link>
+    </div>
+  </section>;
 }
 
 function Meta({ item, number }) { return <div className="ed-plate__meta"><small>{number} / {item.state}</small><h3>{item.name}</h3><Arrow /></div>; }

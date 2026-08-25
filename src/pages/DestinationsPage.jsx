@@ -1,4 +1,6 @@
-import { useMemo } from 'react';
+import { useMemo, useRef } from 'react';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 import { Link, useSearchParams } from 'react-router-dom';
 import Breadcrumbs from '../components/common/Breadcrumbs.jsx';
 import ImageCarousel from '../components/common/ImageCarousel.jsx';
@@ -10,6 +12,7 @@ import { destinationHeroImages, destinations, destinationStates } from '../data/
 import { usePageMeta } from '../hooks/usePageMeta.js';
 
 export default function DestinationsPage() {
+  const gridRef = useRef(null);
   // The active state filter is derived from the `state` query param so links from
   // elsewhere (e.g. the footer) can deep-link to a pre-filtered listing.
   const [searchParams, setSearchParams] = useSearchParams();
@@ -23,13 +26,24 @@ export default function DestinationsPage() {
     } else {
       params.set('state', nextState);
     }
-    setSearchParams(params, { replace: true });
+    // Query-string filters are an in-place UI state change, not a navigation.
+    // React Router otherwise lets ScrollRestoration reset the document position.
+    setSearchParams(params, { replace: true, preventScrollReset: true });
   };
 
   const filteredDestinations = useMemo(
     () => (activeState === 'All' ? destinations : destinations.filter((item) => item.state === activeState)),
     [activeState],
   );
+
+  useGSAP(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    gsap.fromTo(
+      gridRef.current?.children ?? [],
+      { autoAlpha: 0, y: 14 },
+      { autoAlpha: 1, y: 0, duration: 0.38, stagger: 0.045, ease: 'power2.out', clearProps: 'opacity,visibility,transform' },
+    );
+  }, { scope: gridRef, dependencies: [activeState], revertOnUpdate: true });
 
   usePageMeta({
     title: 'Destinations Across Northeast India | Hornbill Journeys',
@@ -75,7 +89,7 @@ export default function DestinationsPage() {
           </p>
         </div>
         <DestinationFilters activeState={activeState} onChange={handleStateChange} />
-        <div className="destination-list-grid" aria-live="polite">
+        <div className="destination-list-grid" ref={gridRef} aria-live="polite">
           {filteredDestinations.map((destination) => (
             <DestinationListingCard key={destination.slug} destination={destination} />
           ))}

@@ -40,8 +40,8 @@ body * { font-family: var(--font-sans) !important; }
 
 /* Editorial home composition */
 .hero-bg {
-  background-image: url('/tawang valley.jpg');
-  background-position: center 48%;
+  background-image: url('/mountain-hero.jpg');
+  background-position: center 40%;
   inset: -8% 0;
 }
 
@@ -123,8 +123,54 @@ body * { font-family: var(--font-sans) !important; }
 .testi-card { border-width: 1px 0 0; border-radius: 0; background: transparent; padding: 2rem 0; }
 .testi-av { border-radius: 2px; }
 
-.cta-section::before,
 .vehicles::before { display: none; }
+
+/* Historical Hornbill gold-line motif, restored on intentional dark-green CTAs. */
+.cta-section::before,
+.system-final-cta::before,
+.destination-final-cta::before,
+.experience-final-cta::before,
+.vehicle-final-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cpath d='M0 30 30 0l30 30-30 30Z' fill='none' stroke='%23c8922a' stroke-width='.5' opacity='.12'/%3E%3C/svg%3E");
+  background-size: 60px 60px;
+}
+
+:where(.cta-section, .system-final-cta, .destination-final-cta, .experience-final-cta, .vehicle-final-cta) > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Center-focused fleet carousel: native scrolling supplies touch/trackpad drag,
+   GSAP supplies the continuous focus hierarchy. */
+.vehicles-carousel { overflow: hidden; margin-inline: -1.5rem; padding-inline: 1.5rem; }
+.vehicles-grid {
+  align-items: stretch;
+  padding: 2.2rem max(1.5rem, calc((100% - min(30vw, 400px)) / 2)) 2.8rem;
+  scroll-padding-inline: max(1.5rem, calc((100% - min(30vw, 400px)) / 2));
+  cursor: grab;
+}
+.vehicles-grid:active { cursor: grabbing; }
+.vehicles-grid > .reveal {
+  flex: 0 0 min(30vw, 400px);
+  scroll-snap-align: center;
+  transform-origin: center center;
+  will-change: transform, opacity;
+  position: relative;
+  z-index: 1;
+}
+.vehicles-grid > .reveal.is-focused { z-index: 3; }
+.vehicles-grid > .reveal.is-focused .vehicle-card {
+  border-color: rgba(200, 146, 42, 0.42);
+  box-shadow: 0 22px 55px rgba(5, 9, 6, 0.22);
+}
+.vehicles-grid:focus-visible { outline-offset: -5px; }
+.vehicle-arrow { transition: transform var(--transition-base), background var(--transition-base), border-color var(--transition-base), opacity var(--transition-base); }
+.vehicle-arrow:not(:disabled):hover { transform: scale(1.08); }
+.vehicle-arrow:not(:disabled):active { transform: scale(.95); }
 
 .page-transition { min-height: 40vh; }
 
@@ -153,6 +199,14 @@ body * { font-family: var(--font-sans) !important; }
   .exp-grid { display: flex; overflow-x: auto; gap: 1rem; scroll-snap-type: x mandatory; scrollbar-width: none; }
   .exp-grid > .reveal { flex: 0 0 min(82vw, 340px); scroll-snap-align: start; }
   .exp-img { height: 290px; }
+  .vehicles-carousel { margin-inline: -1.2rem; padding-inline: 0; }
+  .vehicles-grid {
+    padding-inline: 8vw;
+    scroll-padding-inline: 8vw;
+    gap: .8rem;
+  }
+  .vehicles-grid > .reveal { flex-basis: 84vw; }
+  .vehicle-arrow { top: 46%; }
 }
 
 @media (max-width: 480px) {
@@ -164,4 +218,5 @@ body * { font-family: var(--font-sans) !important; }
 @media (prefers-reduced-motion: reduce) {
   .hero-bg { inset: 0; transform: none !important; }
   .page-transition { opacity: 1 !important; }
+  .vehicles-grid > .reveal { opacity: 1 !important; transform: none !important; }
 }

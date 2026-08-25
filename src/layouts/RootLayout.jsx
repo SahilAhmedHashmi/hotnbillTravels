@@ -3,6 +3,7 @@ import { Outlet, ScrollRestoration, useLocation } from 'react-router-dom';
 import Navbar from '../components/layout/Navbar.jsx';
 import Footer from '../components/layout/Footer.jsx';
 import FloatingContactWidget from '../components/layout/FloatingContactWidget.jsx';
+import PageTransition from '../components/layout/PageTransition.jsx';
 
 function RouteEffects() {
   const location = useLocation();
@@ -27,7 +28,7 @@ export default function RootLayout() {
       <ScrollRestoration />
       <RouteEffects />
       <Navbar />
-      <Outlet />
+      <PageTransition><Outlet /></PageTransition>
       <Footer />
       <FloatingContactWidget />
     </>

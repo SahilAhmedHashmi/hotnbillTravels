@@ -1,0 +1,167 @@
+/* Deliberately loaded last: one coherent Figtree system across route styles. */
+body,
+button,
+input,
+select,
+textarea {
+  font-family: var(--font-sans);
+}
+
+body * { font-family: var(--font-sans) !important; }
+
+:where(h1, h2, h3, h4, h5, h6, .stat-num, .dest-name, .exp-title, .vehicle-name,
+  .testi-text, .trust-card strong, .placeholder-page h1, .system-faq summary,
+  .section-heading h2, .system-final-cta h2, .fleet-card h2, .experience-list-body strong,
+  .booking-step-panel h2, .trip-summary h2, .contact-form-panel h2) {
+  font-family: var(--font-display);
+  letter-spacing: -0.035em;
+}
+
+:where(.label, .btn, .view-all, .nav-links a, .logo-name, .logo-tagline, .stat-lbl,
+  .dest-tag, .exp-badge, .vehicle-type, .vehicle-spec, .vehicle-btn,
+  .trust-card span, .testi-from, .form-field span, .contact-field > span) {
+  font-family: var(--font-sans);
+}
+
+.label { letter-spacing: var(--tracking-label); }
+
+:where(.card-lift, .fleet-card, .destination-list-card, .experience-list-card,
+  .vehicle-card, .exp-card) { box-shadow: none; }
+
+@media (hover: hover) and (pointer: fine) {
+  :where(.card-lift, .fleet-card, .destination-list-card, .experience-list-card,
+    .vehicle-card, .exp-card):hover { box-shadow: none; }
+}
+
+@media (hover: none) {
+  .dest-pill,
+  .experience-card-cta { opacity: 1; transform: none; }
+}
+
+/* Editorial home composition */
+.hero-bg {
+  background-image: url('/tawang valley.jpg');
+  background-position: center 48%;
+  inset: -8% 0;
+}
+
+.hero-overlay {
+  background: linear-gradient(90deg, rgba(6, 10, 7, 0.9) 0%, rgba(6, 10, 7, 0.62) 48%, rgba(6, 10, 7, 0.18) 78%);
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  align-items: end;
+  gap: clamp(3rem, 8vw, 9rem);
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.hero-main { max-width: 850px; }
+
+.hero-eyebrow,
+.hero-title,
+.hero-desc,
+.hero-actions {
+  opacity: 1;
+  animation: none;
+}
+
+.hero-title {
+  display: grid;
+  font-size: clamp(4rem, 7.7vw, 7.1rem);
+  font-weight: 550;
+  line-height: 0.88;
+  letter-spacing: -0.065em;
+}
+
+.hero-title > span { display: block; padding-bottom: 0.08em; }
+.hero-title em { font-weight: 400; letter-spacing: -0.055em; }
+.hero-desc { max-width: 530px; font-size: clamp(1rem, 1.25vw, 1.15rem); color: rgba(255, 255, 255, 0.76); }
+
+.hero-fieldnote {
+  align-self: end;
+  padding: 1.25rem 0 1.25rem 1.4rem;
+  border-left: 1px solid rgba(232, 180, 74, 0.7);
+  color: var(--white);
+}
+
+.hero-fieldnote > span {
+  color: var(--gold-hi);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.hero-fieldnote strong { display: block; margin-top: 0.7rem; font-size: 1.15rem; font-weight: 600; }
+.hero-fieldnote p { color: rgba(255, 255, 255, 0.62); font-size: 0.82rem; line-height: 1.65; }
+.hero-fieldnote a { color: var(--white); font-size: 0.74rem; text-decoration: none; }
+.hero-fieldnote i { display: inline-block; margin-left: 0.35rem; font-style: normal; transition: transform var(--transition-base); }
+.hero-fieldnote a:hover i { transform: translateX(5px); }
+.hero-scroll-indicator { text-decoration: none; }
+
+.about-inner { grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr); }
+.about-img-main { border-radius: 0; }
+.about-dot-grid { display: none; }
+.about-features { counter-reset: approach; }
+.about-feat { counter-increment: approach; position: relative; padding: 1.15rem 0; background: transparent; border: 0; border-top: 1px solid rgba(17, 21, 16, 0.14); border-radius: 0; }
+.about-feat::before { content: '0' counter(approach); color: var(--gold); font-size: 0.64rem; letter-spacing: 0.12em; }
+
+.exp-card { border: 0; border-radius: 0; background: transparent; }
+.exp-img { height: 260px; }
+.exp-body { padding: 1.25rem 0; }
+.exp-ico { display: none; }
+.exp-title { font-size: 1.5rem; }
+.exp-badge { border-radius: 0; }
+
+.trust-card { border-width: 1px 0 0; border-radius: 0; padding: 1.5rem 0; background: transparent; }
+.trust-card strong { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; }
+.trust-card span { margin-top: 1.25rem; color: var(--text); font-size: 0.72rem; }
+
+.testi-card { border-width: 1px 0 0; border-radius: 0; background: transparent; padding: 2rem 0; }
+.testi-av { border-radius: 2px; }
+
+.cta-section::before,
+.vehicles::before { display: none; }
+
+.page-transition { min-height: 40vh; }
+
+.nav-links a { position: relative; }
+.nav-links a:not(.nav-cta)::after { content: ''; position: absolute; right: 0; bottom: 7px; left: 0; height: 1px; background: var(--gold-hi); transform: scaleX(0); transform-origin: right; transition: transform var(--transition-base); }
+.nav-links a:not(.nav-cta):hover::after,
+.nav-links a:not(.nav-cta).active::after { transform: scaleX(1); transform-origin: left; }
+.menu-toggle span { transition: transform var(--transition-base), opacity var(--transition-fast); }
+.menu-toggle[aria-expanded='true'] span:first-child { transform: translateY(3px) rotate(45deg); }
+.menu-toggle[aria-expanded='true'] span:last-child { transform: translateY(-3px) rotate(-45deg); }
+
+.btn { border-radius: 2px; box-shadow: none; }
+.btn-gold:hover { box-shadow: none; }
+.btn:active { transform: translateY(1px) scale(0.985); }
+
+@media (max-width: 900px) {
+  .hero-content { grid-template-columns: 1fr; align-content: end; gap: 2.5rem; }
+  .hero-fieldnote { display: none; }
+}
+
+@media (max-width: 760px) {
+  .hero-content { padding-top: 7.5rem; padding-bottom: 5.5rem; }
+  .hero-title { font-size: clamp(3.1rem, 15vw, 5rem); line-height: 0.92; }
+  .hero-desc { max-width: 34rem; }
+  .hero-scroll-indicator { display: none; }
+  .exp-grid { display: flex; overflow-x: auto; gap: 1rem; scroll-snap-type: x mandatory; scrollbar-width: none; }
+  .exp-grid > .reveal { flex: 0 0 min(82vw, 340px); scroll-snap-align: start; }
+  .exp-img { height: 290px; }
+}
+
+@media (max-width: 480px) {
+  .hero-actions { width: 100%; margin-top: 2rem; }
+  .hero-actions .btn-ghost { border-color: transparent; justify-content: flex-start; padding-left: 0; }
+  .about-features { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-bg { inset: 0; transform: none !important; }
+  .page-transition { opacity: 1 !important; }
+}

@@ -7,8 +7,8 @@ export default function TrustSection() {
     <section className="trust-section">
       <div className="trust-inner">
         <div className="trust-copy">
-          <SectionLabel>Why Travelers Trust Us</SectionLabel>
-          <h2>Local knowledge, careful planning, and support when the road changes.</h2>
+          <SectionLabel>What we take care of</SectionLabel>
+          <h2>Good journeys are built in the details you should not have to manage.</h2>
         </div>
         <div className="trust-grid">
           {trustStats.map((item, index) => (

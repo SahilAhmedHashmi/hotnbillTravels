@@ -48,7 +48,7 @@ export default function Navbar() {
                     {item.label}
                   </Link>
                 ) : (
-                  <NavLink to={item.to} onClick={() => setOpen(false)}>
+                  <NavLink className={item.className} to={item.to} onClick={() => setOpen(false)}>
                     {item.label}
                   </NavLink>
                 )}

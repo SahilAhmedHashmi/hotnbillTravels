@@ -1,7 +1,7 @@
 import HeroSection from '../components/home/HeroSection.jsx';
-import StatsBar from '../components/home/StatsBar.jsx';
 import AboutSection from '../components/home/AboutSection.jsx';
 import DestinationsPreview from '../components/home/DestinationsPreview.jsx';
+import ExperiencesPreview from '../components/home/ExperiencesPreview.jsx';
 import FleetPreview from '../components/home/FleetPreview.jsx';
 import TrustSection from '../components/home/TrustSection.jsx';
 import TestimonialsSection from '../components/home/TestimonialsSection.jsx';
@@ -20,10 +20,11 @@ export default function HomePage() {
   return (
     <main>
       <HeroSection />
-      <StatsBar />
       <AboutSection />
       <SectionDivider />
       <DestinationsPreview />
+      <SectionDivider />
+      <ExperiencesPreview />
       <SectionDivider />
       <FleetPreview />
       <SectionDivider />

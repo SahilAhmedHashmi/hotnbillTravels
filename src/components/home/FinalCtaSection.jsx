@@ -13,7 +13,7 @@ export default function FinalCtaSection() {
         shape a route that feels personal.
       </p>
       <div className="cta-actions">
-        <Button to="/contact">Enquire Now</Button>
+        <Button to="/plan-my-trip">Plan My Trip</Button>
         <Button href={contact.phoneHref} variant="ghost"><Icon name="phone" /> Call</Button>
         <Button href={contact.whatsappHref} variant="ghost"><Icon name="whatsapp" /> WhatsApp</Button>
       </div>

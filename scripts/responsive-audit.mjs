@@ -15,10 +15,11 @@ const routes = [
 ];
 const baseUrl = process.env.AUDIT_URL || 'http://127.0.0.1:4173';
 const edgePath = process.env.EDGE_PATH || 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe';
+const debugPort = Number(process.env.AUDIT_DEBUG_PORT || 9323);
 const profile = mkdtempSync(join(tmpdir(), 'hornbill-edge-'));
 const edge = spawn(edgePath, [
   '--headless=new', '--disable-gpu', '--no-first-run', '--no-default-browser-check',
-  '--remote-debugging-port=9223', '--remote-allow-origins=*', `--user-data-dir=${profile}`, 'about:blank',
+  `--remote-debugging-port=${debugPort}`, '--remote-allow-origins=*', `--user-data-dir=${profile}`, 'about:blank',
 ], { stdio: 'ignore' });
 
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -29,7 +30,7 @@ try {
   let target;
   for (let attempt = 0; attempt < 40 && !target; attempt += 1) {
     try {
-      const targets = await fetch('http://127.0.0.1:9223/json').then((response) => response.json());
+      const targets = await fetch(`http://127.0.0.1:${debugPort}/json`).then((response) => response.json());
       target = targets.find(({ type }) => type === 'page');
     } catch { await delay(250); }
   }

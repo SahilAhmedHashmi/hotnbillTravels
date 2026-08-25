@@ -2,10 +2,10 @@ import Reveal from '../common/Reveal.jsx';
 import SectionLabel from '../common/SectionLabel.jsx';
 
 const features = [
-  ['Local Expertise', 'Born and raised guides who know every hidden trail'],
-  ['Community Tourism', 'Direct benefits to indigenous communities'],
-  ['Responsible Travel', 'Low-impact, sustainable tourism practices'],
-  ['Fully Customised', 'Every itinerary hand-crafted for you'],
+  ['Local knowledge', 'Guides and drivers who understand the region’s roads and rhythms'],
+  ['Private routes', 'A journey planned around your dates, pace, and interests'],
+  ['Practical support', 'Help with vehicles, stays, transfers, and restricted-area permits'],
+  ['Time to wander', 'Room for weather, photography, food stops, and small detours'],
 ];
 
 export default function AboutSection() {
@@ -16,7 +16,7 @@ export default function AboutSection() {
           <div className="about-dot-grid" />
           <img
             className="about-img-main"
-            src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&w=900&q=80"
+            src="/destinations/living-root-bridges.jpg"
             alt="Lush green hills of Northeast India"
             loading="lazy"
             decoding="async"
@@ -41,7 +41,6 @@ export default function AboutSection() {
           <div className="about-features">
             {features.map(([title, copy]) => (
               <div className="about-feat" key={title}>
-                <div className="feat-ico" aria-hidden="true" />
                 <div className="feat-body"><strong>{title}</strong><span>{copy}</span></div>
               </div>
             ))}

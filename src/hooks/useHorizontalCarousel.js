@@ -1,41 +1,62 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 
-export function useHorizontalCarousel() {
+export function useHorizontalCarousel(itemCount = 0) {
   const trackRef = useRef(null);
-  const [canGoPrev, setCanGoPrev] = useState(false);
-  const [canGoNext, setCanGoNext] = useState(true);
+  const [activeIndex, setActiveIndex] = useState(itemCount > 1 ? 1 : 0);
 
   const update = useCallback(() => {
     const track = trackRef.current;
     if (!track) return;
-    const maxScroll = track.scrollWidth - track.clientWidth - 2;
-    setCanGoPrev(track.scrollLeft > 2);
-    setCanGoNext(track.scrollLeft < maxScroll);
+    const center = track.getBoundingClientRect().left + track.clientWidth / 2;
+    const cards = [...track.querySelectorAll('[data-carousel-item]')];
+    if (!cards.length) return;
+    const nearest = cards.reduce((best, card, index) => {
+      const rect = card.getBoundingClientRect();
+      const distance = Math.abs(rect.left + rect.width / 2 - center);
+      return distance < best.distance ? { index, distance } : best;
+    }, { index: 0, distance: Number.POSITIVE_INFINITY });
+    setActiveIndex(nearest.index);
   }, []);
 
-  const getStep = () => {
+  const goTo = useCallback((index) => {
     const track = trackRef.current;
-    const firstCard = track?.querySelector('.vehicle-card');
-    if (!track || !firstCard) return 0;
-    const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
-    return firstCard.getBoundingClientRect().width + gap;
-  };
+    const cards = [...(track?.querySelectorAll('[data-carousel-item]') ?? [])];
+    const next = Math.max(0, Math.min(index, cards.length - 1));
+    cards[next]?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    setActiveIndex(next);
+  }, []);
 
-  const scrollByStep = (direction) => {
-    trackRef.current?.scrollBy({ left: direction * getStep(), behavior: 'smooth' });
-  };
+  const move = useCallback((direction) => goTo(activeIndex + direction), [activeIndex, goTo]);
 
   useEffect(() => {
     const track = trackRef.current;
     if (!track) return undefined;
     update();
-    track.addEventListener('scroll', update, { passive: true });
+    let frame;
+    const onScroll = () => {
+      window.cancelAnimationFrame(frame);
+      frame = window.requestAnimationFrame(update);
+    };
+    track.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', update);
     return () => {
-      track.removeEventListener('scroll', update);
+      window.cancelAnimationFrame(frame);
+      track.removeEventListener('scroll', onScroll);
       window.removeEventListener('resize', update);
     };
   }, [update]);
 
-  return { trackRef, canGoPrev, canGoNext, scrollByStep };
+  useEffect(() => {
+    const frame = window.requestAnimationFrame(() => goTo(itemCount > 1 ? 1 : 0));
+    return () => window.cancelAnimationFrame(frame);
+  }, [goTo, itemCount]);
+
+  return {
+    trackRef,
+    activeIndex,
+    canGoPrev: activeIndex > 0,
+    canGoNext: activeIndex < itemCount - 1,
+    move,
+    goTo,
+  };
 }

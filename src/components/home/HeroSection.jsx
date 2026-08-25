@@ -22,8 +22,13 @@ export default function HeroSection() {
 
     const timeline = gsap.timeline({ defaults: { ease: 'power3.out' } });
     timeline
-      .from('.hero-main', { y: 18, duration: 0.68 })
-      .from('.hero-fieldnote', { x: 16, duration: 0.45 }, '-=0.5');
+      .from('.hero-bg', { scale: 1.075, autoAlpha: 0, duration: 1.15, ease: 'power2.out' })
+      .from('.hero-eyebrow', { y: 12, autoAlpha: 0, duration: 0.42 }, '-=0.7')
+      .from('.hero-title > span', { yPercent: 75, autoAlpha: 0, duration: 0.72, stagger: 0.11 }, '-=0.2')
+      .from('.hero-desc', { y: 16, autoAlpha: 0, duration: 0.48 }, '-=0.42')
+      .from('.hero-actions .btn', { y: 12, autoAlpha: 0, duration: 0.42, stagger: 0.08 }, '-=0.28')
+      .from('.hero-fieldnote', { x: 18, autoAlpha: 0, duration: 0.52 }, '-=0.42')
+      .from('.hero-scroll-indicator', { autoAlpha: 0, duration: 0.35 }, '-=0.2');
 
     gsap.to('.hero-bg', {
       yPercent: 8,

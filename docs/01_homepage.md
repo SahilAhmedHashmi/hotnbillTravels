@@ -487,9 +487,9 @@ Links:
 
 * Call: `tel:+910000000000`
 * WhatsApp: `https://wa.me/910000000000`
-* Email: `mailto:hello@example.com`
+* Email: `mailto:hornbilljourneys@gmail.com`
 
-Use placeholders and TODO comments for real details.
+Use the configured company email for contact links.
 
 Behavior:
 

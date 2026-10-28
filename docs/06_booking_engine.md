@@ -497,15 +497,13 @@ Notes
 
 Recipient
 
-Placeholder
-
 ```
-hello@example.com
+hornbilljourneys@gmail.com
 ```
 
-Add TODO:
-
-Replace with official company email.
+Guided enquiries are sent through the Vercel `/api/submit-enquiry` function using Resend.
+Configure `RESEND_API_KEY` and a Resend-approved `RESEND_FROM_EMAIL` environment variable
+in Vercel before enabling production submissions.
 
 ---
 

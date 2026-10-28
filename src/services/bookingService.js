@@ -30,21 +30,28 @@ export async function submitBooking(form, labels) {
   const reference = createBookingReference();
   const message = buildBookingMessage(form, labels, reference);
 
-  // TODO: Replace placeholder email recipient with the official company email and backend/API submission.
-  const emailPayload = {
-    to: 'hello@example.com',
-    subject: `Booking Enquiry ${reference}`,
-    body: message,
-  };
-
   const whatsappUrl = `${contact.whatsappHref}?text=${encodeURIComponent(message)}`;
+  const response = await fetch('/api/submit-enquiry', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ form, labels, reference }),
+  });
 
-  await new Promise((resolve) => window.setTimeout(resolve, 450));
+  let result;
+  try {
+    result = await response.json();
+  } catch {
+    throw new Error('The enquiry service returned an invalid response.');
+  }
+
+  if (!response.ok) {
+    throw new Error(result.error || 'The enquiry could not be sent.');
+  }
 
   return {
     reference,
     message,
     whatsappUrl,
-    emailPayload,
+    emailSent: result.emailSent === true,
   };
 }

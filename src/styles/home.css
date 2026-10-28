@@ -80,7 +80,7 @@
 .cta-section h2 em,
 .vehicles-header h2 em,
 .dest-header h2 em {
-  font-style: italic;
+  font-style: normal;
   color: var(--gold-pale);
   font-weight: 300;
 }
@@ -207,7 +207,7 @@
   font-size: 1.35rem;
   color: var(--white);
   line-height: 1.35;
-  font-style: italic;
+  font-style: normal;
   margin: 0;
 }
 
@@ -841,7 +841,7 @@
 .testi-text {
   font-family: 'Cormorant Garant', serif;
   font-size: 1.1rem;
-  font-style: italic;
+  font-style: normal;
   color: rgba(255, 255, 255, 0.82);
   line-height: 1.72;
   margin: 0 0 1.6rem;

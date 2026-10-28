@@ -15,6 +15,8 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+*, *::before, *::after { font-family: 'Figtree', sans-serif !important; }
+
 body.nav-open { overflow: hidden; }
 
 img {
@@ -213,17 +215,15 @@ p, h1, h2, h3, h4, h5, h6, a, span {
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 20px;
   text-decoration: none;
 }
 
 .logo-mark {
-  width: 44px;
-  height: 44px;
-  flex: 0 0 44px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1px solid rgba(200, 146, 42, 0.4);
+  width: 72px;
+  height: 58px;
+  flex: 0 0 72px;
+  object-fit: contain;
 }
 
 .logo-name {
@@ -624,8 +624,8 @@ footer {
 @media (max-width: 480px) {
   .site-nav { padding-inline: 1rem; }
   .nav-inner { height: 68px; }
-  .logo { gap: 9px; min-width: 0; }
-  .logo-mark { width: 40px; height: 40px; flex-basis: 40px; }
+  .logo { gap: 12px; min-width: 0; }
+  .logo-mark { width: 52px; height: 44px; flex-basis: 52px; }
   .logo-name { font-size: 1.12rem; }
   .logo-tagline { font-size: 0.5rem; letter-spacing: 0.14em; }
   .nav-menu { inset: 68px 0.75rem auto; max-height: calc(100dvh - 80px); overflow-y: auto; }

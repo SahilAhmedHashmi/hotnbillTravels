@@ -5,10 +5,10 @@ export default function Logo({ asLink = true }) {
     <>
       <img
         className="logo-mark"
-        src="/logo.jpeg"
+        src="/hornbill-logo.svg"
         alt="Hornbill Journeys emblem"
-        width="44"
-        height="44"
+        width="72"
+        height="58"
         loading="eager"
         decoding="async"
       />

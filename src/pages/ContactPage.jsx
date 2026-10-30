@@ -115,7 +115,6 @@ export default function ContactPage() {
     else if (!EMAIL_RE.test(form.email.trim())) next.email = 'That email looks incomplete.';
     if (!form.destination) next.destination = 'Please choose a destination state.';
     if (Number(form.travellers || 0) < 1) next.travellers = 'Enter at least one traveller.';
-    if (form.message.trim().length < 10) next.message = 'A few more details help us plan (10+ characters).';
     return next;
   };
 
@@ -311,15 +310,14 @@ export default function ContactPage() {
                       </select>
                     </label>
 
-                    <label className={`contact-field contact-field-full ${errors.message ? 'has-error' : ''}`}>
-                      <span>Your Message*</span>
+                    <label className="contact-field contact-field-full">
+                      <span>Additional Information</span>
                       <textarea
                         value={form.message}
                         onChange={(e) => update('message', e.target.value)}
                         rows={5}
-                        placeholder="Where you'd like to go, group size, must-see places, budget range..."
+                        placeholder="Do you need help with accomodation, do you have any specific tourist sites in mind that you want to visit, etc."
                       />
-                      {errors.message && <small>{errors.message}</small>}
                     </label>
                   </div>
 

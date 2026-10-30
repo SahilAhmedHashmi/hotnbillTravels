@@ -6,7 +6,7 @@ export const contact = {
   // Existing call CTAs intentionally remain aliases for the primary number.
   phoneLabel: '+91 8761815947',
   phoneHref: 'tel:+918761815947',
-  whatsappHref: 'https://wa.me/918761815947',
+  whatsappHref: 'https://wa.me/918638887582',
   emailLabel: 'hornbilljourneys@gmail.com',
   emailHref: '/contact#contact',
   address: 'Guwahati, Assam',

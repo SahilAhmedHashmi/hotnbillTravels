@@ -73,23 +73,34 @@ export default async function handler(request, response) {
   if (validationError) return sendJson(response, 400, { error: validationError });
 
   const { textBody, htmlBody } = buildEmail(payload);
-  const resendResponse = await fetch('https://api.resend.com/emails', {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      from: process.env.RESEND_FROM_EMAIL,
-      to: [RECIPIENT],
-      reply_to: bounded(payload.form.email),
-      subject: `Booking Enquiry ${bounded(payload.reference)}`,
-      text: textBody,
-      html: htmlBody,
-    }),
-  });
+  let resendResponse;
+  try {
+    resendResponse = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        from: process.env.RESEND_FROM_EMAIL,
+        to: [RECIPIENT],
+        reply_to: bounded(payload.form.email),
+        subject: `Booking Enquiry ${bounded(payload.reference)}`,
+        text: textBody,
+        html: htmlBody,
+      }),
+    });
+  } catch (error) {
+    console.error('Resend request failed.', error);
+    return sendJson(response, 502, { error: 'The email provider could not be reached.' });
+  }
 
   if (!resendResponse.ok) {
+    const providerError = await resendResponse.text();
+    console.error('Resend rejected enquiry email.', {
+      status: resendResponse.status,
+      response: providerError.slice(0, 1000),
+    });
     return sendJson(response, 502, { error: 'The email provider could not deliver the enquiry.' });
   }
 

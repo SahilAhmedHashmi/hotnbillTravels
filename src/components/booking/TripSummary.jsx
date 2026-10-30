@@ -1,5 +1,5 @@
 export default function TripSummary({ form, labels }) {
-  const travellers = Number(form.adults || 0) + Number(form.children || 0);
+  const travellers = Number(form.travellers || 0);
 
   return (
     <aside className="trip-summary" aria-label="Live trip summary">

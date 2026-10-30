@@ -9,20 +9,21 @@ import VehicleStep from '../components/booking/VehicleStep.jsx';
 import ContactStep from '../components/booking/ContactStep.jsx';
 import ReviewStep from '../components/booking/ReviewStep.jsx';
 import TripSummary from '../components/booking/TripSummary.jsx';
-import { destinations, getDestinationBySlug } from '../data/destinations.js';
+import { destinations, destinationStates, getDestinationBySlug } from '../data/destinations.js';
 import { getExperienceBySlug } from '../data/experiences.js';
 import { getVehicleBySlug } from '../data/vehicles.js';
 import { submitBooking } from '../services/bookingService.js';
 import { usePageMeta } from '../hooks/usePageMeta.js';
 
 const initialFromParams = (params) => ({
-  destination: params.get('destination') || destinations[0]?.slug || '',
+  destination: destinationStates.includes(params.get('destination'))
+    ? params.get('destination')
+    : getDestinationBySlug(params.get('destination'))?.state || destinations[0]?.state || '',
   experience: params.get('experience') || '',
   startDate: '',
   endDate: '',
   days: '',
-  adults: '2',
-  children: '0',
+  travellers: '2',
   specialRequirements: '',
   vehicle: params.get('vehicle') || '',
   tripType: '',
@@ -50,7 +51,9 @@ export default function PlanMyTripPage() {
   });
 
   const labels = useMemo(() => ({
-    destination: getDestinationBySlug(form.destination)?.name,
+    destination: destinationStates.includes(form.destination)
+      ? form.destination
+      : getDestinationBySlug(form.destination)?.state,
     experience: getExperienceBySlug(form.experience)?.title,
     vehicle: getVehicleBySlug(form.vehicle)?.name,
   }), [form.destination, form.experience, form.vehicle]);
@@ -71,7 +74,7 @@ export default function PlanMyTripPage() {
         nextErrors.endDate = 'End date cannot be before start date.';
       }
     }
-    if (step === 2 && Number(form.adults || 0) + Number(form.children || 0) < 1) {
+    if (step === 2 && Number(form.travellers || 0) < 1) {
       nextErrors.travellers = 'At least one traveller is required.';
     }
     if (step === 4) {
@@ -160,4 +163,3 @@ export default function PlanMyTripPage() {
     </main>
   );
 }
-

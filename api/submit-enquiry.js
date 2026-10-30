@@ -29,15 +29,13 @@ const buildEmail = ({ form, labels, reference }) => {
     ['Destination', labels.destination || 'Not selected'],
     ['Experience', labels.experience || 'Not selected'],
     ['Travel dates', `${form.startDate || 'TBD'} to ${form.endDate || 'TBD'}`],
-    ['Travellers', `${Number(form.adults || 0) + Number(form.children || 0)} (${form.adults || 0} adults, ${form.children || 0} children)`],
+    ['Passengers / Travellers', form.travellers || 0],
     ['Vehicle', labels.vehicle || 'Not selected'],
     ['Trip type', form.tripType || 'Not selected'],
     ['Full name', form.fullName],
     ['Phone', form.phone],
     ['Email', form.email],
-    ['City', form.city || 'Not provided'],
     ['Special requirements', form.specialRequirements || 'None'],
-    ['Notes', form.notes || 'None'],
   ];
 
   const textBody = [

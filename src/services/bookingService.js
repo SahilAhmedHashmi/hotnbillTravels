@@ -17,7 +17,7 @@ export function buildBookingMessage(form, labels, reference) {
     `Destination: ${labels.destination || 'Not selected'}`,
     `Experience: ${labels.experience || 'Not selected'}`,
     `Travel Dates: ${form.startDate || 'TBD'} to ${form.endDate || 'TBD'}`,
-    `Travellers: ${Number(form.adults || 0) + Number(form.children || 0)} (${form.adults} adults, ${form.children} children)`,
+    `Passengers / Travellers: ${form.travellers || 0}`,
     `Vehicle: ${labels.vehicle || 'Not selected'}`,
     `Trip Type: ${form.tripType || 'Not selected'}`,
     `Contact: ${form.fullName}, ${form.phone}, ${form.email}, ${form.city}`,

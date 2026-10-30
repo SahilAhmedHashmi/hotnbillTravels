@@ -1,5 +1,5 @@
 export default function ReviewStep({ form, labels }) {
-  const travellers = Number(form.adults || 0) + Number(form.children || 0);
+  const travellers = Number(form.travellers || 0);
   const rows = [
     ['Destination', labels.destination || 'Not selected'],
     ['Experience', labels.experience || 'Not selected'],

@@ -1,5 +1,5 @@
 import FormField from './FormField.jsx';
-import { destinations } from '../../data/destinations.js';
+import { destinationStates } from '../../data/destinations.js';
 import { experiences } from '../../data/experiences.js';
 
 export default function DestinationStep({ form, update, errors }) {
@@ -12,8 +12,8 @@ export default function DestinationStep({ form, update, errors }) {
         <FormField label="Destination" error={errors.destination}>
           <select value={form.destination} onChange={(event) => update('destination', event.target.value)}>
             <option value="">Select destination</option>
-            {destinations.map((destination) => (
-              <option key={destination.slug} value={destination.slug}>{destination.name} - {destination.state}</option>
+            {destinationStates.filter((state) => state !== 'All').map((state) => (
+              <option key={state} value={state}>{state}</option>
             ))}
           </select>
         </FormField>

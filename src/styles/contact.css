@@ -182,6 +182,29 @@
   cursor: pointer;
 }
 
+.select-chevron {
+  position: relative;
+  display: block;
+}
+
+.select-chevron::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 2px solid var(--gold);
+  border-bottom: 2px solid var(--gold);
+  transform: translateY(-65%) rotate(45deg);
+  pointer-events: none;
+}
+
+.select-chevron select {
+  background-image: none;
+  padding-right: 2.8rem;
+}
+
 .contact-field option {
   color: var(--text);
   background: var(--off-white);

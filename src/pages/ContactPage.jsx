@@ -7,6 +7,8 @@ import Reveal from '../components/common/Reveal.jsx';
 import FinalCta from '../components/common/FinalCta.jsx';
 import NortheastMap from '../components/map/NortheastMap.jsx';
 import { contact } from '../data/contact.js';
+import { destinationStates } from '../data/destinations.js';
+import { vehicles } from '../data/vehicles.js';
 import { submitBooking } from '../services/bookingService.js';
 
 const INTERESTS = [
@@ -23,6 +25,9 @@ const emptyForm = {
   fullName: '',
   email: '',
   phone: '',
+  destination: '',
+  travellers: '1',
+  vehicle: '',
   interest: INTERESTS[0],
   travelDate: '',
   message: '',
@@ -108,6 +113,8 @@ export default function ContactPage() {
     if (!form.fullName.trim()) next.fullName = 'Please tell us your name.';
     if (!form.email.trim()) next.email = 'We need an email to reply.';
     else if (!EMAIL_RE.test(form.email.trim())) next.email = 'That email looks incomplete.';
+    if (!form.destination) next.destination = 'Please choose a destination state.';
+    if (Number(form.travellers || 0) < 1) next.travellers = 'Enter at least one traveller.';
     if (form.message.trim().length < 10) next.message = 'A few more details help us plan (10+ characters).';
     return next;
   };
@@ -119,6 +126,9 @@ export default function ContactPage() {
       `Name: ${form.fullName}`,
       `Email: ${form.email}`,
       form.phone && `Phone: ${form.phone}`,
+      `Destination: ${form.destination || 'Not selected'}`,
+      `Passengers / Travellers: ${form.travellers}`,
+      `Vehicle: ${vehicles.find((vehicle) => vehicle.slug === form.vehicle)?.name || 'Not selected'}`,
       `Interest: ${form.interest}`,
       form.travelDate && `Preferred dates: ${form.travelDate}`,
       '',
@@ -140,6 +150,8 @@ export default function ContactPage() {
             fullName: form.fullName,
             email: form.email,
             phone: form.phone,
+            travellers: form.travellers,
+            vehicle: form.vehicle,
             startDate: form.travelDate,
             endDate: '',
             adults: 0,
@@ -150,9 +162,9 @@ export default function ContactPage() {
             notes: '',
           },
           {
-            destination: form.interest,
+            destination: form.destination,
             experience: form.interest,
-            vehicle: '',
+            vehicle: vehicles.find((vehicle) => vehicle.slug === form.vehicle)?.name || '',
           },
         );
         setSubmitted(true);
@@ -245,6 +257,27 @@ export default function ContactPage() {
                       />
                     </label>
 
+                    <label className={`contact-field ${errors.destination ? 'has-error' : ''}`}>
+                      <span>Destination (State)</span>
+                      <select value={form.destination} onChange={(e) => update('destination', e.target.value)}>
+                        <option value="">Select a state</option>
+                        {destinationStates.filter((state) => state !== 'All').map((state) => (
+                          <option key={state} value={state}>{state}</option>
+                        ))}
+                      </select>
+                      {errors.destination && <small>{errors.destination}</small>}
+                    </label>
+
+                    <label className="contact-field">
+                      <span>Passengers / Travellers</span>
+                      <input
+                        type="number"
+                        min="1"
+                        value={form.travellers}
+                        onChange={(e) => update('travellers', e.target.value)}
+                      />
+                    </label>
+
                     <label className="contact-field">
                       <span>Preferred Dates</span>
                       <input
@@ -253,6 +286,18 @@ export default function ContactPage() {
                         onChange={(e) => update('travelDate', e.target.value)}
                         placeholder="e.g. Mid-October, 8 days"
                       />
+                    </label>
+
+                    <label className="contact-field contact-field-full">
+                      <span>Preferred Vehicle</span>
+                      <span className="select-chevron">
+                        <select value={form.vehicle} onChange={(e) => update('vehicle', e.target.value)}>
+                          <option value="">Select a vehicle</option>
+                          {vehicles.map((vehicle) => (
+                            <option key={vehicle.slug} value={vehicle.slug}>{vehicle.name}</option>
+                          ))}
+                        </select>
+                      </span>
                     </label>
 
                     <label className="contact-field contact-field-full">

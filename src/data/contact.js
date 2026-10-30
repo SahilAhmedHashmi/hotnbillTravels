@@ -8,6 +8,6 @@ export const contact = {
   phoneHref: 'tel:+918761815947',
   whatsappHref: 'https://wa.me/918761815947',
   emailLabel: 'hornbilljourneys@gmail.com',
-  emailHref: 'mailto:hornbilljourneys@gmail.com',
+  emailHref: '/contact#contact',
   address: 'Guwahati, Assam',
 };

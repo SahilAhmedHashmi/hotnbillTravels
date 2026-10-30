@@ -7,6 +7,7 @@ import Reveal from '../components/common/Reveal.jsx';
 import FinalCta from '../components/common/FinalCta.jsx';
 import NortheastMap from '../components/map/NortheastMap.jsx';
 import { contact } from '../data/contact.js';
+import { submitBooking } from '../services/bookingService.js';
 
 const INTERESTS = [
   'Custom Itinerary',
@@ -95,6 +96,7 @@ export default function ContactPage() {
   const [form, setForm] = useState(emptyForm);
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const update = (field, value) => {
     setForm((prev) => ({ ...prev, [field]: value }));
@@ -126,16 +128,39 @@ export default function ContactPage() {
   }, [form]);
 
   const waHref = `${contact.whatsappHref}?text=${encodeURIComponent(enquiryText)}`;
-  const mailHref = `${contact.emailHref}?subject=${encodeURIComponent(
-    `Travel enquiry — ${form.interest}`,
-  )}&body=${encodeURIComponent(enquiryText)}`;
-
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     const next = validate();
     setErrors(next);
     if (Object.keys(next).length === 0) {
-      setSubmitted(true);
+      setIsSubmitting(true);
+      try {
+        await submitBooking(
+          {
+            fullName: form.fullName,
+            email: form.email,
+            phone: form.phone,
+            startDate: form.travelDate,
+            endDate: '',
+            adults: 0,
+            children: 0,
+            tripType: form.interest,
+            city: '',
+            specialRequirements: form.message,
+            notes: '',
+          },
+          {
+            destination: form.interest,
+            experience: form.interest,
+            vehicle: '',
+          },
+        );
+        setSubmitted(true);
+      } catch (error) {
+        setErrors({ submit: error.message || 'We could not send your enquiry. Please try again.' });
+      } finally {
+        setIsSubmitting(false);
+      }
     }
   };
 
@@ -253,9 +278,10 @@ export default function ContactPage() {
                     </label>
                   </div>
 
-                  <button type="submit" className="btn btn-gold contact-submit">
-                    Review &amp; Send
+                  <button type="submit" className="btn btn-gold contact-submit" disabled={isSubmitting}>
+                    {isSubmitting ? 'Sending...' : 'Send Enquiry'}
                   </button>
+                  {errors.submit && <p className="contact-form-note has-error">{errors.submit}</p>}
                   <p className="contact-form-note">
                     We use your details only to answer this enquiry. No spam, ever.
                   </p>
@@ -272,8 +298,7 @@ export default function ContactPage() {
                 <p className="label">Almost there</p>
                 <h2>Thanks, {form.fullName.split(' ')[0]}!</h2>
                 <p className="contact-form-lead">
-                  Your enquiry is ready. Send it through your preferred channel and we&rsquo;ll get back to you within
-                  24 hours.
+                  Your enquiry has been sent to our team. We&rsquo;ll get back to you within 24 hours.
                 </p>
 
                 <div className="contact-summary">
@@ -296,9 +321,6 @@ export default function ContactPage() {
                 <div className="contact-success-actions">
                   <a className="btn btn-gold" href={waHref} target="_blank" rel="noopener noreferrer">
                     <Icon name="whatsapp" /> Send on WhatsApp
-                  </a>
-                  <a className="btn btn-ghost" href={mailHref}>
-                    <Icon name="mail" /> Send by Email
                   </a>
                 </div>
                 <button type="button" className="contact-reset" onClick={resetForm}>
